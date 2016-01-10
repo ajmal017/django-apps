@@ -1,0 +1,582 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="http://ianlunn.github.io/Hover/hover.jpg" property="og:image" />
+	<meta content="Hover.css" property="og:site_name" />
+	<meta content="Hover.css - A collection of CSS3 powered hover effects" property="og:title" />
+	<title>
+		Hover.css - A collection of CSS3 powered hover effects
+	</title>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" media="all" rel="stylesheet" />
+	<link href="{% static 'hover/css/demo.css' %}" media="all" rel="stylesheet" />
+	<link href="{% static 'hover/css/hover.css' %}" media="all" rel="stylesheet" />
+</head>
+
+<body>
+	<!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<div class="main">
+		<span id="forkongithub">
+			<a href="https://github.com/IanLunn/Hover">
+				Fork me on GitHub
+			</a>
+		</span>
+		<h1>
+			Hover.css
+			<a class="sup" href="https://github.com/IanLunn/Hover/releases" title="View release history">
+				v2
+			</a>
+		</h1>
+		<p class="intro">
+			A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.
+		</p>
+		<div class="social aligncenter">
+			<div class="social-button">
+				<iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=IanLunn&amp;repo=Hover&amp;type=watch&amp;count=true" width="110">
+				</iframe>
+			</div>
+			<div class="social-button">
+				<a class="twitter-share-button" data-dnt="true" data-related="IanLunn" href="https://twitter.com/share">
+					Tweet
+				</a>
+			</div>
+		</div>
+		<div class="aligncenter">
+			<a class="button cta hvr-float-shadow" href="https://github.com/IanLunn/Hover">
+				Download on GitHub
+			</a>
+			<br/>
+			<a class="tutorial hvr-pop" href="http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/">
+				Read Tutorial →
+			</a>
+		</div>
+		<div class="effects">
+			<h2>
+				2D Transitions
+			</h2>
+			<a class="hvr-grow" href="#">
+				Grow
+			</a>
+			<a class="hvr-shrink" href="#">
+				Shrink
+			</a>
+			<a class="hvr-pulse" href="#">
+				Pulse
+			</a>
+			<a class="hvr-pulse-grow" href="#">
+				Pulse Grow
+			</a>
+			<a class="hvr-pulse-shrink" href="#">
+				Pulse Shrink
+			</a>
+			<a class="hvr-push" href="#">
+				Push
+			</a>
+			<a class="hvr-pop" href="#">
+				Pop
+			</a>
+			<a class="hvr-bounce-in" href="#">
+				Bounce In
+			</a>
+			<a class="hvr-bounce-out" href="#">
+				Bounce Out
+			</a>
+			<a class="hvr-rotate" href="#">
+				Rotate
+			</a>
+			<a class="hvr-grow-rotate" href="#">
+				Grow Rotate
+			</a>
+			<a class="hvr-float" href="#">
+				Float
+			</a>
+			<a class="hvr-sink" href="#">
+				Sink
+			</a>
+			<a class="hvr-bob" href="#">
+				Bob
+			</a>
+			<a class="hvr-hang" href="#">
+				Hang
+			</a>
+			<a class="hvr-skew" href="#">
+				Skew
+			</a>
+			<a class="hvr-skew-forward" href="#">
+				Skew Forward
+			</a>
+			<a class="hvr-skew-backward" href="#">
+				Skew Backward
+			</a>
+			<a class="hvr-wobble-horizontal" href="#">
+				Wobble Horizontal
+			</a>
+			<a class="hvr-wobble-vertical" href="#">
+				Wobble Vertical
+			</a>
+			<a class="hvr-wobble-to-bottom-right" href="#">
+				Wobble To Bottom Right
+			</a>
+			<a class="hvr-wobble-to-top-right" href="#">
+				Wobble To Top Right
+			</a>
+			<a class="hvr-wobble-top" href="#">
+				Wobble Top
+			</a>
+			<a class="hvr-wobble-bottom" href="#">
+				Wobble Bottom
+			</a>
+			<a class="hvr-wobble-skew" href="#">
+				Wobble Skew
+			</a>
+			<a class="hvr-buzz" href="#">
+				Buzz
+			</a>
+			<a class="hvr-buzz-out" href="#">
+				Buzz Out
+			</a>
+			<h2>
+				Background Transitions
+			</h2>
+			<a class="hvr-fade" href="#">
+				Fade
+			</a>
+			<a class="hvr-back-pulse" href="#">
+				Back Pulse
+			</a>
+			<a class="hvr-sweep-to-right" href="#">
+				Sweep To Right
+			</a>
+			<a class="hvr-sweep-to-left" href="#">
+				Sweep To Left
+			</a>
+			<a class="hvr-sweep-to-bottom" href="#">
+				Sweep To Bottom
+			</a>
+			<a class="hvr-sweep-to-top" href="#">
+				Sweep To Top
+			</a>
+			<a class="hvr-bounce-to-right" href="#">
+				Bounce To Right
+			</a>
+			<a class="hvr-bounce-to-left" href="#">
+				Bounce To Left
+			</a>
+			<a class="hvr-bounce-to-bottom" href="#">
+				Bounce To Bottom
+			</a>
+			<a class="hvr-bounce-to-top" href="#">
+				Bounce To Top
+			</a>
+			<a class="hvr-radial-out" href="#">
+				Radial Out
+			</a>
+			<a class="hvr-radial-in" href="#">
+				Radial In
+			</a>
+			<a class="hvr-rectangle-in" href="#">
+				Rectangle In
+			</a>
+			<a class="hvr-rectangle-out" href="#">
+				Rectangle Out
+			</a>
+			<a class="hvr-shutter-in-horizontal" href="#">
+				Shutter In Horizontal
+			</a>
+			<a class="hvr-shutter-out-horizontal" href="#">
+				Shutter Out Horizontal
+			</a>
+			<a class="hvr-shutter-in-vertical" href="#">
+				Shutter In Vertical
+			</a>
+			<a class="hvr-shutter-out-vertical" href="#">
+				Shutter Out Vertical
+			</a>
+			<h2>
+				Icons
+			</h2>
+			<small>
+				Font icons courtesy of
+				<a href="https://fortawesome.github.io/Font-Awesome/">
+					FontAwesome
+				</a>
+				.
+				<a href="https://github.com/IanLunn/Hover/#using-fontawesome-with-icon-effects">
+					How to use FontAwesome icons
+				</a>
+				with Hover.css.
+			</small>
+			<a class="hvr-icon-back" href="#">
+				Icon Back
+			</a>
+			<a class="hvr-icon-forward" href="#">
+				Icon Forward
+			</a>
+			<a class="hvr-icon-down" href="#">
+				Icon Down
+			</a>
+			<a class="hvr-icon-up" href="#">
+				Icon Up
+			</a>
+			<a class="hvr-icon-spin" href="#">
+				Icon Spin
+			</a>
+			<a class="hvr-icon-drop" href="#">
+				Icon Drop
+			</a>
+			<a class="hvr-icon-fade" href="#">
+				Icon Fade
+			</a>
+			<a class="hvr-icon-float-away" href="#">
+				Icon Float Away
+			</a>
+			<a class="hvr-icon-sink-away" href="#">
+				Icon Sink Away
+			</a>
+			<a class="hvr-icon-grow" href="#">
+				Icon Grow
+			</a>
+			<a class="hvr-icon-shrink" href="#">
+				Icon Shrink
+			</a>
+			<a class="hvr-icon-pulse" href="#">
+				Icon Pulse
+			</a>
+			<a class="hvr-icon-pulse-grow" href="#">
+				Icon Pulse Grow
+			</a>
+			<a class="hvr-icon-pulse-shrink" href="#">
+				Icon Pulse Shrink
+			</a>
+			<a class="hvr-icon-push" href="#">
+				Icon Push
+			</a>
+			<a class="hvr-icon-pop" href="#">
+				Icon Pop
+			</a>
+			<a class="hvr-icon-bounce" href="#">
+				Icon Bounce
+			</a>
+			<a class="hvr-icon-rotate" href="#">
+				Icon Rotate
+			</a>
+			<a class="hvr-icon-grow-rotate" href="#">
+				Icon Grow Rotate
+			</a>
+			<a class="hvr-icon-float" href="#">
+				Icon Float
+			</a>
+			<a class="hvr-icon-sink" href="#">
+				Icon Sink
+			</a>
+			<a class="hvr-icon-bob" href="#">
+				Icon Bob
+			</a>
+			<a class="hvr-icon-hang" href="#">
+				Icon Hang
+			</a>
+			<a class="hvr-icon-wobble-horizontal" href="#">
+				Icon Wobble Horizontal
+			</a>
+			<a class="hvr-icon-wobble-vertical" href="#">
+				Icon Wobble Vertical
+			</a>
+			<a class="hvr-icon-buzz" href="#">
+				Icon Buzz
+			</a>
+			<a class="hvr-icon-buzz-out" href="#">
+				Icon Buzz Out
+			</a>
+			<h2>
+				Border Transitions
+			</h2>
+			<a class="hvr-border-fade" href="#">
+				Border Fade
+			</a>
+			<a class="hvr-hollow" href="#">
+				Hollow
+			</a>
+			<a class="hvr-trim" href="#">
+				Trim
+			</a>
+			<a class="hvr-ripple-out" href="#">
+				Ripple Out
+			</a>
+			<a class="hvr-ripple-in" href="#">
+				Ripple In
+			</a>
+			<a class="hvr-outline-out" href="#">
+				Outline Out
+			</a>
+			<a class="hvr-outline-in" href="#">
+				Outline In
+			</a>
+			<a class="hvr-round-corners" href="#">
+				Round Corners
+			</a>
+			<a class="hvr-underline-from-left" href="#">
+				Underline From Left
+			</a>
+			<a class="hvr-underline-from-center" href="#">
+				Underline From Center
+			</a>
+			<a class="hvr-underline-from-right" href="#">
+				Underline From Right
+			</a>
+			<a class="hvr-reveal" href="#">
+				Reveal
+			</a>
+			<a class="hvr-underline-reveal" href="#">
+				Underline Reveal
+			</a>
+			<a class="hvr-overline-reveal" href="#">
+				Overline Reveal
+			</a>
+			<a class="hvr-overline-from-left" href="#">
+				Overline From Left
+			</a>
+			<a class="hvr-overline-from-center" href="#">
+				Overline From Center
+			</a>
+			<a class="hvr-overline-from-right" href="#">
+				Overline From Right
+			</a>
+			<h2>
+				Shadow and Glow Transitions
+			</h2>
+			<a class="hvr-shadow" href="#">
+				Shadow
+			</a>
+			<a class="hvr-grow-shadow" href="#">
+				Grow Shadow
+			</a>
+			<a class="hvr-float-shadow" href="#">
+				Float Shadow
+			</a>
+			<a class="hvr-glow" href="#">
+				Glow
+			</a>
+			<a class="hvr-shadow-radial" href="#">
+				Shadow Radial
+			</a>
+			<a class="hvr-box-shadow-outset" href="#">
+				Box Shadow Outset
+			</a>
+			<a class="hvr-box-shadow-inset" href="#">
+				Box Shadow Inset
+			</a>
+			<h2>
+				Speech Bubbles
+			</h2>
+			<a class="hvr-bubble-top" href="#">
+				Bubble Top
+			</a>
+			<a class="hvr-bubble-right" href="#">
+				Bubble Right
+			</a>
+			<a class="hvr-bubble-bottom" href="#">
+				Bubble Bottom
+			</a>
+			<a class="hvr-bubble-left" href="#">
+				Bubble Left
+			</a>
+			<a class="hvr-bubble-float-top" href="#">
+				Bubble Float Top
+			</a>
+			<a class="hvr-bubble-float-right" href="#">
+				Bubble Float Right
+			</a>
+			<a class="hvr-bubble-float-bottom" href="#">
+				Bubble Float Bottom
+			</a>
+			<a class="hvr-bubble-float-left" href="#">
+				Bubble Float Left
+			</a>
+			<h2>
+				Curls
+			</h2>
+			<a class="hvr-curl-top-left" href="#">
+				Curl Top Left
+			</a>
+			<a class="hvr-curl-top-right" href="#">
+				Curl Top Right
+			</a>
+			<a class="hvr-curl-bottom-right" href="#">
+				Curl Bottom Right
+			</a>
+			<a class="hvr-curl-bottom-left" href="#">
+				Curl Bottom Left
+			</a>
+		</div>
+		<div class="footer">
+			<div class="about">
+				<h2>
+					About Hover.css
+				</h2>
+				<p>
+					All Hover.css effects make use of a single element (with the help of some pseudo-elements where necessary), are self contained so you can easily copy and paste them, and come in CSS, Sass, and LESS flavours.
+				</p>
+				<p>
+					For best results, hover effects use a couple of "hacks" (undesirable but usually necessary lines of code). For more information on these hacks and whether you need them,
+					<a href="https://github.com/IanLunn/Hover/wiki/Hacks-Explained">
+						please read the FAQ
+					</a>
+					.
+				</p>
+				<p>
+					Many effects use CSS3 features such as transitions, transforms and animations. Old browsers that don't support these features may need some extra attention to be certain a fallback hover effect is still in place.
+				</p>
+				<br/>
+				<h3>
+					License
+				</h3>
+				<p>
+					Hover.css is open source, and made available under a
+					<a href="http://www.opensource.org/licenses/mit-license.php">
+						MIT License
+					</a>
+					. Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
+				</p>
+				<p>
+					Placing author information in your stylesheet, credits page or humans.txt is much appreciated.
+				</p>
+				<br/>
+				<h3>
+					Hover.css is now available as an Eager App
+				</h3>
+				<p>
+					Quickly and easily install
+					<a href="https://eager.io/app/AN_LdP2tOk0f">
+						Hover.css
+					</a>
+					on your WordPress site or via an embed code with
+					<a href="https://eager.io/">
+						Eager app
+					</a>
+					.
+				</p>
+			</div>
+		</div>
+		<div class="ad">
+			<h2>
+				Like Hover.css? Try out my animation framework for sliders,
+				<br/> presentations, and other step-based applications
+			</h2>
+			<a class="ad__logo" href="http://www.sequencejs.com/" title="Learn more about Sequence.js">
+				<img alt="Sequence.js" src="{% static 'hover/sequence-logo.png' %}" />
+			</a>
+			<div class="ad__preview">
+				<a href="http://www.sequencejs.com/" title="Learn more about Sequence.js">
+					<img src="{% static 'hover/modern-slide-in.png' %}" />
+				</a>
+				<a class="second" href="http://www.sequencejs.com/" title="Learn more about Sequence.js">
+					<img src="{% static 'hover/photo-stack.png' %}" />
+				</a>
+				<a href="http://www.sequencejs.com/" title="Learn more about Sequence.js">
+					<img src="{% static 'hover/two-up.png' %}" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="made-by group">
+		<ul>
+			<li>
+				<!-- "IL" logo Copyright (c) Ian Lunn Design Limited 2015 -->
+				<a cass="icon__ild" class="ild-ident" href="http://ianlunn.co.uk/" target="_blank" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer">
+					<svg class="" height="30" onmouseenter="el=this;el.classList.add('active');setTimeout(function(){el.classList.remove('active')},600);" viewbox="0 0 52 52" width="24" xmlns="http://www.w3.org/2000/svg">
+						<g class="circle-holder">
+							<path class="circle" d="M5.4 26c0-11.4 9.2-20.6 20.6-20.6s20.6 9.2 20.6 20.6c0 11.4-9.2 20.6-20.6 20.6s-20.6-9.2-20.6-20.6zm-5.4 0c0 14.4 11.6 26 26 26s26-11.6 26-26-11.6-26-26-26-26 11.6-26 26z" fill="#2E96D6">
+							</path>
+						</g>
+						<path class="i" d="M15 22h9v16h-9v-16z" fill="#fff">
+						</path>
+						<path class="l" d="M28 14h9v24h-9v-24z" fill="#fff">
+						</path>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a class="icon__twitter" href="https://twitter.com/IanLunn/" target="_blank" title="Ian Lunn on Twitter">
+					<i class="fa fa-twitter">
+					</i>
+				</a>
+			</li>
+			<li>
+				<a class="icon__github" href="https://github.com/IanLunn/Hover/" target="_blank" title="Hover.css on GitHub">
+					<i class="fa fa-github">
+					</i>
+				</a>
+			</li>
+		</ul>
+		<p>
+			Made by
+			<br/>
+			<a href="http://ianlunn.co.uk/" target="_blank" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer">
+				Ian Lunn - Web Designer &amp; Front End Developer
+			</a>
+		</p>
+		<p class="follow">
+			<a class="twitter-follow-button" data-dnt="true" data-show-count="false" data-size="large" href="https://twitter.com/IanLunn">
+				Follow @IanLunn
+			</a>
+			for Hover.css news, web design &amp;
+			<br/> development links, tips, and opinions
+		</p>
+		<small>
+			Copyright © 2015
+			<a href="http://ianlunn.co.uk/" target="_blank" title="Ian Lunn - Freelance Web Designer &amp; Front End Developer">
+				Ian Lunn Design Limited
+			</a>
+		</small>
+	</div>
+	<script>
+	/**
+	 * Used to demonstrate Hover.css only. Not required when adding
+	 * Hover.css to your own pages. Prevents a link from being
+	 * navigated and gaining focus.
+	 */
+	var effects = document.querySelectorAll('.effects')[0];
+
+	effects.addEventListener('click', function(e) {
+
+		if (e.target.className.indexOf('hvr') > -1) {
+			e.preventDefault();
+			e.target.blur();
+
+		}
+	});
+	</script>
+	<script>
+	! function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0],
+			p = /^http:/.test(d.location) ? 'http' : 'https';
+		if (!d.getElementById(id)) {
+			js = d.createElement(s);
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+	}(document, 'script', 'twitter-wjs');
+	</script>
+	<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-11991680-4', 'ianlunn.github.io');
+	ga('send', 'pageview');
+	</script>
+</body>
+
+</html>

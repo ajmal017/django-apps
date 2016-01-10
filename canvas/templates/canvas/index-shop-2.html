@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html dir="ltr" lang="en-US">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="CenterStack" name="author"/>
+  <!-- Stylesheets
+	============================================= -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/style.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/dark.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/font-icons.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/magnific-popup.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/responsive.css' %}" rel="stylesheet" type="text/css"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+  <!-- External JavaScripts
+	============================================= -->
+  <script src="{% static 'canvas/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'canvas/js/plugins.js' %}" type="text/javascript">
+  </script>
+  <!-- Document Title
+	============================================= -->
+  <title>
+   Home - Shop Layout 2 | Canvas
+  </title>
+ </head>
+ <body class="stretched">
+  <!-- Document Wrapper
+	============================================= -->
+  <div class="clearfix" id="wrapper">
+   <!-- Top Bar
+		============================================= -->
+   <div id="top-bar">
+    <div class="container clearfix">
+     <div class="col_half nobottommargin hidden-xs">
+      <p class="nobottommargin">
+       <strong>
+        Call:
+       </strong>
+       1800-547-2145 |
+       <strong>
+        Email:
+       </strong>
+       info@canvas.com
+      </p>
+     </div>
+     <div class="col_half col_last fright nobottommargin">
+      <!-- Top Links
+					============================================= -->
+      <div class="top-links">
+       <ul>
+        <li>
+         <a href="#">
+          USD
+         </a>
+         <ul>
+          <li>
+           <a href="#">
+            EUR
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            AUD
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            GBP
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          EN
+         </a>
+         <ul>
+          <li>
+           <a href="#">
+            <img alt="French" src="{% static 'canvas/images/icons/flags/french.png' %}"/>
+            FR
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <img alt="Italian" src="{% static 'canvas/images/icons/flags/italian.png' %}"/>
+            IT
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <img alt="German" src="{% static 'canvas/images/icons/flags/german.png' %}"/>
+            DE
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          Login
+         </a>
+         <div class="top-link-section">
+          <form id="top-login" role="form">
+           <div class="input-group" id="top-login-username">
+            <span class="input-group-addon">
+             <i class="icon-user">
+             </i>
+            </span>
+            <input class="form-control" placeholder="Email address" required="" type="email"/>
+           </div>
+           <div class="input-group" id="top-login-password">
+            <span class="input-group-addon">
+             <i class="icon-key">
+             </i>
+            </span>
+            <input class="form-control" placeholder="Password" required="" type="password"/>
+           </div>
+           <label class="checkbox">
+            <input type="checkbox" value="remember-me"/>
+            Remember me
+           </label>
+           <button class="btn btn-danger btn-block" type="submit">
+            Sign in
+           </button>
+          </form>
+         </div>
+        </li>
+       </ul>
+      </div>
+      <!-- .top-links end -->
+     </div>
+    </div>
+   </div>
+   <!-- #top-bar end -->
+   <!-- Header
+		============================================= -->
+   <header class="sticky-style-2" id="header">
+    <div class="container clearfix">
+     <!-- Logo
+				============================================= -->
+     <div id="logo">
+      <a class="standard-logo" data-dark-logo="{% static 'canvas/images/logo-transparent.png' %}" href="{% static 'canvas/index.html' %}">
+       <img alt="Canvas Logo" src="{% static 'canvas/images/logo-transparent.png' %}"/>
+      </a>
+      <a class="retina-logo" data-dark-logo="{% static 'canvas/images/logo-transparent.png' %}" href="{% static 'canvas/index.html' %}">
+       <img alt="Canvas Logo" src="{% static 'canvas/images/logo-transparent.png' %}"/>
+      </a>
+     </div>
+     <!-- #logo end -->
+     <ul class="header-extras">
+      <li>
+       <i class="i-medium i-circled i-bordered icon-thumbs-up2 nomargin">
+       </i>
+       <div class="he-text">
+        Original Brands
+        <span>
+         100% Guaranteed
+        </span>
+       </div>
+      </li>
+      <li>
+       <i class="i-medium i-circled i-bordered icon-truck2 nomargin">
+       </i>
+       <div class="he-text">
+        Free Shipping
+        <span>
+         for $20 or more
+        </span>
+       </div>
+      </li>
+      <li>
+       <i class="i-medium i-circled i-bordered icon-undo nomargin">
+       </i>
+       <div class="he-text">
+        30-Day Returns
+        <span>
+         Completely Free
+        </span>
+       </div>
+      </li>
+     </ul>
+    </div>
+    <div id="header-wrap">
+     <!-- Primary Navigation
+				============================================= -->
+     <nav class="style-2" id="primary-menu">
+      <div class="container clearfix">
+       <div id="primary-menu-trigger">
+        <i class="icon-reorder">
+        </i>
+       </div>
+       <ul>
+        <li class="current">
+         <a href="#">
+          <div>
+           Home
+          </div>
+          <span>
+           Lets Start
+          </span>
+         </a>
+         <ul>
+          <li>
+           <a href="{% url 'canvas_index_corporate' %}">
+            <div>
+             Home - Corporate
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_corporate' %}">
+              <div>
+               Corporate - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_2' %}">
+              <div>
+               Corporate - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_3' %}">
+              <div>
+               Corporate - Layout 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_4' %}">
+              <div>
+               Corporate - Layout 4
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_portfolio' %}">
+            <div>
+             Home - Portfolio
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_portfolio' %}">
+              <div>
+               Portfolio - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_2' %}">
+              <div>
+               Portfolio - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_3' %}">
+              <div>
+               Portfolio - Masonry
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_4' %}">
+              <div>
+               Portfolio - AJAX
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_blog' %}">
+            <div>
+             Home - Blog
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_blog' %}">
+              <div>
+               Blog - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_blog_2' %}">
+              <div>
+               Blog - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_blog_3' %}">
+              <div>
+               Blog - Layout 3
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_shop' %}">
+            <div>
+             Home - Shop
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_shop' %}">
+              <div>
+               Shop - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_shop_2' %}">
+              <div>
+               Shop - Layout 2
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_magazine' %}">
+            <div>
+             Home - Magazine
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_magazine' %}">
+              <div>
+               Magazine - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_magazine_2' %}">
+              <div>
+               Magazine - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_magazine_3' %}">
+              <div>
+               Magazine - Layout 3
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_landing' %}">
+            <div>
+             Home - Landing Page
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_landing' %}">
+              <div>
+               Landing Page - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_2' %}">
+              <div>
+               Landing Page - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_3' %}">
+              <div>
+               Landing Page - Layout 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_4' %}">
+              <div>
+               Landing Page - Layout 4
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_5' %}">
+              <div>
+               Landing Page - Layout 5
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_fullscreen_image' %}">
+            <div>
+             Home - Full Screen
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_image' %}">
+              <div>
+               Full Screen - Image
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_slider' %}">
+              <div>
+               Full Screen - Slider
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_video' %}">
+              <div>
+               Full Screen - Video
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_onepage' %}">
+            <div>
+             Home - One Page
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_onepage' %}">
+              <div>
+               One Page - Default
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_onepage_2' %}">
+              <div>
+               One Page - Submenu
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_onepage_3' %}">
+              <div>
+               One Page - Dots Style
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_wedding' %}">
+            <div>
+             Home - Wedding
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_restaurant' %}">
+            <div>
+             Home - Restaurant
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_events' %}">
+            <div>
+             Home - Events
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_parallax' %}">
+            <div>
+             Home - Parallax
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_app_showcase' %}">
+            <div>
+             Home - App Showcase
+            </div>
+           </a>
+          </li>
+         </ul>
+        </li>
+        <!-- Mega Menu
+								============================================= -->
+        <li class="mega-menu">
+         <a href="#">
+          <div>
+           Men
+          </div>
+          <span>
+           Out of the Box
+          </span>
+         </a>
+         <div class="mega-menu-content style-2 col-4 clearfix">
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Footwear
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                Casual Shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Formal Shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sports shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Flip Flops
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Slippers
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sports Sandals
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Party Shoes
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Clothing
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                Casual Shirts
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                T-Shirts
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Collared Tees
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Pants / Trousers
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Ethnic Wear
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Jeans
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sweamwear
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Accessories
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                Bags &amp; Backpacks
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Watches
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sunglasses
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Wallets
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Caps &amp; Hats
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Jewellery
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Belts, Ties
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              New Arrivals
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                T-Shirts
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Formal Shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Accessories
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Watches
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Perfumes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Belts, Ties
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Formal Shirts
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </li>
+        <!-- .mega-menu end -->
+        <li>
+         <a href="#">
+          <div>
+           Women
+          </div>
+          <span>
+           Out of the Box
+          </span>
+         </a>
+         <div class="mega-menu-content style-2 col-2 clearfix">
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Footwear
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                Casual Shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Formal Shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sports shoes
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Flip Flops
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Slippers
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sports Sandals
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Party Shoes
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Clothing
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="#">
+               <div>
+                Casual Shirts
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                T-Shirts
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Collared Tees
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Pants / Trousers
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Ethnic Wear
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Jeans
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="#">
+               <div>
+                Sweamwear
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </li>
+        <!-- .mega-menu end -->
+        <li>
+         <a href="#">
+          <div>
+           Accessories
+          </div>
+          <span>
+           Awesome Works
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          <div>
+           Sale
+          </div>
+          <span>
+           Awesome Works
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          <div>
+           Blog
+          </div>
+          <span>
+           Latest News
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          <div>
+           Videos
+          </div>
+          <span>
+           Latest News
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          <div>
+           Contact
+          </div>
+          <span>
+           Get In Touch
+          </span>
+         </a>
+        </li>
+       </ul>
+       <!-- Top Cart
+						============================================= -->
+       <div id="top-cart">
+        <a href="#" id="top-cart-trigger">
+         <i class="icon-shopping-cart">
+         </i>
+         <span>
+          5
+         </span>
+        </a>
+        <div class="top-cart-content">
+         <div class="top-cart-title">
+          <h4>
+           Shopping Cart
+          </h4>
+         </div>
+         <div class="top-cart-items">
+          <div class="top-cart-item clearfix">
+           <div class="top-cart-item-image">
+            <a href="#">
+             <img alt="Blue Round-Neck Tshirt" src="{% static 'canvas/images/shop/small/1.jpg' %}"/>
+            </a>
+           </div>
+           <div class="top-cart-item-desc">
+            <a href="#">
+             Blue Round-Neck Tshirt
+            </a>
+            <span class="top-cart-item-price">
+             $19.99
+            </span>
+            <span class="top-cart-item-quantity">
+             x 2
+            </span>
+           </div>
+          </div>
+          <div class="top-cart-item clearfix">
+           <div class="top-cart-item-image">
+            <a href="#">
+             <img alt="Light Blue Denim Dress" src="{% static 'canvas/images/shop/small/6.jpg' %}"/>
+            </a>
+           </div>
+           <div class="top-cart-item-desc">
+            <a href="#">
+             Light Blue Denim Dress
+            </a>
+            <span class="top-cart-item-price">
+             $24.99
+            </span>
+            <span class="top-cart-item-quantity">
+             x 3
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="top-cart-action clearfix">
+          <span class="fleft top-checkout-price">
+           $114.95
+          </span>
+          <button class="button button-3d button-small nomargin fright">
+           View Cart
+          </button>
+         </div>
+        </div>
+       </div>
+       <!-- #top-cart end -->
+       <!-- Top Search
+						============================================= -->
+       <div id="top-search">
+        <a href="#" id="top-search-trigger">
+         <i class="icon-search3">
+         </i>
+         <i class="icon-line-cross">
+         </i>
+        </a>
+        <form action="search.html" method="get">
+         <input class="form-control" name="q" placeholder="Type &amp; Hit Enter.." type="text" value=""/>
+        </form>
+       </div>
+       <!-- #top-search end -->
+      </div>
+     </nav>
+     <!-- #primary-menu end -->
+    </div>
+   </header>
+   <!-- #header end -->
+   <!-- Content
+		============================================= -->
+   <section id="content">
+    <div class="content-wrap">
+     <div class="container clearfix">
+      <div class="col_two_third bottommargin-lg">
+       <div class="fslider" data-arrows="false">
+        <div class="flexslider">
+         <div class="slider-wrap">
+          <div class="slide">
+           <a href="#">
+            <img alt="Shop Image" src="{% static 'canvas/images/shop/slider/1.jpg' %}"/>
+           </a>
+          </div>
+          <div class="slide">
+           <a href="#">
+            <img alt="Shop Image" src="{% static 'canvas/images/shop/slider/2.jpg' %}"/>
+           </a>
+          </div>
+          <div class="slide">
+           <a href="#">
+            <img alt="Shop Image" src="{% static 'canvas/images/shop/slider/3.jpg' %}"/>
+           </a>
+          </div>
+          <div class="slide">
+           <a href="#">
+            <img alt="Shop Image" src="{% static 'canvas/images/shop/slider/4.jpg' %}"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third bottommargin-lg col_last">
+       <div class="col_full bottommargin-sm">
+        <a href="#">
+         <img alt="Image" src="{% static 'canvas/images/shop/banners/7.jpg' %}"/>
+        </a>
+       </div>
+       <div class="col_full nobottommargin">
+        <a href="#">
+         <img alt="Image" src="{% static 'canvas/images/shop/banners/3.jpg' %}"/>
+        </a>
+       </div>
+      </div>
+      <div class="clear">
+      </div>
+     </div>
+     <div class="promo parallax promo-full bottommargin-lg" data-stellar-background-ratio="0.4" style="background-image: url('images/parallax/3.jpg');">
+      <div class="container clearfix">
+       <h3>
+        Get
+        <span>
+         30%
+        </span>
+        off on orders of $29 or more. Use Coupon:
+        <span>
+         SHOP30
+        </span>
+       </h3>
+       <span>
+        Sale available on selected Designer Brands that include Apparels, Footwear, Fashion Accessories &amp; Watches.
+       </span>
+       <a class="button button-xlarge button-rounded" href="#">
+        Start Shopping
+       </a>
+      </div>
+     </div>
+     <div class="container clearfix">
+      <div class="col_one_third bottommargin-lg">
+       <div class="feature-box center media-box fbox-bg">
+        <div class="fbox-media">
+         <img alt="Image" src="{% static 'canvas/images/shop/banners/10.jpg' %}"/>
+        </div>
+        <div class="fbox-desc">
+         <h3>
+          Men's Footwear
+          <span class="subtitle">
+           Flat 50% Off*
+          </span>
+         </h3>
+         <p>
+          <a class="btn btn-default" href="#">
+           Shop Now
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third bottommargin-lg">
+       <div class="feature-box center media-box fbox-bg">
+        <div class="fbox-media">
+         <img alt="Image" src="{% static 'canvas/images/shop/banners/11.jpg' %}"/>
+        </div>
+        <div class="fbox-desc">
+         <h3>
+          Latest Product Arrivals
+          <span class="subtitle">
+           New Dress Designs Available
+          </span>
+         </h3>
+         <p>
+          <a class="btn btn-default" href="#">
+           Check New Arrivals
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third bottommargin-lg col_last">
+       <div class="feature-box center media-box fbox-bg">
+        <div class="fbox-media">
+         <img alt="Image" src="{% static 'canvas/images/shop/banners/12.jpg' %}"/>
+        </div>
+        <div class="fbox-desc">
+         <h3>
+          The Style Blog
+          <span class="subtitle">
+           Fashion Tips from Experts
+          </span>
+         </h3>
+         <p>
+          <a class="btn btn-default" href="#">
+           Browse Videos
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="clear">
+      </div>
+      <div class="col_one_third nobottommargin">
+       <div class="fancy-title title-border">
+        <h4>
+         Recently Arrived
+        </h4>
+       </div>
+       <div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/1.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Blue Round-Neck Tshirt
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $29.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/6.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Checked Short Dress
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $23.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/7.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Light Blue Denim Dress
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $19.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/9.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Slim Fit Chinos
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $24.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third nobottommargin">
+       <div class="fancy-title title-border">
+        <h4>
+         Popular Products
+        </h4>
+       </div>
+       <div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/3.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Round-Neck Tshirt
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $15
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/10.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Green Trousers
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $19
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/11.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Silver Chrome Watch
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $34.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/4.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Black Polo Tshirt
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $17.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third nobottommargin col_last">
+       <div class="fancy-title title-border">
+        <h4>
+         Recommended for You
+        </h4>
+       </div>
+       <div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/8.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Pink Printed Dress
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $21
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/5.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Blue Round-Neck Tshirt
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $19.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/12.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Men Aviator Sunglasses
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $14.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+            <i class="icon-star-empty">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="spost clearfix">
+         <div class="entry-image">
+          <a href="#">
+           <img alt="Image" src="{% static 'canvas/images/shop/small/2.jpg' %}"/>
+          </a>
+         </div>
+         <div class="entry-c">
+          <div class="entry-title">
+           <h4>
+            <a href="#">
+             Unisex Sunglasses
+            </a>
+           </h4>
+          </div>
+          <ul class="entry-meta">
+           <li class="color">
+            $17.99
+           </li>
+           <li>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star3">
+            </i>
+            <i class="icon-star-half-full">
+            </i>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="clear">
+      </div>
+      <div class="line">
+      </div>
+      <div class="owl-carousel image-carousel" id="oc-clients-full">
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/1.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/2.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/3.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/4.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/5.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/6.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/7.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/8.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/9.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/10.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/11.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/12.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/13.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/14.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/15.png' %}"/>
+        </a>
+       </div>
+       <div class="oc-item">
+        <a href="#">
+         <img alt="Clients" src="{% static 'canvas/images/clients/logo/18.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <script type="text/javascript">
+       jQuery(document).ready(function($) {
+
+							var ocClients = $("#oc-clients-full");
+
+							ocClients.owlCarousel({
+								margin: 30,
+								nav: false,
+								autoplay: true,
+								dots: false,
+								autoplayHoverPause: true,
+								responsive:{
+									0:{ items:2 },
+									480:{ items:3 },
+									768:{ items:4 },
+									992:{ items:5 },
+									1200:{ items:7 }
+								}
+							});
+						});
+      </script>
+     </div>
+     <div class="si-sticky si-sticky-right hidden-sm hidden-xs">
+      <a class="social-icon si-colored si-facebook" data-animate="bounceInRight" href="#">
+       <i class="icon-facebook">
+       </i>
+       <i class="icon-facebook">
+       </i>
+      </a>
+      <a class="social-icon si-colored si-twitter" data-animate="bounceInRight" data-delay="100" href="#">
+       <i class="icon-twitter">
+       </i>
+       <i class="icon-twitter">
+       </i>
+      </a>
+      <a class="social-icon si-colored si-pinterest" data-animate="bounceInRight" data-delay="200" href="#">
+       <i class="icon-pinterest">
+       </i>
+       <i class="icon-pinterest">
+       </i>
+      </a>
+      <a class="social-icon si-colored si-instagram" data-animate="bounceInRight" data-delay="300" href="#">
+       <i class="icon-instagram">
+       </i>
+       <i class="icon-instagram">
+       </i>
+      </a>
+      <a class="social-icon si-colored si-gplus" data-animate="bounceInRight" data-delay="600" href="#">
+       <i class="icon-gplus">
+       </i>
+       <i class="icon-gplus">
+       </i>
+      </a>
+      <a class="social-icon si-colored si-rss" data-animate="bounceInRight" data-delay="700" href="#">
+       <i class="icon-rss">
+       </i>
+       <i class="icon-rss">
+       </i>
+      </a>
+     </div>
+    </div>
+   </section>
+   <!-- #content end -->
+   <!-- Footer
+		============================================= -->
+   <footer class="dark" id="footer">
+    <div class="container">
+     <!-- Footer Widgets
+				============================================= -->
+     <div class="footer-widgets-wrap clearfix">
+      <div class="col_two_third">
+       <div class="col_one_third">
+        <div class="widget clearfix">
+         <img alt="" class="footer-logo" src="{% static 'canvas/images/footer-widget-logo.png' %}"/>
+         <p>
+          We believe in
+          <strong>
+           Simple
+          </strong>
+          ,
+          <strong>
+           Creative
+          </strong>
+          &amp;
+          <strong>
+           Flexible
+          </strong>
+          Design Standards.
+         </p>
+         <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+          <address>
+           <strong>
+            Headquarters:
+           </strong>
+           <br/>
+           795 Folsom Ave, Suite 600
+           <br/>
+           San Francisco, CA 94107
+           <br/>
+          </address>
+          <abbr title="Phone Number">
+           <strong>
+            Phone:
+           </strong>
+          </abbr>
+          (91) 8547 632521
+          <br/>
+          <abbr title="Fax">
+           <strong>
+            Fax:
+           </strong>
+          </abbr>
+          (91) 11 4752 1433
+          <br/>
+          <abbr title="Email Address">
+           <strong>
+            Email:
+           </strong>
+          </abbr>
+          info@canvas.com
+         </div>
+        </div>
+       </div>
+       <div class="col_one_third">
+        <div class="widget widget_links clearfix">
+         <h4>
+          Blogroll
+         </h4>
+         <ul>
+          <li>
+           <a href="http://codex.wordpress.org/">
+            Documentation
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/support/forum/requests-and-feedback">
+            Feedback
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/extend/plugins/">
+            Plugins
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/support/">
+            Support Forums
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/extend/themes/">
+            Themes
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/news/">
+            WordPress Blog
+           </a>
+          </li>
+          <li>
+           <a href="http://planet.wordpress.org/">
+            WordPress Planet
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col_one_third col_last">
+        <div class="widget clearfix">
+         <h4>
+          Recent Posts
+         </h4>
+         <div id="post-list-footer">
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Lorem ipsum dolor sit amet, consectetur
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Elit Assumenda vel amet dolorum quasi
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Debitis nihil placeat, illum est nisi
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third col_last">
+       <div class="widget clearfix" style="margin-bottom: -20px;">
+        <div class="row">
+         <div class="col-md-6 bottommargin-sm">
+          <div class="counter counter-small">
+           <span data-comma="true" data-from="50" data-refresh-interval="80" data-speed="3000" data-to="15065421">
+           </span>
+          </div>
+          <h5 class="nobottommargin">
+           Total Downloads
+          </h5>
+         </div>
+         <div class="col-md-6 bottommargin-sm">
+          <div class="counter counter-small">
+           <span data-comma="true" data-from="100" data-refresh-interval="50" data-speed="2000" data-to="18465">
+           </span>
+          </div>
+          <h5 class="nobottommargin">
+           Clients
+          </h5>
+         </div>
+        </div>
+       </div>
+       <div class="widget subscribe-widget clearfix">
+        <h5>
+         <strong>
+          Subscribe
+         </strong>
+         to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:
+        </h5>
+        <div data-notify-msg="" data-notify-type="success" id="widget-subscribe-form-result">
+        </div>
+        <form action="include/subscribe.php" class="nobottommargin" id="widget-subscribe-form" method="post" role="form">
+         <div class="input-group divcenter">
+          <span class="input-group-addon">
+           <i class="icon-email2">
+           </i>
+          </span>
+          <input class="form-control required email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" placeholder="Enter your Email" type="email"/>
+          <span class="input-group-btn">
+           <button class="btn btn-success" type="submit">
+            Subscribe
+           </button>
+          </span>
+         </div>
+        </form>
+        <script type="text/javascript">
+         $("#widget-subscribe-form").validate({
+									submitHandler: function(form) {
+										$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+										$(form).ajaxSubmit({
+											target: '#widget-subscribe-form-result',
+											success: function() {
+												$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+												$('#widget-subscribe-form').find('.form-control').val('');
+												$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+												SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+											}
+										});
+									}
+								});
+        </script>
+       </div>
+       <div class="widget clearfix" style="margin-bottom: -20px;">
+        <div class="row">
+         <div class="col-md-6 clearfix bottommargin-sm">
+          <a class="social-icon si-dark si-colored si-facebook nobottommargin" href="#" style="margin-right: 10px;">
+           <i class="icon-facebook">
+           </i>
+           <i class="icon-facebook">
+           </i>
+          </a>
+          <a href="#">
+           <small style="display: block; margin-top: 3px;">
+            <strong>
+             Like us
+            </strong>
+            <br/>
+            on Facebook
+           </small>
+          </a>
+         </div>
+         <div class="col-md-6 clearfix">
+          <a class="social-icon si-dark si-colored si-rss nobottommargin" href="#" style="margin-right: 10px;">
+           <i class="icon-rss">
+           </i>
+           <i class="icon-rss">
+           </i>
+          </a>
+          <a href="#">
+           <small style="display: block; margin-top: 3px;">
+            <strong>
+             Subscribe
+            </strong>
+            <br/>
+            to RSS Feeds
+           </small>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- .footer-widgets-wrap end -->
+    </div>
+    <!-- Copyrights
+			============================================= -->
+    <div id="copyrights">
+     <div class="container clearfix">
+      <div class="col_half">
+       Copyrights © 2014 All Rights Reserved by Canvas Inc.
+       <br/>
+       <div class="copyright-links">
+        <a href="#">
+         Terms of Use
+        </a>
+        /
+        <a href="#">
+         Privacy Policy
+        </a>
+       </div>
+      </div>
+      <div class="col_half col_last tright">
+       <div class="fright clearfix">
+        <a class="social-icon si-small si-borderless si-facebook" href="#">
+         <i class="icon-facebook">
+         </i>
+         <i class="icon-facebook">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-twitter" href="#">
+         <i class="icon-twitter">
+         </i>
+         <i class="icon-twitter">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-gplus" href="#">
+         <i class="icon-gplus">
+         </i>
+         <i class="icon-gplus">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-pinterest" href="#">
+         <i class="icon-pinterest">
+         </i>
+         <i class="icon-pinterest">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-vimeo" href="#">
+         <i class="icon-vimeo">
+         </i>
+         <i class="icon-vimeo">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-github" href="#">
+         <i class="icon-github">
+         </i>
+         <i class="icon-github">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-yahoo" href="#">
+         <i class="icon-yahoo">
+         </i>
+         <i class="icon-yahoo">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-linkedin" href="#">
+         <i class="icon-linkedin">
+         </i>
+         <i class="icon-linkedin">
+         </i>
+        </a>
+       </div>
+       <div class="clear">
+       </div>
+       <i class="icon-envelope2">
+       </i>
+       info@canvas.com
+       <span class="middot">
+        ·
+       </span>
+       <i class="icon-headphones">
+       </i>
+       +91-11-6541-6369
+       <span class="middot">
+        ·
+       </span>
+       <i class="icon-skype2">
+       </i>
+       CanvasOnSkype
+      </div>
+     </div>
+    </div>
+    <!-- #copyrights end -->
+   </footer>
+   <!-- #footer end -->
+  </div>
+  <!-- #wrapper end -->
+  <!-- Go To Top
+	============================================= -->
+  <div class="icon-angle-up" id="gotoTop">
+  </div>
+  <!-- Footer Scripts
+	============================================= -->
+  <script src="{% static 'canvas/js/functions.js' %}" type="text/javascript">
+  </script>
+ </body>
+</html>

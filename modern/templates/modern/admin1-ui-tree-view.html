@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+ <head>
+  <!-- Title -->
+  <title>
+   Modern
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta charset="utf-8"/>
+  <meta content="Admin Dashboard Template" name="description"/>
+  <meta content="admin,dashboard" name="keywords"/>
+  <meta content="CenterStack" name="author"/>
+  <!-- Styles -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/pace-master/themes/blue/pace-theme-flash.css' %}" rel="stylesheet"/>
+  <link href="{% static 'modern/assets/plugins/uniform/css/uniform.default.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'modern/assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/fontawesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/line-icons/simple-line-icons.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/waves/waves.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/switchery/switchery.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/3d-bold-navigation/css/style.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/slidepushmenus/css/component.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/plugins/jstree/themes/default/style.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Theme Styles -->
+  <link href="{% static 'modern/assets/css/modern.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link class="theme-color" href="{% static 'modern/assets/css/themes/green.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'modern/assets/css/custom.css' %}" rel="stylesheet" type="text/css"/>
+  <script src="{% static 'modern/assets/plugins/3d-bold-navigation/js/modernizr.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/offcanvasmenueffects/js/snap.svg-min.js' %}">
+  </script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+ </head>
+ <body class="page-header-fixed">
+  <div class="overlay">
+  </div>
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+   <h3>
+    <span class="pull-left">
+     Chat
+    </span>
+    <a class="pull-right" href="javascript:void(0);" id="closeRight">
+     <i class="fa fa-times">
+     </i>
+    </a>
+   </h3>
+   <div class="slimscroll">
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+     <span>
+      Sandra smith
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar3.png' %}"/>
+     <span>
+      Amily Lee
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar4.png' %}"/>
+     <span>
+      Christopher Palmer
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar5.png' %}"/>
+     <span>
+      Nick Doe
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+     <span>
+      Sandra smith
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar3.png' %}"/>
+     <span>
+      Amily Lee
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar4.png' %}"/>
+     <span>
+      Christopher Palmer
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+    <a class="showRight2" href="javascript:void(0);">
+     <img alt="" src="{% static 'modern/assets/images/avatar5.png' %}"/>
+     <span>
+      Nick Doe
+      <small>
+       Hi! How're you?
+      </small>
+     </span>
+    </a>
+   </div>
+  </nav>
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+   <h3>
+    <span class="pull-left">
+     Sandra Smith
+    </span>
+    <a class="pull-right" href="javascript:void(0);" id="closeRight2">
+     <i class="fa fa-angle-right">
+     </i>
+    </a>
+   </h3>
+   <div class="slimscroll chat">
+    <div class="chat-item chat-item-left">
+     <div class="chat-image">
+      <img alt="" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+     </div>
+     <div class="chat-message">
+      Hi There!
+     </div>
+    </div>
+    <div class="chat-item chat-item-right">
+     <div class="chat-message">
+      Hi! How are you?
+     </div>
+    </div>
+    <div class="chat-item chat-item-left">
+     <div class="chat-image">
+      <img alt="" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+     </div>
+     <div class="chat-message">
+      Fine! do you like my project?
+     </div>
+    </div>
+    <div class="chat-item chat-item-right">
+     <div class="chat-message">
+      Yes, It's clean and creative, good job!
+     </div>
+    </div>
+    <div class="chat-item chat-item-left">
+     <div class="chat-image">
+      <img alt="" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+     </div>
+     <div class="chat-message">
+      Thanks, I tried!
+     </div>
+    </div>
+    <div class="chat-item chat-item-right">
+     <div class="chat-message">
+      Good luck with your sales!
+     </div>
+    </div>
+   </div>
+   <div class="chat-write">
+    <form action="javascript:void(0);" class="form-horizontal">
+     <input class="form-control" placeholder="Say something" type="text"/>
+    </form>
+   </div>
+  </nav>
+  <div class="menu-wrap">
+   <nav class="profile-menu">
+    <div class="profile">
+     <img alt="David Green" src="{% static 'modern/assets/images/profile-menu-image.png' %}" width="60"/>
+     <span>
+      David Green
+     </span>
+    </div>
+    <div class="profile-menu-list">
+     <a href="#">
+      <i class="fa fa-star">
+      </i>
+      <span>
+       Favorites
+      </span>
+     </a>
+     <a href="#">
+      <i class="fa fa-bell">
+      </i>
+      <span>
+       Alerts
+      </span>
+     </a>
+     <a href="#">
+      <i class="fa fa-envelope">
+      </i>
+      <span>
+       Messages
+      </span>
+     </a>
+     <a href="#">
+      <i class="fa fa-comment">
+      </i>
+      <span>
+       Comments
+      </span>
+     </a>
+    </div>
+   </nav>
+   <button class="close-button" id="close-button">
+    Close Menu
+   </button>
+  </div>
+  <form action="#" class="search-form" method="GET">
+   <div class="input-group">
+    <input class="form-control search-input" name="search" placeholder="Search..." type="text"/>
+    <span class="input-group-btn">
+     <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button">
+      <i class="fa fa-times">
+      </i>
+     </button>
+    </span>
+   </div>
+   <!-- Input Group -->
+  </form>
+  <!-- Search Form -->
+  <main class="page-content content-wrap">
+   <div class="navbar">
+    <div class="navbar-inner">
+     <div class="sidebar-pusher">
+      <a class="waves-effect waves-button waves-classic push-sidebar" href="javascript:void(0);">
+       <i class="fa fa-bars">
+       </i>
+      </a>
+     </div>
+     <div class="logo-box">
+      <a class="logo-text" href="{% url 'modern-admin1-index' %}">
+       <span>
+        Modern
+       </span>
+      </a>
+     </div>
+     <!-- Logo Box -->
+     <div class="search-button">
+      <a class="waves-effect waves-button waves-classic show-search" href="javascript:void(0);">
+       <i class="fa fa-search">
+       </i>
+      </a>
+     </div>
+     <div class="topmenu-outer">
+      <div class="top-menu">
+       <ul class="nav navbar-nav navbar-left">
+        <li>
+         <a class="waves-effect waves-button waves-classic sidebar-toggle" href="javascript:void(0);">
+          <i class="fa fa-bars">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="waves-effect waves-button waves-classic cd-nav-trigger" href="#cd-nav">
+          <i class="fa fa-diamond">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="waves-effect waves-button waves-classic toggle-fullscreen" href="javascript:void(0);">
+          <i class="fa fa-expand">
+          </i>
+         </a>
+        </li>
+        <li class="dropdown">
+         <a class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown" href="#">
+          <i class="fa fa-cogs">
+          </i>
+         </a>
+         <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+          <li class="li-group">
+           <ul class="list-unstyled">
+            <li class="no-link" role="presentation">
+             Fixed Header
+             <div class="ios-switch pull-right switch-md">
+              <input checked="" class="js-switch pull-right fixed-header-check" type="checkbox"/>
+             </div>
+            </li>
+           </ul>
+          </li>
+          <li class="li-group">
+           <ul class="list-unstyled">
+            <li class="no-link" role="presentation">
+             Fixed Sidebar
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right fixed-sidebar-check" type="checkbox"/>
+             </div>
+            </li>
+            <li class="no-link" role="presentation">
+             Horizontal bar
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right horizontal-bar-check" type="checkbox"/>
+             </div>
+            </li>
+            <li class="no-link" role="presentation">
+             Toggle Sidebar
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right toggle-sidebar-check" type="checkbox"/>
+             </div>
+            </li>
+            <li class="no-link" role="presentation">
+             Compact Menu
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right compact-menu-check" type="checkbox"/>
+             </div>
+            </li>
+            <li class="no-link" role="presentation">
+             Hover Menu
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right hover-menu-check" type="checkbox"/>
+             </div>
+            </li>
+           </ul>
+          </li>
+          <li class="li-group">
+           <ul class="list-unstyled">
+            <li class="no-link" role="presentation">
+             Boxed Layout
+             <div class="ios-switch pull-right switch-md">
+              <input class="js-switch pull-right boxed-layout-check" type="checkbox"/>
+             </div>
+            </li>
+           </ul>
+          </li>
+          <li class="li-group">
+           <ul class="list-unstyled">
+            <li class="no-link" role="presentation">
+             Choose Theme Color
+             <div class="color-switcher">
+              <a class="colorbox color-blue" data-css="blue" href="?theme=blue" title="Blue Theme">
+              </a>
+              <a class="colorbox color-green" data-css="green" href="?theme=green" title="Green Theme">
+              </a>
+              <a class="colorbox color-red" data-css="red" href="?theme=red" title="Red Theme">
+              </a>
+              <a class="colorbox color-white" data-css="white" href="?theme=white" title="White Theme">
+              </a>
+              <a class="colorbox color-purple" data-css="purple" href="?theme=purple" title="purple Theme">
+              </a>
+              <a class="colorbox color-dark" data-css="dark" href="?theme=dark" title="Dark Theme">
+              </a>
+             </div>
+            </li>
+           </ul>
+          </li>
+          <li class="no-link">
+           <button class="btn btn-default reset-options">
+            Reset Options
+           </button>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+         <a class="waves-effect waves-button waves-classic show-search" href="javascript:void(0);">
+          <i class="fa fa-search">
+          </i>
+         </a>
+        </li>
+        <li class="dropdown">
+         <a class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown" href="#">
+          <i class="fa fa-envelope">
+          </i>
+          <span class="badge badge-success pull-right">
+           4
+          </span>
+         </a>
+         <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+          <li>
+           <p class="drop-title">
+            You have 4 new  messages !
+           </p>
+          </li>
+          <li class="dropdown-menu-list slimscroll messages">
+           <ul class="list-unstyled">
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online on">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Sandra Smith
+              </p>
+              <p class="msg-text">
+               Hey ! I'm working on your project
+              </p>
+              <p class="msg-time">
+               3 minutes ago
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online off">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar4.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Amily Lee
+              </p>
+              <p class="msg-text">
+               Hi David !
+              </p>
+              <p class="msg-time">
+               8 minutes ago
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online off">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar3.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Christopher Palmer
+              </p>
+              <p class="msg-text">
+               See you soon !
+              </p>
+              <p class="msg-time">
+               56 minutes ago
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online on">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar5.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Nick Doe
+              </p>
+              <p class="msg-text">
+               Nice to meet you
+              </p>
+              <p class="msg-time">
+               2 hours ago
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online on">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar2.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Sandra Smith
+              </p>
+              <p class="msg-text">
+               Hey ! I'm working on your project
+              </p>
+              <p class="msg-time">
+               5 hours ago
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="msg-img">
+               <div class="online off">
+               </div>
+               <img alt="" class="img-circle" src="{% static 'modern/assets/images/avatar4.png' %}"/>
+              </div>
+              <p class="msg-name">
+               Amily Lee
+              </p>
+              <p class="msg-text">
+               Hi David !
+              </p>
+              <p class="msg-time">
+               9 hours ago
+              </p>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="drop-all">
+           <a class="text-center" href="#">
+            All Messages
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dropdown">
+         <a class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown" href="#">
+          <i class="fa fa-bell">
+          </i>
+          <span class="badge badge-success pull-right">
+           3
+          </span>
+         </a>
+         <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+          <li>
+           <p class="drop-title">
+            You have 3 pending tasks !
+           </p>
+          </li>
+          <li class="dropdown-menu-list slimscroll tasks">
+           <ul class="list-unstyled">
+            <li>
+             <a href="#">
+              <div class="task-icon badge badge-success">
+               <i class="icon-user">
+               </i>
+              </div>
+              <span class="badge badge-roundless badge-default pull-right">
+               1min ago
+              </span>
+              <p class="task-details">
+               New user registered.
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="task-icon badge badge-danger">
+               <i class="icon-energy">
+               </i>
+              </div>
+              <span class="badge badge-roundless badge-default pull-right">
+               24min ago
+              </span>
+              <p class="task-details">
+               Database error.
+              </p>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div class="task-icon badge badge-info">
+               <i class="icon-heart">
+               </i>
+              </div>
+              <span class="badge badge-roundless badge-default pull-right">
+               1h ago
+              </span>
+              <p class="task-details">
+               Reached 24k likes
+              </p>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="drop-all">
+           <a class="text-center" href="#">
+            All Tasks
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dropdown">
+         <a class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown" href="#">
+          <span class="user-name">
+           David
+           <i class="fa fa-angle-down">
+           </i>
+          </span>
+          <img alt="" class="img-circle avatar" height="40" src="{% static 'modern/assets/images/avatar1.png' %}" width="40"/>
+         </a>
+         <ul class="dropdown-menu dropdown-list" role="menu">
+          <li role="presentation">
+           <a href="{% url 'modern-admin1-profile' %}">
+            <i class="fa fa-user">
+            </i>
+            Profile
+           </a>
+          </li>
+          <li role="presentation">
+           <a href="{% url 'modern-admin1-calendar' %}">
+            <i class="fa fa-calendar">
+            </i>
+            Calendar
+           </a>
+          </li>
+          <li role="presentation">
+           <a href="{% url 'modern-admin1-inbox' %}">
+            <i class="fa fa-envelope">
+            </i>
+            Inbox
+            <span class="badge badge-success pull-right">
+             4
+            </span>
+           </a>
+          </li>
+          <li class="divider" role="presentation">
+          </li>
+          <li role="presentation">
+           <a href="{% url 'modern-admin1-lock-screen' %}">
+            <i class="fa fa-lock">
+            </i>
+            Lock screen
+           </a>
+          </li>
+          <li role="presentation">
+           <a href="{% url 'modern-admin1-login' %}">
+            <i class="fa fa-sign-out m-r-xs">
+            </i>
+            Log out
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="log-out waves-effect waves-button waves-classic" href="{% url 'modern-admin1-login' %}">
+          <span>
+           <i class="fa fa-sign-out m-r-xs">
+           </i>
+           Log out
+          </span>
+         </a>
+        </li>
+        <li>
+         <a class="waves-effect waves-button waves-classic" href="javascript:void(0);" id="showRight">
+          <i class="fa fa-comments">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <!-- Nav -->
+      </div>
+      <!-- Top Menu -->
+     </div>
+    </div>
+   </div>
+   <!-- Navbar -->
+   <div class="page-sidebar sidebar">
+    <div class="page-sidebar-inner slimscroll">
+     <div class="sidebar-header">
+      <div class="sidebar-profile">
+       <a href="javascript:void(0);" id="profile-menu-link">
+        <div class="sidebar-profile-image">
+         <img alt="" class="img-circle img-responsive" src="{% static 'modern/assets/images/profile-menu-image.png' %}"/>
+        </div>
+        <div class="sidebar-profile-details">
+         <span>
+          David Green
+          <br/>
+          <small>
+           Art Director
+          </small>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <ul class="menu accordion-menu">
+      <li>
+       <a class="waves-effect waves-button" href="{% url 'modern-admin1-index' %}">
+        <span class="menu-icon glyphicon glyphicon-home">
+        </span>
+        <p>
+         Dashboard
+        </p>
+       </a>
+      </li>
+      <li>
+       <a class="waves-effect waves-button" href="{% url 'modern-admin1-profile' %}">
+        <span class="menu-icon glyphicon glyphicon-user">
+        </span>
+        <p>
+         Profile
+        </p>
+       </a>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-envelope">
+        </span>
+        <p>
+         Mailbox
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-inbox' %}">
+          Inbox
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-inbox-alt' %}">
+          Inbox Alt
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-message-view' %}">
+          View Message
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-message-view-alt' %}">
+          View Message Alt
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-compose' %}">
+          Compose
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-compose-alt' %}">
+          Compose Alt
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink active open">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-briefcase">
+        </span>
+        <p>
+         UI Kits
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-ui-alerts' %}">
+          Alerts
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-buttons' %}">
+          Buttons
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-icons' %}">
+          Icons
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-typography' %}">
+          Typography
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-notifications' %}">
+          Notifications
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-grid' %}">
+          Grid
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-tabs-accordions' %}">
+          Tabs &amp; Accordions
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-modals' %}">
+          Modals
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-panels' %}">
+          Panels
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-progress' %}">
+          Progress Bars
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-sliders' %}">
+          Sliders
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-ui-nestable' %}">
+          Nestable
+         </a>
+        </li>
+        <li class="active">
+         <a href="{% url 'modern-admin1-ui-tree-view' %}">
+          Tree View
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-th">
+        </span>
+        <p>
+         Layouts
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-layout-blank' %}">
+          Blank Page
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-boxed' %}">
+          Boxed Page
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-horizontal-menu' %}">
+          Horizontal Menu
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-horizontal-menu-boxed' %}">
+          Boxed &amp; Horizontal Menu
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-horizontal-menu-minimal' %}">
+          Horizontal Menu Minimal
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-fixed-sidebar' %}">
+          Fixed Sidebar
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-static-header' %}">
+          Static Header
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-collapsed-sidebar' %}">
+          Collapsed Sidebar
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-compact-menu' %}">
+          Compact Menu
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-layout-hover-menu' %}">
+          Hover Menu
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-list">
+        </span>
+        <p>
+         Tables
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-table-static' %}">
+          Static Tables
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-table-responsive' %}">
+          Responsive Tables
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-table-data' %}">
+          Data Tables
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-edit">
+        </span>
+        <p>
+         Forms
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-form-elements' %}">
+          Form Elements
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-wizard' %}">
+          Form Wizard
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-upload' %}">
+          File Upload
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-image-crop' %}">
+          Image Crop
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-image-zoom' %}">
+          Image Zoom
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-select2' %}">
+          Select2
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-form-x-editable' %}">
+          X-editable
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-stats">
+        </span>
+        <p>
+         Charts
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-charts-sparkline' %}">
+          Sparkline
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-charts-rickshaw' %}">
+          Rickshaw
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-charts-morris' %}">
+          Morris
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-charts-flotchart' %}">
+          Flotchart
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-charts-chartjs' %}">
+          Chart.js
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-log-in">
+        </span>
+        <p>
+         Login
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-login' %}">
+          Login Form
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-login-alt' %}">
+          Login Alt
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-register' %}">
+          Register Form
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-register-alt' %}">
+          Register Alt
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-forgot' %}">
+          Forgot Password
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-lock-screen' %}">
+          Lock Screen
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-map-marker">
+        </span>
+        <p>
+         Maps
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-maps-google' %}">
+          Google Maps
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-maps-vector' %}">
+          Vector Maps
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-gift">
+        </span>
+        <p>
+         Extra
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li>
+         <a href="{% url 'modern-admin1-404' %}">
+          404 Page
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-500' %}">
+          500 Page
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-invoice' %}">
+          Invoice
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-calendar' %}">
+          Calendar
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-faq' %}">
+          FAQ
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-todo' %}">
+          Todo
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-pricing-tables' %}">
+          Pricing Tables
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-shop' %}">
+          Shop
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-gallery' %}">
+          Gallery
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-timeline' %}">
+          Timeline
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-search' %}">
+          Search Results
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-coming-soon' %}">
+          Coming Soon
+         </a>
+        </li>
+        <li>
+         <a href="{% url 'modern-admin1-contact' %}">
+          Contact
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="droplink">
+       <a class="waves-effect waves-button" href="#">
+        <span class="menu-icon glyphicon glyphicon-flash">
+        </span>
+        <p>
+         Levels
+        </p>
+        <span class="arrow">
+        </span>
+       </a>
+       <ul class="sub-menu">
+        <li class="droplink">
+         <a href="#">
+          <p>
+           Level 1.1
+          </p>
+          <span class="arrow">
+          </span>
+         </a>
+         <ul class="sub-menu">
+          <li class="droplink">
+           <a href="#">
+            <p>
+             Level 2.1
+            </p>
+            <span class="arrow">
+            </span>
+           </a>
+           <ul class="sub-menu">
+            <li>
+             <a href="#">
+              Level 3.1
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            Level 2.2
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          Level 1.2
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </div>
+    <!-- Page Sidebar Inner -->
+   </div>
+   <!-- Page Sidebar -->
+   <div class="page-inner">
+    <div class="page-title">
+     <h3>
+      Tree View
+     </h3>
+     <div class="page-breadcrumb">
+      <ol class="breadcrumb">
+       <li>
+        <a href="{% url 'modern-admin1-index' %}">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         UI Kits
+        </a>
+       </li>
+       <li class="active">
+        Tree View
+       </li>
+      </ol>
+     </div>
+    </div>
+    <div id="main-wrapper">
+     <div class="row">
+      <div class="col-md-6">
+       <div class="panel panel-white">
+        <div class="panel-heading clearfix">
+         <h3 class="panel-title">
+          Basic Tree
+         </h3>
+        </div>
+        <div class="panel-body">
+         <div id="basicTree">
+          <ul>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"icon":"fa fa-warning icon-state-danger icon-md"}'>
+              Custom icon
+             </li>
+             <li data-jstree='{"type":"file"}'>
+              Child node
+             </li>
+            </ul>
+           </li>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"opened":true}'>
+              Root node
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                Child node
+               </li>
+               <li data-jstree='{"opened":true}'>
+                Opened
+                <ul>
+                 <li data-jstree='{"selected":true,"type":"file"}'>
+                  Selected
+                 </li>
+                 <li data-jstree='{"type":"file"}'>
+                  Child node
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"opened":true}'>
+              Opened
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"icon":"fa fa-tags icon-state-primary icon-md"}'>
+              Custom icon
+             </li>
+            </ul>
+           </li>
+           <li data-jstree='{"type":"file"}'>
+            File type
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="panel panel-white">
+        <div class="panel-heading clearfix">
+         <h3 class="panel-title">
+          Drag &amp; Drop
+         </h3>
+        </div>
+        <div class="panel-body">
+         <div id="dragTree">
+          <ul>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"icon":"fa fa-warning icon-state-danger icon-md"}'>
+              Custom icon
+             </li>
+             <li data-jstree='{"type":"file"}'>
+              Child node
+             </li>
+            </ul>
+           </li>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"opened":true}'>
+              Root node
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                Child node
+               </li>
+               <li data-jstree='{"opened":true}'>
+                Opened
+                <ul>
+                 <li data-jstree='{"selected":true,"type":"file"}'>
+                  Selected
+                 </li>
+                 <li data-jstree='{"type":"file"}'>
+                  Child node
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"opened":true}'>
+              Opened
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"icon":"fa fa-tags icon-state-primary icon-md"}'>
+              Custom icon
+             </li>
+            </ul>
+           </li>
+           <li data-jstree='{"type":"file"}'>
+            File type
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-6">
+       <div class="panel panel-white">
+        <div class="panel-heading clearfix">
+         <h3 class="panel-title">
+          Checkbox Tree
+         </h3>
+        </div>
+        <div class="panel-body">
+         <div id="checkTree">
+          <ul>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"icon":"fa fa-warning icon-state-danger icon-md"}'>
+              Custom icon
+             </li>
+             <li data-jstree='{"type":"file"}'>
+              Child node
+             </li>
+            </ul>
+           </li>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"opened":true}'>
+              Root node
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                Child node
+               </li>
+               <li data-jstree='{"opened":true}'>
+                Opened
+                <ul>
+                 <li data-jstree='{"selected":true,"type":"file"}'>
+                  Selected
+                 </li>
+                 <li data-jstree='{"type":"file"}'>
+                  Child node
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"opened":true}'>
+              Opened
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"icon":"fa fa-tags icon-state-primary icon-md"}'>
+              Custom icon
+             </li>
+            </ul>
+           </li>
+           <li data-jstree='{"type":"file"}'>
+            File type
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="panel panel-white">
+        <div class="panel-heading clearfix">
+         <h3 class="panel-title">
+          Ajax
+         </h3>
+        </div>
+        <div class="panel-body">
+         <div id="ajaxTree">
+          <ul>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"icon":"fa fa-warning icon-state-danger icon-md"}'>
+              Custom icon
+             </li>
+             <li data-jstree='{"type":"file"}'>
+              Child node
+             </li>
+            </ul>
+           </li>
+           <li>
+            Root node
+            <ul>
+             <li data-jstree='{"opened":true}'>
+              Root node
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                Child node
+               </li>
+               <li data-jstree='{"opened":true}'>
+                Opened
+                <ul>
+                 <li data-jstree='{"selected":true,"type":"file"}'>
+                  Selected
+                 </li>
+                 <li data-jstree='{"type":"file"}'>
+                  Child node
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"opened":true}'>
+              Opened
+              <ul>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+               <li data-jstree='{"type":"file"}'>
+                File type
+               </li>
+              </ul>
+             </li>
+             <li data-jstree='{"icon":"fa fa-tags icon-state-primary icon-md"}'>
+              Custom icon
+             </li>
+            </ul>
+           </li>
+           <li data-jstree='{"type":"file"}'>
+            File type
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Row -->
+    </div>
+    <!-- Main Wrapper -->
+    <div class="page-footer">
+     <p class="no-s">
+      2015 © Modern by Steelcoders.
+     </p>
+    </div>
+   </div>
+   <!-- Page Inner -->
+  </main>
+  <!-- Page Content -->
+  <nav class="cd-nav-container" id="cd-nav">
+   <header>
+    <h3>
+     Navigation
+    </h3>
+    <a class="cd-close-nav" href="#0">
+     Close
+    </a>
+   </header>
+   <ul class="cd-nav list-unstyled">
+    <li class="cd-selected" data-menu="index">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-home">
+       </i>
+      </span>
+      <p>
+       Dashboard
+      </p>
+     </a>
+    </li>
+    <li data-menu="profile">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-user">
+       </i>
+      </span>
+      <p>
+       Profile
+      </p>
+     </a>
+    </li>
+    <li data-menu="inbox">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-envelope">
+       </i>
+      </span>
+      <p>
+       Mailbox
+      </p>
+     </a>
+    </li>
+    <li data-menu="#">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-tasks">
+       </i>
+      </span>
+      <p>
+       Tasks
+      </p>
+     </a>
+    </li>
+    <li data-menu="#">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-cog">
+       </i>
+      </span>
+      <p>
+       Settings
+      </p>
+     </a>
+    </li>
+    <li data-menu="calendar">
+     <a href="javsacript:void(0);">
+      <span>
+       <i class="glyphicon glyphicon-calendar">
+       </i>
+      </span>
+      <p>
+       Calendar
+      </p>
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <div class="cd-overlay">
+  </div>
+  <!-- Javascripts -->
+  <script src="{% static 'modern/assets/plugins/jquery/jquery-2.1.4.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/jquery-ui/jquery-ui.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/pace-master/pace.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/jquery-blockui/jquery.blockui.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/bootstrap/js/bootstrap.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/switchery/switchery.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/uniform/jquery.uniform.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/offcanvasmenueffects/js/classie.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/offcanvasmenueffects/js/main.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/waves/waves.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/3d-bold-navigation/js/main.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/plugins/jstree/jstree.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/js/modern.min.js' %}">
+  </script>
+  <script src="{% static 'modern/assets/js/pages/jstree.js' %}">
+  </script>
+ </body>
+</html>

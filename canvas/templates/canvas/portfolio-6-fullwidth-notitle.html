@@ -1,0 +1,3740 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html dir="ltr" lang="en-US">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="CenterStack" name="author"/>
+  <!-- Stylesheets
+    ============================================= -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/style.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/dark.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/font-icons.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/magnific-popup.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'canvas/css/responsive.css' %}" rel="stylesheet" type="text/css"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  <!-- External JavaScripts
+    ============================================= -->
+  <script src="{% static 'canvas/js/jquery.js' %}" type="text/javascript">
+  </script>
+  <script src="{% static 'canvas/js/plugins.js' %}" type="text/javascript">
+  </script>
+  <!-- Document Title
+    ============================================= -->
+  <title>
+   Portfolio - 6 Columns Full Width No Title | Canvas
+  </title>
+ </head>
+ <body class="stretched">
+  <!-- Document Wrapper
+    ============================================= -->
+  <div class="clearfix" id="wrapper">
+   <!-- Header
+        ============================================= -->
+   <header class="full-header" id="header">
+    <div id="header-wrap">
+     <div class="container clearfix">
+      <div id="primary-menu-trigger">
+       <i class="icon-reorder">
+       </i>
+      </div>
+      <!-- Logo
+                    ============================================= -->
+      <div id="logo">
+       <a class="standard-logo" data-dark-logo="{% static 'canvas/images/logo-transparent.png' %}" href="{% static 'canvas/index.html' %}">
+        <img alt="Canvas Logo" src="{% static 'canvas/images/logo-transparent.png' %}"/>
+       </a>
+       <a class="retina-logo" data-dark-logo="{% static 'canvas/images/logo-transparent.png' %}" href="{% static 'canvas/index.html' %}">
+        <img alt="Canvas Logo" src="{% static 'canvas/images/logo-transparent.png' %}"/>
+       </a>
+      </div>
+      <!-- #logo end -->
+      <!-- Primary Navigation
+                    ============================================= -->
+      <nav id="primary-menu">
+       <ul>
+        <li>
+         <a href="{% url 'canvas_index' %}">
+          <div>
+           Home
+          </div>
+         </a>
+         <ul>
+          <li>
+           <a href="{% url 'canvas_index_corporate' %}">
+            <div>
+             Home - Corporate
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_corporate' %}">
+              <div>
+               Corporate - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_2' %}">
+              <div>
+               Corporate - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_3' %}">
+              <div>
+               Corporate - Layout 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_corporate_4' %}">
+              <div>
+               Corporate - Layout 4
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_portfolio' %}">
+            <div>
+             Home - Portfolio
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_portfolio' %}">
+              <div>
+               Portfolio - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_2' %}">
+              <div>
+               Portfolio - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_3' %}">
+              <div>
+               Portfolio - Masonry
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_portfolio_4' %}">
+              <div>
+               Portfolio - AJAX
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_blog' %}">
+            <div>
+             Home - Blog
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_blog' %}">
+              <div>
+               Blog - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_blog_2' %}">
+              <div>
+               Blog - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_blog_3' %}">
+              <div>
+               Blog - Layout 3
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_shop' %}">
+            <div>
+             Home - Shop
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_shop' %}">
+              <div>
+               Shop - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_shop_2' %}">
+              <div>
+               Shop - Layout 2
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_magazine' %}">
+            <div>
+             Home - Magazine
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_magazine' %}">
+              <div>
+               Magazine - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_magazine_2' %}">
+              <div>
+               Magazine - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_magazine_3' %}">
+              <div>
+               Magazine - Layout 3
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_landing' %}">
+            <div>
+             Home - Landing Page
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_landing' %}">
+              <div>
+               Landing Page - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_2' %}">
+              <div>
+               Landing Page - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_3' %}">
+              <div>
+               Landing Page - Layout 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_4' %}">
+              <div>
+               Landing Page - Layout 4
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_landing_5' %}">
+              <div>
+               Landing Page - Layout 5
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_fullscreen_image' %}">
+            <div>
+             Home - Full Screen
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_image' %}">
+              <div>
+               Full Screen - Image
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_slider' %}">
+              <div>
+               Full Screen - Slider
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_fullscreen_video' %}">
+              <div>
+               Full Screen - Video
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_onepage' %}">
+            <div>
+             Home - One Page
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_index_onepage' %}">
+              <div>
+               One Page - Default
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_onepage_2' %}">
+              <div>
+               One Page - Submenu
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_index_onepage_3' %}">
+              <div>
+               One Page - Dots Style
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_wedding' %}">
+            <div>
+             Home - Wedding
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_restaurant' %}">
+            <div>
+             Home - Restaurant
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_events' %}">
+            <div>
+             Home - Events
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_parallax' %}">
+            <div>
+             Home - Parallax
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_index_app_showcase' %}">
+            <div>
+             Home - App Showcase
+            </div>
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          <div>
+           Features
+          </div>
+         </a>
+         <ul>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-stack">
+             </i>
+             Sliders
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_slider_revolution' %}">
+              <div>
+               Revolution Slider
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_slider_revolution' %}">
+                <div>
+                 Full Screen
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_revolution_fullwidth' %}">
+                <div>
+                 Full Width
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_revolution_kenburns' %}">
+                <div>
+                 Kenburns Effect
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_revolution_html5_videos' %}">
+                <div>
+                 HTML5 Video
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_canvas' %}">
+              <div>
+               Canvas Slider
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_slider_canvas' %}">
+                <div>
+                 Full Width
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_fade' %}">
+                <div>
+                 Fade Transition
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_autoplay' %}">
+                <div>
+                 Autoplay Feature
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_video_event' %}">
+                <div>
+                 Custom Video Event
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_pagination' %}">
+                <div>
+                 Pagination Navigation
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_3' %}">
+                <div>
+                 3 Columns
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_4' %}">
+                <div>
+                 4 Columns
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_canvas_5' %}">
+                <div>
+                 5 Columns
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_flex' %}">
+              <div>
+               Flex Slider
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_slider_flex' %}">
+                <div>
+                 Default Layout
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_flex_thumbs' %}">
+                <div>
+                 with Thumbs
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_owl' %}">
+              <div>
+               Owl Slider
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_slider_owl_full' %}">
+                <div>
+                 Full Width
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_owl' %}">
+                <div>
+                 Boxed Width
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_slider_owl_videos' %}">
+                <div>
+                 Video Slider
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_static_parallax' %}">
+              <div>
+               Static Media
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_static_parallax' %}">
+                <div>
+                 Static - Parallax
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_static_image' %}">
+                <div>
+                 Static - Image
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_static_thumbs_grid' %}">
+                <div>
+                 Static - Thumb Gallery
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_static_html5_video' %}">
+                <div>
+                 Static - HTML5 Video
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_static_embed_video' %}">
+                <div>
+                 Static - Embedded Video
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_camera' %}">
+              <div>
+               Camera Slider
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_elastic' %}">
+              <div>
+               Elastic Slider
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_slider_nivo' %}">
+              <div>
+               Nivo Slider
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-gift">
+             </i>
+             Widgets
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="#">
+              <div>
+               Links
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Flickr Photostream
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Dribbble Shots
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Instagram Feed
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Posts List
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Twitter Feed
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Tabbed Widgets
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Carousel
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Subscribers
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Social Icons
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Testimonials
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Quick Contact
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Tags Cloud
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Video Embeds
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <div>
+               Raw Text/HTML
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-umbrella">
+             </i>
+             Headers
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_header_light' %}">
+              <div>
+               Light Version
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_dark' %}">
+              <div>
+               Dark Version
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_transparent' %}">
+              <div>
+               Transparent
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_semi_transparent' %}">
+              <div>
+               Semi Transparent
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_header_semi_transparent' %}">
+                <div>
+                 Light Version
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_header_semi_transparent_dark' %}">
+                <div>
+                 Dark Version
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_side_left' %}">
+              <div>
+               Left Side Header
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_header_side_left' %}">
+                <div>
+                 Fixed Position
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_header_side_left_open' %}">
+                <div>
+                 OnClick Open
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_header_side_left_open_push' %}">
+                <div>
+                 Push Content
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_side_right' %}">
+              <div>
+               Right Side Header
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_header_side_right' %}">
+                <div>
+                 Fixed Position
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_header_side_right_open' %}">
+                <div>
+                 OnClick Open
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_header_side_right_open_push' %}">
+                <div>
+                 Push Content
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_header_floating' %}">
+              <div>
+               Floating Version
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_static_sticky' %}">
+              <div>
+               Static Sticky
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_responsive_sticky' %}">
+              <div>
+               Responsive Sticky
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_side_panel' %}">
+            <div>
+             <i class="icon-line-layout">
+             </i>
+             Side Panel
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-align-justify2">
+             </i>
+             Menu Styles
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_header_light' %}">
+              <div>
+               Menu - Style 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_2' %}">
+              <div>
+               Menu - Style 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_3' %}">
+              <div>
+               Menu - Style 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_4' %}">
+              <div>
+               Menu - Style 4
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_5' %}">
+              <div>
+               Menu - Style 5
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_6' %}">
+              <div>
+               Menu - Style 6
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_7' %}">
+              <div>
+               Menu - Style 7
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_8' %}">
+              <div>
+               Menu - Style 8
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_9' %}">
+              <div>
+               Menu - Style 9
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_menu_10' %}">
+              <div>
+               Menu - Overlay
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-ok-sign">
+             </i>
+             Page Titles
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_page' %}">
+              <div>
+               Left Align
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_right' %}">
+              <div>
+               Right Align
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_center' %}">
+              <div>
+               Center Align
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_dark' %}">
+              <div>
+               Dark Style
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_pattern' %}">
+              <div>
+               Pattern Background
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_parallax' %}">
+              <div>
+               Parallax Background
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_page_title_parallax' %}">
+                <div>
+                 Default Header
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_page_title_parallax_header' %}">
+                <div>
+                 Transparent Header
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_video' %}">
+              <div>
+               HTML5 Video
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_nobg' %}">
+              <div>
+               No Background
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_page_title_mini' %}">
+              <div>
+               Mini Version
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_contact' %}">
+            <div>
+             <i class="icon-envelope-alt">
+             </i>
+             Contact Pages
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_contact' %}">
+              Contact 1
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_2' %}">
+              Contact 2
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_3' %}">
+              Contact 3
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_4' %}">
+              Contact 4
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_5' %}">
+              Contact 5
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_6' %}">
+              Contact 6
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_contact_7' %}">
+              Contact 7
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_coming_soon' %}">
+            <div>
+             <i class="icon-time">
+             </i>
+             Coming Soon
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_coming_soon' %}">
+              <div>
+               Simple Layout
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_coming_soon_2' %}">
+              <div>
+               Parallax Image
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_coming_soon_3' %}">
+              <div>
+               HTML5 Video
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-adjust">
+             </i>
+             Dark Version
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            <div>
+             <i class="icon-calendar3">
+             </i>
+             Events
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_events_calendar' %}">
+              <div>
+               Full Width Calendar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_events_list' %}">
+              <div>
+               Events List
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_events_list' %}">
+                <div>
+                 Right Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_events_list_left_sidebar' %}">
+                <div>
+                 Left Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_events_list_both_sidebar' %}">
+                <div>
+                 Both Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_events_list_fullwidth' %}">
+                <div>
+                 Full Width
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_events_list_parallax' %}">
+                <div>
+                 Parallax List
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_event_single' %}">
+              <div>
+               Single Event
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_event_single_right_sidebar' %}">
+                <div>
+                 Right Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single_left_sidebar' %}">
+                <div>
+                 Left Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single_both_sidebar' %}">
+                <div>
+                 Both Sidebar
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single' %}">
+                <div>
+                 Full Width
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'canvas_event_single_full_width_image' %}">
+              <div>
+               Single Event - Full
+              </div>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'canvas_event_single_full_width_image' %}">
+                <div>
+                 Parallax Image
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single_full_width_map' %}">
+                <div>
+                 Google Map
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single_full_width_slider' %}">
+                <div>
+                 Slider Gallery
+                </div>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'canvas_event_single_full_width_video' %}">
+                <div>
+                 HTML5 Video
+                </div>
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a data-scrollto="#footer" href="#footer">
+            <div>
+             <i class="icon-th">
+             </i>
+             Footers
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a data-scrollto="#footer" href="#footer">
+              <div>
+               Footer - Layout 1
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_footer_2' %}">
+              <div>
+               Footer - Layout 2
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_footer_3' %}">
+              <div>
+               Footer - Layout 3
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_footer_4' %}">
+              <div>
+               Footer - Layout 4
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_footer_5' %}">
+              <div>
+               Footer - Layout 5
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_footer_6' %}">
+              <div>
+               Footer - Layout 6
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+        <li class="mega-menu">
+         <a href="#">
+          <div>
+           Pages
+          </div>
+         </a>
+         <div class="mega-menu-content style-2 col-4 clearfix">
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Introduction
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_about' %}">
+               <div>
+                About Us
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_about_2' %}">
+               <div>
+                About Us - Layout 2
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_about_me' %}">
+               <div>
+                About Me
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_team' %}">
+               <div>
+                Team Members
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_jobs' %}">
+               <div>
+                Careers
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_side_navigation' %}">
+               <div>
+                Side Navigation
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_page_submenu' %}">
+               <div>
+                Page Submenu
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_sitemap' %}">
+               <div>
+                Sitemap
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Utility
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_services' %}">
+               <div>
+                Services - Layout 1
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_services_2' %}">
+               <div>
+                Services - Layout 2
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_services_3' %}">
+               <div>
+                Services - Layout 3
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_faqs' %}">
+               <div>
+                FAQs - Layout 1
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_faqs_2' %}">
+               <div>
+                FAQs - Layout 2
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_faqs_3' %}">
+               <div>
+                FAQs - Layout 3
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_faqs_4' %}">
+               <div>
+                FAQs - Layout 4
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_maintenance' %}">
+               <div>
+                Maintenance Page
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Layout Grids
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_full_width' %}">
+               <div>
+                Full Width
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_full_width_wide' %}">
+               <div>
+                Full Width - Wide
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_right_sidebar' %}">
+               <div>
+                Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_both_sidebar' %}">
+               <div>
+                Both Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_both_right_sidebar' %}">
+               <div>
+                Both Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_both_left_sidebar' %}">
+               <div>
+                Both Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blank_page' %}">
+               <div>
+                Blank Page
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Miscellaneous
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_login_register' %}">
+               <div>
+                Login/Register
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_login_register_2' %}">
+               <div>
+                Login/Register - Style 2
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_login_register_3' %}">
+               <div>
+                Login/Register - Style 3
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_login_1' %}">
+               <div>
+                Login - Style 1
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_login_2' %}">
+               <div>
+                Login - Style 2
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_404' %}">
+               <div>
+                404 - Simple Layout
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_404_2' %}">
+               <div>
+                404 - Parallax Image
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_404_3' %}">
+               <div>
+                404 - HTML5 Video
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </li>
+        <li class="current mega-menu">
+         <a href="#">
+          <div>
+           Portfolio
+          </div>
+         </a>
+         <div class="mega-menu-content style-2 col-5 clearfix">
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Grids
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_portfolio_1' %}">
+               <div>
+                1 Column
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_2' %}">
+               <div>
+                2 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_3' %}">
+               <div>
+                3 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio' %}">
+               <div>
+                4 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_5' %}">
+               <div>
+                5 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_6' %}">
+               <div>
+                6 Columns
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Masonry
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_portfolio_mixed_masonry' %}">
+               <div>
+                Mixed Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_2_masonry' %}">
+               <div>
+                2 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_3_masonry' %}">
+               <div>
+                3 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_masonry' %}">
+               <div>
+                4 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_5_masonry' %}">
+               <div>
+                5 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_6_masonry' %}">
+               <div>
+                6 Columns
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Loading Styles
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_portfolio' %}">
+               <div>
+                jQuery Filter
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_pagination' %}">
+               <div>
+                Pagination
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_jpagination' %}">
+               <div>
+                jQuery Pagination
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_infinity_scroll' %}">
+               <div>
+                Infinity Scroll
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_ajax' %}">
+               <div>
+                AJAX In Page
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_ajax_in_modal' %}">
+               <div>
+                AJAX In Modal
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Single Project
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_extended' %}">
+               <div>
+                Extended Item
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_fullwidth' %}">
+               <div>
+                Parallax Image
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_gallery_full' %}">
+               <div>
+                Slider Gallery
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_video_fullwidth_left_sidebar' %}">
+               <div>
+                HTML5 Video
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_thumbs_right_sidebar' %}">
+               <div>
+                Masonry Thumbs
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_single_video_both_sidebar' %}">
+               <div>
+                Embed Video
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Layouts
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_portfolio_nomargin' %}">
+               <div>
+                Default
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_1_alt_right_sidebar' %}">
+               <div>
+                Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_3_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_2_both_sidebar' %}">
+               <div>
+                Both Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_fullwidth_notitle' %}">
+               <div>
+                100% Width
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_portfolio_parallax' %}">
+               <div>
+                Parallax
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </li>
+        <li class="mega-menu">
+         <a href="#">
+          <div>
+           Blog
+          </div>
+         </a>
+         <div class="mega-menu-content style-2 col-4 clearfix">
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Default
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog' %}">
+               <div>
+                Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_both_sidebar' %}">
+               <div>
+                Both Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_full_width' %}">
+               <div>
+                Full Width
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Timeline
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_timeline_right_sidebar' %}">
+               <div>
+                Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_timeline_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_timeline' %}">
+               <div>
+                Full Width
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Masonry
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_masonry' %}">
+               <div>
+                4 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_masonry_3' %}">
+               <div>
+                3 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_masonry_2' %}">
+               <div>
+                2 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_masonry_full' %}">
+               <div>
+                100% Width
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Grid
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_grid' %}">
+               <div>
+                4 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_grid_3' %}">
+               <div>
+                3 Columns
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_grid_2' %}">
+               <div>
+                2 Columns
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Small Thumbs
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_small_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_small' %}">
+               <div>
+                Right Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_small_both_sidebar' %}">
+               <div>
+                Both Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_small_full_width' %}">
+               <div>
+                Full Width
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_small_alt' %}">
+               <div>
+                Alternate Layout
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Item Splitting
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_grid' %}">
+               <div>
+                Pagination
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_masonry' %}">
+               <div>
+                Infinite Scroll
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Single
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_single' %}">
+               <div>
+                Default Layout
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_single_left_sidebar' %}">
+               <div>
+                Left Sidebar
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_single_full' %}">
+               <div>
+                Full Width
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_single_small' %}">
+               <div>
+                Small Image
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_single_split_right_sidebar' %}">
+               <div>
+                Split Layout
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="mega-menu-title">
+            <a href="#">
+             <div>
+              Comments Module
+             </div>
+            </a>
+            <ul>
+             <li>
+              <a href="{% url 'canvas_blog_single_left_sidebar' %}">
+               <div>
+                Facebook Comments
+               </div>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'canvas_blog_single_small' %}">
+               <div>
+                Disqus Comments
+               </div>
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </div>
+        </li>
+        <li>
+         <a href="{% url 'canvas_shop' %}">
+          <div>
+           Shop
+          </div>
+         </a>
+         <ul>
+          <li>
+           <a href="{% url 'canvas_shop' %}">
+            <div>
+             4 Columns
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_shop_3' %}">
+            <div>
+             3 Columns
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_shop_3' %}">
+              <div>
+               Full Width
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_3_right_sidebar' %}">
+              <div>
+               Right Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_3_left_sidebar' %}">
+              <div>
+               Left Sidebar
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_shop_2' %}">
+            <div>
+             2 Columns
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_shop_2_right_sidebar' %}">
+              <div>
+               Right Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_2_left_sidebar' %}">
+              <div>
+               Left Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_2_both_sidebar' %}">
+              <div>
+               Both Sidebar
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_shop_1' %}">
+            <div>
+             1 Columns
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_shop_1' %}">
+              <div>
+               Full Width
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_1_right_sidebar' %}">
+              <div>
+               Right Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_1_left_sidebar' %}">
+              <div>
+               Left Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_1_both_sidebar' %}">
+              <div>
+               Both Sidebar
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_shop_category_parallax' %}">
+            <div>
+             Categories - Parallax
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_shop_single' %}">
+            <div>
+             Single Product
+            </div>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'canvas_shop_single' %}">
+              <div>
+               Full Width
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_single_right_sidebar' %}">
+              <div>
+               Right Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_single_left_sidebar' %}">
+              <div>
+               Left Sidebar
+              </div>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'canvas_shop_single_both_sidebar' %}">
+              <div>
+               Both Sidebar
+              </div>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'canvas_cart' %}">
+            <div>
+             Cart
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="{% url 'canvas_checkout' %}">
+            <div>
+             Checkout
+            </div>
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="mega-menu">
+         <a href="#">
+          <div>
+           Shortcodes
+          </div>
+         </a>
+         <div class="mega-menu-content col-5 clearfix">
+          <ul>
+           <li>
+            <a href="{% url 'canvas_animations' %}">
+             <div>
+              <i class="icon-magic">
+              </i>
+              Animations
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_buttons' %}">
+             <div>
+              <i class="icon-link">
+              </i>
+              Buttons
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_carousel' %}">
+             <div>
+              <i class="icon-heart3">
+              </i>
+              Carousel
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_charts' %}">
+             <div>
+              <i class="icon-bar-chart">
+              </i>
+              Charts
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_clients' %}">
+             <div>
+              <i class="icon-apple">
+              </i>
+              Clients
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_columns_grids' %}">
+             <div>
+              <i class="icon-th-large">
+              </i>
+              Columns
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_counters' %}">
+             <div>
+              <i class="icon-time">
+              </i>
+              Counters
+             </div>
+            </a>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="{% url 'canvas_dividers' %}">
+             <div>
+              <i class="icon-indent-right">
+              </i>
+              Dividers
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_featured_boxes' %}">
+             <div>
+              <i class="icon-lightbulb">
+              </i>
+              Icon Boxes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_gallery' %}">
+             <div>
+              <i class="icon-picture">
+              </i>
+              Galleries
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_headings_dropcaps' %}">
+             <div>
+              <i class="icon-pencil2">
+              </i>
+              Heading Styles
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_icon_lists' %}">
+             <div>
+              <i class="icon-list-alt">
+              </i>
+              Icon Lists
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_labels_badges' %}">
+             <div>
+              <i class="icon-plus-sign">
+              </i>
+              Labels
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_lightbox' %}">
+             <div>
+              <i class="icon-resize-full">
+              </i>
+              Lightbox
+             </div>
+            </a>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="{% url 'canvas_lists_panels' %}">
+             <div>
+              <i class="icon-th-list">
+              </i>
+              Lists &amp; Panels
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_maps' %}">
+             <div>
+              <i class="icon-map-marker2">
+              </i>
+              Maps
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_media_embeds' %}">
+             <div>
+              <i class="icon-play">
+              </i>
+              Media Embeds
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_modal_popovers' %}">
+             <div>
+              <i class="icon-move">
+              </i>
+              Modal Boxes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_navigation' %}">
+             <div>
+              <i class="icon-align-justify2">
+              </i>
+              Navigations
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_pagination_progress' %}">
+             <div>
+              <i class="icon-cogs">
+              </i>
+              Pagination
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_pie_skills' %}">
+             <div>
+              <i class="icon-tasks">
+              </i>
+              Pies &amp; Skills
+             </div>
+            </a>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="{% url 'canvas_pricing' %}">
+             <div>
+              <i class="icon-dollar">
+              </i>
+              Pricing Boxes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_process_steps' %}">
+             <div>
+              <i class="icon-thumbs-up">
+              </i>
+              Process Steps
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_promo_boxes' %}">
+             <div>
+              <i class="icon-rocket">
+              </i>
+              Promo Boxes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_quotes_blockquotes' %}">
+             <div>
+              <i class="icon-quote-left">
+              </i>
+              Blockquotes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_responsive' %}">
+             <div>
+              <i class="icon-laptop2">
+              </i>
+              Responsive
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_sections' %}">
+             <div>
+              <i class="icon-folder-open">
+              </i>
+              Sections
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_social_icons' %}">
+             <div>
+              <i class="icon-facebook2">
+              </i>
+              Social Icons
+             </div>
+            </a>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="{% url 'canvas_style_boxes' %}">
+             <div>
+              <i class="icon-exclamation-sign">
+              </i>
+              Alert Boxes
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_styled_icons' %}">
+             <div>
+              <i class="icon-flag2">
+              </i>
+              Styled Icons
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_tables' %}">
+             <div>
+              <i class="icon-table">
+              </i>
+              Tables
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_tabs' %}">
+             <div>
+              <i class="icon-star3">
+              </i>
+              Tabs
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_testimonials_twitter' %}">
+             <div>
+              <i class="icon-user4">
+              </i>
+              Testimonials
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_thumbnails_slider' %}">
+             <div>
+              <i class="icon-camera3">
+              </i>
+              Thumbnails
+             </div>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'canvas_toggles_accordions' %}">
+             <div>
+              <i class="icon-ok-circle">
+              </i>
+              Toggles
+             </div>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </li>
+       </ul>
+       <!-- Top Cart
+                        ============================================= -->
+       <div id="top-cart">
+        <a href="#" id="top-cart-trigger">
+         <i class="icon-shopping-cart">
+         </i>
+         <span>
+          5
+         </span>
+        </a>
+        <div class="top-cart-content">
+         <div class="top-cart-title">
+          <h4>
+           Shopping Cart
+          </h4>
+         </div>
+         <div class="top-cart-items">
+          <div class="top-cart-item clearfix">
+           <div class="top-cart-item-image">
+            <a href="#">
+             <img alt="Blue Round-Neck Tshirt" src="{% static 'canvas/images/shop/small/1.jpg' %}"/>
+            </a>
+           </div>
+           <div class="top-cart-item-desc">
+            <a href="#">
+             Blue Round-Neck Tshirt
+            </a>
+            <span class="top-cart-item-price">
+             $19.99
+            </span>
+            <span class="top-cart-item-quantity">
+             x 2
+            </span>
+           </div>
+          </div>
+          <div class="top-cart-item clearfix">
+           <div class="top-cart-item-image">
+            <a href="#">
+             <img alt="Light Blue Denim Dress" src="{% static 'canvas/images/shop/small/6.jpg' %}"/>
+            </a>
+           </div>
+           <div class="top-cart-item-desc">
+            <a href="#">
+             Light Blue Denim Dress
+            </a>
+            <span class="top-cart-item-price">
+             $24.99
+            </span>
+            <span class="top-cart-item-quantity">
+             x 3
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="top-cart-action clearfix">
+          <span class="fleft top-checkout-price">
+           $114.95
+          </span>
+          <button class="button button-3d button-small nomargin fright">
+           View Cart
+          </button>
+         </div>
+        </div>
+       </div>
+       <!-- #top-cart end -->
+       <!-- Top Search
+                        ============================================= -->
+       <div id="top-search">
+        <a href="#" id="top-search-trigger">
+         <i class="icon-search3">
+         </i>
+         <i class="icon-line-cross">
+         </i>
+        </a>
+        <form action="search.html" method="get">
+         <input class="form-control" name="q" placeholder="Type &amp; Hit Enter.." type="text" value=""/>
+        </form>
+       </div>
+       <!-- #top-search end -->
+      </nav>
+      <!-- #primary-menu end -->
+     </div>
+    </div>
+   </header>
+   <!-- #header end -->
+   <!-- Page Sub Menu
+        ============================================= -->
+   <div class="no-sticky" id="page-menu">
+    <div id="page-menu-wrap">
+     <div class="container clearfix">
+      <div class="menu-title">
+       Portfolio
+       <span>
+        Variations
+       </span>
+      </div>
+      <nav>
+       <ul>
+        <li>
+         <a href="{% static 'canvas/portfolio-6.html' %}">
+          With Margin
+         </a>
+        </li>
+        <li>
+         <a href="{% static 'canvas/portfolio-6-nomargin.html' %}">
+          No Margin
+         </a>
+        </li>
+        <li>
+         <a href="{% static 'canvas/portfolio-6-notitle.html' %}">
+          No Title
+         </a>
+        </li>
+        <li>
+         <a href="{% static 'canvas/portfolio-6-title-overlay.html' %}">
+          Title Overlay
+         </a>
+        </li>
+        <li>
+         <a href="{% static 'canvas/portfolio-6-fullwidth.html' %}">
+          Full Width
+         </a>
+        </li>
+        <li class="current">
+         <a href="{% static 'canvas/portfolio-6-fullwidth-notitle.html' %}">
+          Full Width - No Title
+         </a>
+        </li>
+       </ul>
+      </nav>
+      <div id="page-submenu-trigger">
+       <i class="icon-reorder">
+       </i>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- #page-menu end -->
+   <!-- Page Title
+        ============================================= -->
+   <section id="page-title">
+    <div class="container clearfix">
+     <h1>
+      Portfolio
+     </h1>
+     <span>
+      Showcase of Our Awesome Works in 6 Columns
+     </span>
+     <ol class="breadcrumb">
+      <li>
+       <a href="#">
+        Home
+       </a>
+      </li>
+      <li class="active">
+       Portfolio
+      </li>
+     </ol>
+    </div>
+   </section>
+   <!-- #page-title end -->
+   <!-- Content
+        ============================================= -->
+   <section id="content">
+    <div class="content-wrap nobottompadding">
+     <div class="container clearfix">
+      <!-- Portfolio Filter
+                    ============================================= -->
+      <ul class="clearfix" id="portfolio-filter">
+       <li class="activeFilter">
+        <a data-filter="*" href="#">
+         Show All
+        </a>
+       </li>
+       <li>
+        <a data-filter=".pf-icons" href="#">
+         Icons
+        </a>
+       </li>
+       <li>
+        <a data-filter=".pf-illustrations" href="#">
+         Illustrations
+        </a>
+       </li>
+       <li>
+        <a data-filter=".pf-uielements" href="#">
+         UI Elements
+        </a>
+       </li>
+       <li>
+        <a data-filter=".pf-media" href="#">
+         Media
+        </a>
+       </li>
+       <li>
+        <a data-filter=".pf-graphics" href="#">
+         Graphics
+        </a>
+       </li>
+      </ul>
+      <!-- #portfolio-filter end -->
+      <div id="portfolio-shuffle">
+       <i class="icon-random">
+       </i>
+      </div>
+     </div>
+     <!-- Portfolio Items
+                ============================================= -->
+     <div class="portfolio-6 portfolio-nomargin portfolio-notitle portfolio-full clearfix" id="portfolio">
+      <article class="portfolio-item pf-media pf-icons">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single.html' %}">
+         <img alt="Open Imagination" src="{% static 'canvas/images/portfolio/4/1.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="image" href="{% static 'canvas/images/portfolio/full/1.jpg' %}">
+          <i class="icon-line-plus">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Open Imagination
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Media
+         </a>
+         ,
+         <a href="#">
+          Icons
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-illustrations">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single.html' %}">
+         <img alt="Locked Steel Gate" src="{% static 'canvas/images/portfolio/4/2.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="image" href="{% static 'canvas/images/portfolio/full/2.jpg' %}">
+          <i class="icon-line-plus">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Locked Steel Gate
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Illustrations
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-graphics pf-uielements">
+       <div class="portfolio-image">
+        <a href="#">
+         <img alt="Mac Sunglasses" src="{% static 'canvas/images/portfolio/4/3.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="iframe" href="http://vimeo.com/89396394">
+          <i class="icon-line-play">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-video.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-video.html' %}">
+          Mac Sunglasses
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Graphics
+         </a>
+         ,
+         <a href="#">
+          UI Elements
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-icons pf-illustrations">
+       <div class="portfolio-image">
+        <div class="fslider" data-arrows="false" data-pause="4000" data-speed="400">
+         <div class="flexslider">
+          <div class="slider-wrap">
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Morning Dew" src="{% static 'canvas/images/portfolio/4/4.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Morning Dew" src="{% static 'canvas/images/portfolio/4/4-1.jpg' %}"/>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="portfolio-overlay" data-lightbox="gallery">
+         <a class="left-icon" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/4.jpg' %}">
+          <i class="icon-line-stack-2">
+          </i>
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/4-1.jpg' %}">
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          Morning Dew
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+         </a>
+         <a href="#">
+          Icons
+         </a>
+         ,
+         <a href="#">
+          Illustrations
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-uielements pf-media">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single.html' %}">
+         <img alt="Console Activity" src="{% static 'canvas/images/portfolio/4/5.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="image" href="{% static 'canvas/images/portfolio/full/5.jpg' %}">
+          <i class="icon-line-plus">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Console Activity
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          UI Elements
+         </a>
+         ,
+         <a href="#">
+          Media
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-graphics pf-illustrations">
+       <div class="portfolio-image">
+        <div class="fslider" data-arrows="false">
+         <div class="flexslider">
+          <div class="slider-wrap">
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Shake It" src="{% static 'canvas/images/portfolio/4/6.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Shake It" src="{% static 'canvas/images/portfolio/4/6-1.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Shake It" src="{% static 'canvas/images/portfolio/4/6-2.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Shake It" src="{% static 'canvas/images/portfolio/4/6-3.jpg' %}"/>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="portfolio-overlay" data-lightbox="gallery">
+         <a class="left-icon" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/6.jpg' %}">
+          <i class="icon-line-stack-2">
+          </i>
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/6-1.jpg' %}">
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/6-2.jpg' %}">
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/6-3.jpg' %}">
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          Shake It!
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Illustrations
+         </a>
+         ,
+         <a href="#">
+          Graphics
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-uielements pf-icons">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single-video.html' %}">
+         <img alt="Backpack Contents" src="{% static 'canvas/images/portfolio/4/7.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="iframe" href="http://www.youtube.com/watch?v=kuceVNBTJio">
+          <i class="icon-line-play">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-video.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-video.html' %}">
+          Backpack Contents
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          UI Elements
+         </a>
+         ,
+         <a href="#">
+          Icons
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-graphics">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single.html' %}">
+         <img alt="Sunset Bulb Glow" src="{% static 'canvas/images/portfolio/4/8.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="image" href="{% static 'canvas/images/portfolio/full/8.jpg' %}">
+          <i class="icon-line-plus">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Sunset Bulb Glow
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Graphics
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-illustrations pf-icons">
+       <div class="portfolio-image">
+        <div class="fslider" data-animation="fade" data-arrows="false" data-pause="3500" data-speed="650">
+         <div class="flexslider">
+          <div class="slider-wrap">
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Bridge Side" src="{% static 'canvas/images/portfolio/4/9.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Bridge Side" src="{% static 'canvas/images/portfolio/4/9-1.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Bridge Side" src="{% static 'canvas/images/portfolio/4/9-2.jpg' %}"/>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="portfolio-overlay" data-lightbox="gallery">
+         <a class="left-icon" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/9.jpg' %}">
+          <i class="icon-line-stack-2">
+          </i>
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/9-1.jpg' %}">
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/9-2.jpg' %}">
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Bridge Side
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Illustrations
+         </a>
+         ,
+         <a href="#">
+          Icons
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-graphics pf-media pf-uielements">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single-video.html' %}">
+         <img alt="Study Table" src="{% static 'canvas/images/portfolio/4/10.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="iframe" href="http://vimeo.com/91973305">
+          <i class="icon-line-play">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-video.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-video.html' %}">
+          Study Table
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Graphics
+         </a>
+         ,
+         <a href="#">
+          Media
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-media pf-icons">
+       <div class="portfolio-image">
+        <a href="{% static 'canvas/portfolio-single.html' %}">
+         <img alt="Workspace Stuff" src="{% static 'canvas/images/portfolio/4/11.jpg' %}"/>
+        </a>
+        <div class="portfolio-overlay">
+         <a class="left-icon" data-lightbox="image" href="{% static 'canvas/images/portfolio/full/11.jpg' %}">
+          <i class="icon-line-plus">
+          </i>
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single.html' %}">
+          Workspace Stuff
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Media
+         </a>
+         ,
+         <a href="#">
+          Icons
+         </a>
+        </span>
+       </div>
+      </article>
+      <article class="portfolio-item pf-illustrations pf-graphics">
+       <div class="portfolio-image">
+        <div class="fslider" data-arrows="false" data-pause="7000" data-speed="700">
+         <div class="flexslider">
+          <div class="slider-wrap">
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Fixed Aperture" src="{% static 'canvas/images/portfolio/4/12.jpg' %}"/>
+            </a>
+           </div>
+           <div class="slide">
+            <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+             <img alt="Fixed Aperture" src="{% static 'canvas/images/portfolio/4/12-1.jpg' %}"/>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="portfolio-overlay" data-lightbox="gallery">
+         <a class="left-icon" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/12.jpg' %}">
+          <i class="icon-line-stack-2">
+          </i>
+         </a>
+         <a class="hidden" data-lightbox="gallery-item" href="{% static 'canvas/images/portfolio/full/12-1.jpg' %}">
+         </a>
+         <a class="right-icon" href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          <i class="icon-line-ellipsis">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div class="portfolio-desc">
+        <h3>
+         <a href="{% static 'canvas/portfolio-single-gallery.html' %}">
+          Fixed Aperture
+         </a>
+        </h3>
+        <span>
+         <a href="#">
+          Illustrations
+         </a>
+         ,
+         <a href="#">
+          Graphics
+         </a>
+        </span>
+       </div>
+      </article>
+     </div>
+     <!-- #portfolio end -->
+     <!-- Portfolio Script
+                ============================================= -->
+     <script type="text/javascript">
+      jQuery(window).load(function(){
+
+                        var $container = $('#portfolio');
+
+                        $container.isotope({ transitionDuration: '0.65s' });
+
+                        $('#portfolio-filter a').click(function(){
+                            $('#portfolio-filter li').removeClass('activeFilter');
+                            $(this).parent('li').addClass('activeFilter');
+                            var selector = $(this).attr('data-filter');
+                            $container.isotope({ filter: selector });
+                            return false;
+                        });
+
+                        $('#portfolio-shuffle').click(function(){
+                            $container.isotope('updateSortData').isotope({
+                                sortBy: 'random'
+                            });
+                        });
+
+                        $(window).resize(function() {
+                            $container.isotope('layout');
+                        });
+
+                    });
+     </script>
+     <!-- Portfolio Script End -->
+    </div>
+   </section>
+   <!-- #content end -->
+   <!-- Footer
+        ============================================= -->
+   <footer class="dark" id="footer">
+    <div class="container">
+     <!-- Footer Widgets
+                ============================================= -->
+     <div class="footer-widgets-wrap clearfix">
+      <div class="col_two_third">
+       <div class="col_one_third">
+        <div class="widget clearfix">
+         <img alt="" class="footer-logo" src="{% static 'canvas/images/footer-widget-logo.png' %}"/>
+         <p>
+          We believe in
+          <strong>
+           Simple
+          </strong>
+          ,
+          <strong>
+           Creative
+          </strong>
+          &amp;
+          <strong>
+           Flexible
+          </strong>
+          Design Standards.
+         </p>
+         <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+          <address>
+           <strong>
+            Headquarters:
+           </strong>
+           <br/>
+           795 Folsom Ave, Suite 600
+           <br/>
+           San Francisco, CA 94107
+           <br/>
+          </address>
+          <abbr title="Phone Number">
+           <strong>
+            Phone:
+           </strong>
+          </abbr>
+          (91) 8547 632521
+          <br/>
+          <abbr title="Fax">
+           <strong>
+            Fax:
+           </strong>
+          </abbr>
+          (91) 11 4752 1433
+          <br/>
+          <abbr title="Email Address">
+           <strong>
+            Email:
+           </strong>
+          </abbr>
+          info@canvas.com
+         </div>
+        </div>
+       </div>
+       <div class="col_one_third">
+        <div class="widget widget_links clearfix">
+         <h4>
+          Blogroll
+         </h4>
+         <ul>
+          <li>
+           <a href="http://codex.wordpress.org/">
+            Documentation
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/support/forum/requests-and-feedback">
+            Feedback
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/extend/plugins/">
+            Plugins
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/support/">
+            Support Forums
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/extend/themes/">
+            Themes
+           </a>
+          </li>
+          <li>
+           <a href="http://wordpress.org/news/">
+            WordPress Blog
+           </a>
+          </li>
+          <li>
+           <a href="http://planet.wordpress.org/">
+            WordPress Planet
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="col_one_third col_last">
+        <div class="widget clearfix">
+         <h4>
+          Recent Posts
+         </h4>
+         <div id="post-list-footer">
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Lorem ipsum dolor sit amet, consectetur
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Elit Assumenda vel amet dolorum quasi
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="spost clearfix">
+           <div class="entry-c">
+            <div class="entry-title">
+             <h4>
+              <a href="#">
+               Debitis nihil placeat, illum est nisi
+              </a>
+             </h4>
+            </div>
+            <ul class="entry-meta">
+             <li>
+              10th July 2014
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col_one_third col_last">
+       <div class="widget clearfix" style="margin-bottom: -20px;">
+        <div class="row">
+         <div class="col-md-6 bottommargin-sm">
+          <div class="counter counter-small">
+           <span data-comma="true" data-from="50" data-refresh-interval="80" data-speed="3000" data-to="15065421">
+           </span>
+          </div>
+          <h5 class="nobottommargin">
+           Total Downloads
+          </h5>
+         </div>
+         <div class="col-md-6 bottommargin-sm">
+          <div class="counter counter-small">
+           <span data-comma="true" data-from="100" data-refresh-interval="50" data-speed="2000" data-to="18465">
+           </span>
+          </div>
+          <h5 class="nobottommargin">
+           Clients
+          </h5>
+         </div>
+        </div>
+       </div>
+       <div class="widget subscribe-widget clearfix">
+        <h5>
+         <strong>
+          Subscribe
+         </strong>
+         to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:
+        </h5>
+        <div data-notify-msg="" data-notify-type="success" id="widget-subscribe-form-result">
+        </div>
+        <form action="include/subscribe.php" class="nobottommargin" id="widget-subscribe-form" method="post" role="form">
+         <div class="input-group divcenter">
+          <span class="input-group-addon">
+           <i class="icon-email2">
+           </i>
+          </span>
+          <input class="form-control required email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" placeholder="Enter your Email" type="email"/>
+          <span class="input-group-btn">
+           <button class="btn btn-success" type="submit">
+            Subscribe
+           </button>
+          </span>
+         </div>
+        </form>
+        <script type="text/javascript">
+         $("#widget-subscribe-form").validate({
+                                    submitHandler: function(form) {
+                                        $(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+                                        $(form).ajaxSubmit({
+                                            target: '#widget-subscribe-form-result',
+                                            success: function() {
+                                                $(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+                                                $('#widget-subscribe-form').find('.form-control').val('');
+                                                $('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+                                                SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+                                            }
+                                        });
+                                    }
+                                });
+        </script>
+       </div>
+       <div class="widget clearfix" style="margin-bottom: -20px;">
+        <div class="row">
+         <div class="col-md-6 clearfix bottommargin-sm">
+          <a class="social-icon si-dark si-colored si-facebook nobottommargin" href="#" style="margin-right: 10px;">
+           <i class="icon-facebook">
+           </i>
+           <i class="icon-facebook">
+           </i>
+          </a>
+          <a href="#">
+           <small style="display: block; margin-top: 3px;">
+            <strong>
+             Like us
+            </strong>
+            <br/>
+            on Facebook
+           </small>
+          </a>
+         </div>
+         <div class="col-md-6 clearfix">
+          <a class="social-icon si-dark si-colored si-rss nobottommargin" href="#" style="margin-right: 10px;">
+           <i class="icon-rss">
+           </i>
+           <i class="icon-rss">
+           </i>
+          </a>
+          <a href="#">
+           <small style="display: block; margin-top: 3px;">
+            <strong>
+             Subscribe
+            </strong>
+            <br/>
+            to RSS Feeds
+           </small>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- .footer-widgets-wrap end -->
+    </div>
+    <!-- Copyrights
+            ============================================= -->
+    <div id="copyrights">
+     <div class="container clearfix">
+      <div class="col_half">
+       Copyrights © 2014 All Rights Reserved by Canvas Inc.
+       <br/>
+       <div class="copyright-links">
+        <a href="#">
+         Terms of Use
+        </a>
+        /
+        <a href="#">
+         Privacy Policy
+        </a>
+       </div>
+      </div>
+      <div class="col_half col_last tright">
+       <div class="fright clearfix">
+        <a class="social-icon si-small si-borderless si-facebook" href="#">
+         <i class="icon-facebook">
+         </i>
+         <i class="icon-facebook">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-twitter" href="#">
+         <i class="icon-twitter">
+         </i>
+         <i class="icon-twitter">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-gplus" href="#">
+         <i class="icon-gplus">
+         </i>
+         <i class="icon-gplus">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-pinterest" href="#">
+         <i class="icon-pinterest">
+         </i>
+         <i class="icon-pinterest">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-vimeo" href="#">
+         <i class="icon-vimeo">
+         </i>
+         <i class="icon-vimeo">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-github" href="#">
+         <i class="icon-github">
+         </i>
+         <i class="icon-github">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-yahoo" href="#">
+         <i class="icon-yahoo">
+         </i>
+         <i class="icon-yahoo">
+         </i>
+        </a>
+        <a class="social-icon si-small si-borderless si-linkedin" href="#">
+         <i class="icon-linkedin">
+         </i>
+         <i class="icon-linkedin">
+         </i>
+        </a>
+       </div>
+       <div class="clear">
+       </div>
+       <i class="icon-envelope2">
+       </i>
+       info@canvas.com
+       <span class="middot">
+        ·
+       </span>
+       <i class="icon-headphones">
+       </i>
+       +91-11-6541-6369
+       <span class="middot">
+        ·
+       </span>
+       <i class="icon-skype2">
+       </i>
+       CanvasOnSkype
+      </div>
+     </div>
+    </div>
+    <!-- #copyrights end -->
+   </footer>
+   <!-- #footer end -->
+  </div>
+  <!-- #wrapper end -->
+  <!-- Go To Top
+    ============================================= -->
+  <div class="icon-angle-up" id="gotoTop">
+  </div>
+  <!-- Footer Scripts
+    ============================================= -->
+  <script src="{% static 'canvas/js/functions.js' %}" type="text/javascript">
+  </script>
+ </body>
+</html>

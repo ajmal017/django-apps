@@ -1,0 +1,3140 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   CenterStack
+  </title>
+  <link href="{% static 'aura/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static 'aura/3dParty/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/global.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/3dParty/rs-plugin/css/pi.settings.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/3dParty/colorbox/colorbox.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/typo.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/slider.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/tabs.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/testimonials.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/tooltips.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/counters.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/social.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/portfolio.css' %}" rel="stylesheet" type="text/css"/>
+  <!--Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"/>
+  <!--Fonts with Icons-->
+  <link href="{% static 'aura/3dParty/fontello/css/fontello.css' %}" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="pi-all">
+   <!-- Header -->
+   <div class="pi-header">
+    <!-- Header row -->
+    <div class="pi-section-w pi-section-dark">
+     <div class="pi-section pi-row-sm">
+      <!-- Phone -->
+      <div class="pi-row-block pi-row-block-txt">
+       <i class="pi-row-block-icon icon-phone pi-icon-base pi-icon-square">
+       </i>
+       Call Us:
+       <strong>
+        +7.906.229.2627
+       </strong>
+      </div>
+      <!-- End phone -->
+      <!-- Email -->
+      <div class="pi-row-block pi-row-block-txt pi-hidden-xs">
+       <i class="pi-row-block-icon icon-mail pi-icon-base pi-icon-square">
+       </i>
+       Email:
+       <a href="#">
+        hello@pitheme.com
+       </a>
+      </div>
+      <!-- End email -->
+      <!-- Social icons -->
+      <div class="pi-row-block pi-pull-right pi-hidden-2xs">
+       <ul class="pi-social-icons pi-stacked pi-jump pi-full-height pi-bordered pi-small pi-colored-bg clearFix">
+        <li>
+         <a class="pi-social-icon-twitter" href="#">
+          <i class="icon-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-facebook" href="#">
+          <i class="icon-facebook">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-dribbble" href="#">
+          <i class="icon-dribbble">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- End social icons -->
+      <!-- Text -->
+      <div class="pi-row-block pi-row-block-txt pi-pull-right pi-hidden-xs">
+       Follow Us:
+      </div>
+      <!-- End text -->
+     </div>
+    </div>
+    <!-- End header row -->
+    <div class="pi-header-sticky">
+     <!-- Header row -->
+     <div class="pi-section-w pi-section-white pi-shadow-bottom pi-row-reducible">
+      <div class="pi-section pi-row-lg">
+       <!-- Logo -->
+       <div class="pi-row-block pi-row-block-logo">
+        <a href="{% url 'aura-index' %}">
+         <img alt="" src="{% static 'aura/img/logo-base.png' %}"/>
+        </a>
+       </div>
+       <!-- End logo -->
+       <!-- Text -->
+       <div class="pi-row-block pi-row-block-txt pi-hidden-2xs">
+        HTML5 template
+       </div>
+       <!-- End text -->
+       <!-- Menu -->
+       <div class="pi-row-block pi-pull-right">
+        <ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm">
+         <li class="pi-has-dropdown active">
+          <a href="{% url 'aura-index' %}">
+           <span>
+            Home
+           </span>
+          </a>
+          <ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+           <li>
+            <a href="{% url 'aura-index' %}">
+             <span>
+              Home 1
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-2' %}">
+             <span>
+              Home 2
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-3' %}">
+             <span>
+              Home 3
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-4' %}">
+             <span>
+              Home 4
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-5' %}">
+             <span>
+              Home 5
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-6' %}">
+             <span>
+              Home 6
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-7' %}">
+             <span>
+              Home 7
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-8' %}">
+             <span>
+              Home 8
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-9' %}">
+             <span>
+              Home 9
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-10' %}">
+             <span>
+              Home 10
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-11' %}">
+             <span>
+              Home 11
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-12' %}">
+             <span>
+              Home 12
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-onepage-1' %}">
+             <span>
+              Onepage 1
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-onepage-2' %}">
+             <span>
+              Onepage 2
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-onepage-3' %}">
+             <span>
+              Onepage 3
+             </span>
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="pi-has-dropdown">
+          <a href="{% url 'aura-headers-headers-light' %}">
+           <span>
+            Features
+           </span>
+          </a>
+          <ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+           <li class="pi-has-dropdown">
+            <a href="{% url 'aura-headers-headers-light' %}">
+             <span>
+              Headers
+             </span>
+            </a>
+            <ul class="pi-submenu">
+             <li>
+              <a href="{% url 'aura-headers-headers-light' %}">
+               <span>
+                Headers Light
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-headers-headers-dark' %}">
+               <span>
+                Headers Dark
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-headers-headers-base' %}">
+               <span>
+                Headers Base
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="pi-has-dropdown">
+            <a href="{% url 'aura-footers-footers-light' %}">
+             <span>
+              Footers
+             </span>
+            </a>
+            <ul class="pi-submenu">
+             <li>
+              <a href="{% url 'aura-footers-footers-light' %}">
+               <span>
+                Footers Light
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-footers-footers-dark' %}">
+               <span>
+                Footers Dark
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-footers-footers-base' %}">
+               <span>
+                Footers Base
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="pi-has-dropdown">
+            <a href="{% url 'aura-utility-utility-alignment' %}">
+             <span>
+              Utility
+             </span>
+            </a>
+            <ul class="pi-submenu">
+             <li>
+              <a href="{% url 'aura-utility-utility-grid' %}">
+               <span>
+                Utility grid
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-utility-utility-visibility' %}">
+               <span>
+                Utility visibility
+               </span>
+              </a>
+             </li>
+             <li>
+              <a href="{% url 'aura-utility-utility-alignment' %}">
+               <span>
+                Utility alignment
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="{% url 'aura-typo' %}">
+             <span>
+              Typography
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-animations' %}">
+             <span>
+              Animations
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-icons' %}">
+             <span>
+              Icons
+             </span>
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="pi-has-dropdown pi-has-dropdown-wide">
+          <a href="{% url 'aura-about-about-1' %}">
+           <span>
+            Templates
+           </span>
+          </a>
+          <div class="pi-submenu-wide pi-submenu-wide-dark pi-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+           <div class="pi-section pi-section-dark pi-no-padding pi-clearfix">
+            <div class="pi-bordered">
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-about-about-1' %}">
+                 <span>
+                  About Company 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-about-about-2' %}">
+                 <span>
+                  About Company 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-about-about-3' %}">
+                 <span>
+                  About Company 3
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-about-about-4' %}">
+                 <span>
+                  About Company 4
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-1' %}">
+                 <span>
+                  Services 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-2' %}">
+                 <span>
+                  Services 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-3' %}">
+                 <span>
+                  Services 3
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-4' %}">
+                 <span>
+                  Services 4
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-5' %}">
+                 <span>
+                  Services 5
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-6' %}">
+                 <span>
+                  Services 6
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-7' %}">
+                 <span>
+                  Services 7
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-8' %}">
+                 <span>
+                  Services 8
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-9' %}">
+                 <span>
+                  Services 9
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-10' %}">
+                 <span>
+                  Services 10
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-services-services-11' %}">
+                 <span>
+                  Services 11
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-clients-clients-1' %}">
+                 <span>
+                  Clients 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-2' %}">
+                 <span>
+                  Clients 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-3' %}">
+                 <span>
+                  Clients 3
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-4' %}">
+                 <span>
+                  Clients 4
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-5' %}">
+                 <span>
+                  Clients 5
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-6' %}">
+                 <span>
+                  Clients 6
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-clients-clients-7' %}">
+                 <span>
+                  Clients 7
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-1' %}">
+                 <span>
+                  Portfolio Classic 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-2' %}">
+                 <span>
+                  Portfolio Classic 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-3' %}">
+                 <span>
+                  Portfolio Classic 3
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-4' %}">
+                 <span>
+                  Portfolio Classic 4
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-5' %}">
+                 <span>
+                  Portfolio Classic 5
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-6' %}">
+                 <span>
+                  Portfolio Classic 6
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-7' %}">
+                 <span>
+                  Portfolio Classic 7
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-8' %}">
+                 <span>
+                  Portfolio Classic 8
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-9' %}">
+                 <span>
+                  Portfolio Classic 9
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-10' %}">
+                 <span>
+                  Portfolio Classic 10
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-masonry' %}">
+                 <span>
+                  Portfolio Masonry 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-masonry-2' %}">
+                 <span>
+                  Portfolio Masonry 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-timeline' %}">
+                 <span>
+                  Portfolio Timeline
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-portfolio-portfolio-single' %}">
+                 <span>
+                  Portfolio Single
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-grid-wide' %}">
+                 <span>
+                  Blog Masonry Wide
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-grid-sidebar' %}">
+                 <span>
+                  Blog Masonry + Sidebar
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-timeline-wide' %}">
+                 <span>
+                  Blog Timeline Wide
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-timeline-sidebar' %}">
+                 <span>
+                  Blog Timeline + Sidebar
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-large-image' %}">
+                 <span>
+                  Blog Large image
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-medium-image' %}">
+                 <span>
+                  Blog Medium image
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-small-image' %}">
+                 <span>
+                  Blog Small image
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-blog-blog-single-post' %}">
+                 <span>
+                  Blog Single Post
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-team-team-1' %}">
+                 <span>
+                  Team 1
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-team-team-2' %}">
+                 <span>
+                  Team 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-team-team-3' %}">
+                 <span>
+                  Team 3
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-testimonials-testimonials-1' %}">
+                 <span>
+                  Testimonials 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-testimonials-testimonials-2' %}">
+                 <span>
+                  Testimonials 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-faq-faq-1' %}">
+                 <span>
+                  FAQ 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-faq-faq-2' %}">
+                 <span>
+                  FAQ 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-contact-contact-1-fancy-header' %}">
+                 <span>
+                  Contact 1
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-contact-contact-2-fancy-header' %}">
+                 <span>
+                  Contact 2
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-layouts-fixed-fluid' %}">
+                 <span>
+                  Layouts Fixed fluid
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-layouts-fluid-fixed' %}">
+                 <span>
+                  Layouts Fluid fixed
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-layouts-fixed-fluid-fixed' %}">
+                 <span>
+                  Layouts Fixed fluid fixed
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-sign-in' %}">
+                 <span>
+                  Sign In
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-sign-up' %}">
+                 <span>
+                  Sign Up
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-404' %}">
+                 <span>
+                  404
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-500' %}">
+                 <span>
+                  500
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="pi-has-dropdown pi-has-dropdown-wide">
+          <a href="{% url 'aura-titlebars-small-breadcrumb-right' %}">
+           <span>
+            Elements
+           </span>
+          </a>
+          <div class="pi-submenu-wide pi-submenu-wide-dark pi-has-border" style="box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+           <div class="pi-section pi-section-dark pi-no-padding pi-clearfix">
+            <div class="pi-bordered">
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-titlebars-small-breadcrumb-right' %}">
+                 <span>
+                  Titlebars - Breadcrumb Right
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-titlebars-small-breadcrumb-top' %}">
+                 <span>
+                  Titlebars - Breadcrumb Top
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-titlebars-big-breadcrumb-right' %}">
+                 <span>
+                  Titlebars - Big Breadcrumb Right
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-titlebars-big-breadcrumb-top' %}">
+                 <span>
+                  Titlebars - Big Breadcrumb Top
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-titlebars-only-breadcrumb' %}">
+                 <span>
+                  Titlebars - Only Breadcrumb
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-icon-boxes-horizontal' %}">
+                 <span>
+                  Icon Boxes Horizontal
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-icon-boxes-vertical' %}">
+                 <span>
+                  Icon Boxes Vertical
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-lists-simple' %}">
+                 <span>
+                  Lists Simple
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-lists-icons' %}">
+                 <span>
+                  Lists Icons
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-lists-groups' %}">
+                 <span>
+                  Lists Groups
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-lists-images' %}">
+                 <span>
+                  Lists Images
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-socials-small' %}">
+                 <span>
+                  Socials Complex Small
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-socials' %}">
+                 <span>
+                  Socials Complex
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-socials-big' %}">
+                 <span>
+                  Socials Complex Big
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-socials-simple' %}">
+                 <span>
+                  Socials Simple
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-counters-numbers' %}">
+                 <span>
+                  Counters Numbers
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-counters-progress-bars' %}">
+                 <span>
+                  Counters Progress Bars
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-tabs' %}">
+                 <span>
+                  Tabs
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-tabs-big' %}">
+                 <span>
+                  Tabs Big
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-tables' %}">
+                 <span>
+                  Tables
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-accordions' %}">
+                 <span>
+                  Accordions
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-alert-boxes' %}">
+                 <span>
+                  Alert Boxes
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-boxes' %}">
+                 <span>
+                  Boxes
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-buttons' %}">
+                 <span>
+                  Buttons
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-forms' %}">
+                 <span>
+                  Forms
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-slider' %}">
+                 <span>
+                  Slider
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-google-maps-roadmap' %}">
+                 <span>
+                  Google Maps Roadmap
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-google-maps-grey' %}">
+                 <span>
+                  Google Maps Grey style
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="pi-col pi-col-sm-3 pi-padding-top-15 pi-no-padding-bottom">
+              <ul class="pi-list-menu pi-list-with-icons pi-list-icons-right-open pi-margin-bottom-15">
+               <li>
+                <a href="{% url 'aura-google-maps-dark' %}">
+                 <span>
+                  Google Maps Dark style
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-google-maps-satellite' %}">
+                 <span>
+                  Google Maps Satellite
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-google-maps-hybrid' %}">
+                 <span>
+                  Google Maps Hybrid
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-images' %}">
+                 <span>
+                  Images
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-pricing-tables' %}">
+                 <span>
+                  Pricing Tables
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-sections' %}">
+                 <span>
+                  Sections
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-testimonials-simple' %}">
+                 <span>
+                  Testimonials Simple
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-testimonials-photo' %}">
+                 <span>
+                  Testimonials With Photo
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a href="{% url 'aura-modals' %}">
+                 <span>
+                  Modals
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="pi-has-dropdown">
+          <a href="{% url 'aura-docs-docs' %}">
+           <span>
+            Docs
+           </span>
+          </a>
+          <ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+           <li>
+            <a href="{% url 'aura-docs-docs' %}">
+             <span>
+              Docs Map
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-docs-quick-start-guide' %}">
+             <span>
+              Quick Start Guide
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-docs-credits' %}">
+             <span>
+              Credits
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-docs-changelog' %}">
+             <span>
+              Changelog
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-docs-theme-structure' %}">
+             <span>
+              Theme Structure
+             </span>
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-docs-theme-settings' %}">
+             <span>
+              Theme Settings
+             </span>
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <!-- End menu -->
+       <!-- Mobile menu button -->
+       <div class="pi-row-block pi-pull-right pi-hidden-lg-only pi-hidden-md-only">
+        <button class="btn pi-btn pi-mobile-menu-toggler" data-target="#pi-main-mobile-menu">
+         <i class="icon-menu pi-text-center">
+         </i>
+        </button>
+       </div>
+       <!-- End mobile menu button -->
+       <!-- Mobile menu -->
+       <div class="pi-section-menu-mobile-w pi-section-dark" id="pi-main-mobile-menu">
+        <div class="pi-section-menu-mobile">
+         <!-- Search form -->
+         <form class="form-inline pi-search-form-wide ng-pristine ng-valid" role="form">
+          <div class="pi-input-with-icon">
+           <div class="pi-input-icon">
+            <i class="icon-search-1">
+            </i>
+           </div>
+           <input class="form-control pi-input-wide" placeholder="Search.." type="text"/>
+          </div>
+         </form>
+         <!-- End search form -->
+         <ul class="pi-menu-mobile pi-items-have-borders pi-menu-mobile-dark">
+          <li class="active">
+           <a href="{% url 'aura-index' %}">
+            <span>
+             Home
+            </span>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-index' %}">
+              <span>
+               Home 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-2' %}">
+              <span>
+               Home 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-3' %}">
+              <span>
+               Home 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-4' %}">
+              <span>
+               Home 4
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-5' %}">
+              <span>
+               Home 5
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-6' %}">
+              <span>
+               Home 6
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-7' %}">
+              <span>
+               Home 7
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-8' %}">
+              <span>
+               Home 8
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-9' %}">
+              <span>
+               Home 9
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-10' %}">
+              <span>
+               Home 10
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-onepage-1' %}">
+              <span>
+               Onepage 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-onepage-2' %}">
+              <span>
+               Onepage 2
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'aura-headers-headers-light' %}">
+            <span>
+             Features
+            </span>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-headers-headers-light' %}">
+              <span>
+               Headers
+              </span>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'aura-headers-headers-light' %}">
+                <span>
+                 Headers Light
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-headers-headers-dark' %}">
+                <span>
+                 Headers Dark
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-headers-headers-base' %}">
+                <span>
+                 Headers Base
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'aura-footers-footers-light' %}">
+              <span>
+               Footers
+              </span>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'aura-footers-footers-light' %}">
+                <span>
+                 Footers Light
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-footers-footers-dark' %}">
+                <span>
+                 Footers Dark
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-footers-footers-base' %}">
+                <span>
+                 Footers Base
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'aura-utility-utility-alignment' %}">
+              <span>
+               Utility
+              </span>
+             </a>
+             <ul>
+              <li>
+               <a href="{% url 'aura-utility-utility-grid' %}">
+                <span>
+                 Utility grid
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-utility-utility-visibility' %}">
+                <span>
+                 Utility visibility
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="{% url 'aura-utility-utility-alignment' %}">
+                <span>
+                 Utility alignment
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="{% url 'aura-typo' %}">
+              <span>
+               Typography
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-animations' %}">
+              <span>
+               Animations
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-icons' %}">
+              <span>
+               Icons
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'aura-about-about-1' %}">
+            <span>
+             Templates
+            </span>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-about-about-1' %}">
+              <span>
+               About Company 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-about-about-2' %}">
+              <span>
+               About Company 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-about-about-3' %}">
+              <span>
+               About Company 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-about-about-4' %}">
+              <span>
+               About Company 4
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-1' %}">
+              <span>
+               Services 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-2' %}">
+              <span>
+               Services 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-3' %}">
+              <span>
+               Services 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-4' %}">
+              <span>
+               Services 4
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-5' %}">
+              <span>
+               Services 5
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-6' %}">
+              <span>
+               Services 6
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-7' %}">
+              <span>
+               Services 7
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-8' %}">
+              <span>
+               Services 8
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-9' %}">
+              <span>
+               Services 9
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-10' %}">
+              <span>
+               Services 10
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-services-services-11' %}">
+              <span>
+               Services 11
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-1' %}">
+              <span>
+               Clients 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-2' %}">
+              <span>
+               Clients 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-3' %}">
+              <span>
+               Clients 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-4' %}">
+              <span>
+               Clients 4
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-5' %}">
+              <span>
+               Clients 5
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-6' %}">
+              <span>
+               Clients 6
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-clients-clients-7' %}">
+              <span>
+               Clients 7
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-1' %}">
+              <span>
+               Portfolio Classic 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-2' %}">
+              <span>
+               Portfolio Classic 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-3' %}">
+              <span>
+               Portfolio Classic 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-4' %}">
+              <span>
+               Portfolio Classic 4
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-5' %}">
+              <span>
+               Portfolio Classic 5
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-6' %}">
+              <span>
+               Portfolio Classic 6
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-7' %}">
+              <span>
+               Portfolio Classic 7
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-8' %}">
+              <span>
+               Portfolio Classic 8
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-9' %}">
+              <span>
+               Portfolio Classic 9
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-10' %}">
+              <span>
+               Portfolio Classic 10
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-masonry' %}">
+              <span>
+               Portfolio Masonry 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-masonry-2' %}">
+              <span>
+               Portfolio Masonry 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-portfolio-portfolio-timeline' %}">
+              <span>
+               Portfolio Timeline
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-grid-wide' %}">
+              <span>
+               Blog Masonry Wide
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-grid-sidebar' %}">
+              <span>
+               Blog Masonry + Sidebar
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-timeline-wide' %}">
+              <span>
+               Blog Timeline Wide
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-timeline-sidebar' %}">
+              <span>
+               Blog Timeline + Sidebar
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-large-image' %}">
+              <span>
+               Blog Large image
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-medium-image' %}">
+              <span>
+               Blog Medium image
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-small-image' %}">
+              <span>
+               Blog Small image
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-blog-blog-single-post' %}">
+              <span>
+               Blog Single Post
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-team-team-1' %}">
+              <span>
+               Team 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-team-team-2' %}">
+              <span>
+               Team 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-team-team-3' %}">
+              <span>
+               Team 3
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-testimonials-testimonials-1' %}">
+              <span>
+               Testimonials 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-testimonials-testimonials-2' %}">
+              <span>
+               Testimonials 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-faq-faq-1' %}">
+              <span>
+               FAQ 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-faq-faq-2' %}">
+              <span>
+               FAQ 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-contact-contact-1-fancy-header' %}">
+              <span>
+               Contact 1
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-contact-contact-2-fancy-header' %}">
+              <span>
+               Contact 2
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-layouts-fixed-fluid' %}">
+              <span>
+               Layouts Fixed fluid
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-layouts-fluid-fixed' %}">
+              <span>
+               Layouts Fluid fixed
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-layouts-fixed-fluid-fixed' %}">
+              <span>
+               Layouts Fixed fluid fixed
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-sign-in' %}">
+              <span>
+               Sign In
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-sign-up' %}">
+              <span>
+               Sign Up
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-404' %}">
+              <span>
+               404
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-500' %}">
+              <span>
+               500
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'aura-titlebars-small-breadcrumb-right' %}">
+            <span>
+             Elements
+            </span>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-titlebars-small-breadcrumb-right' %}">
+              <span>
+               Titlebars - Breadcrumb Right
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-titlebars-small-breadcrumb-top' %}">
+              <span>
+               Titlebars - Breadcrumb Top
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-titlebars-big-breadcrumb-right' %}">
+              <span>
+               Titlebars - Big Breadcrumb Right
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-titlebars-big-breadcrumb-top' %}">
+              <span>
+               Titlebars - Big Breadcrumb Top
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-titlebars-only-breadcrumb' %}">
+              <span>
+               Titlebars - Only Breadcrumb
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-icon-boxes-horizontal' %}">
+              <span>
+               Icon Boxes Horizontal
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-icon-boxes-vertical' %}">
+              <span>
+               Icon Boxes Vertical
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-lists-simple' %}">
+              <span>
+               Lists Simple
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-lists-icons' %}">
+              <span>
+               Lists Icons
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-lists-groups' %}">
+              <span>
+               Lists Groups
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-lists-images' %}">
+              <span>
+               Lists Images
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-socials-small' %}">
+              <span>
+               Socials Complex Small
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-socials' %}">
+              <span>
+               Socials Complex
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-socials-big' %}">
+              <span>
+               Socials Complex Big
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-socials' %}">
+              <span>
+               Socials Simple
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-counters-numbers' %}">
+              <span>
+               Counters Numbers
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-counters-progress-bars' %}">
+              <span>
+               Counters Progress Bars
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-tabs' %}">
+              <span>
+               Tabs
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-tabs-big' %}">
+              <span>
+               Tabs Big
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-tables' %}">
+              <span>
+               Tables
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-accordions' %}">
+              <span>
+               Accordions
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-alert-boxes' %}">
+              <span>
+               Alert Boxes
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-boxes' %}">
+              <span>
+               Boxes
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-buttons' %}">
+              <span>
+               Buttons
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-forms' %}">
+              <span>
+               Forms
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-slider' %}">
+              <span>
+               Slider
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-google-maps-roadmap' %}">
+              <span>
+               Google Maps Roadmap
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-google-maps-grey' %}">
+              <span>
+               Google Maps Grey style
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-google-maps-dark' %}">
+              <span>
+               Google Maps Dark style
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-google-maps-satellite' %}">
+              <span>
+               Google Maps Satellite
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-google-maps-hybrid' %}">
+              <span>
+               Google Maps Hybrid
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-images' %}">
+              <span>
+               Images
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-pricing-tables' %}">
+              <span>
+               Pricing Tables
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-sections' %}">
+              <span>
+               Sections
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-testimonials-simple' %}">
+              <span>
+               Simple
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-testimonials-photo' %}">
+              <span>
+               With Photo
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="{% url 'aura-docs-docs' %}">
+            <span>
+             Docs
+            </span>
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-docs-docs' %}">
+              <span>
+               Docs Map
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-docs-quick-start-guide' %}">
+              <span>
+               Quick Start Guide
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-docs-credits' %}">
+              <span>
+               Credits
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-docs-changelog' %}">
+              <span>
+               Changelog
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-docs-theme-structure' %}">
+              <span>
+               Theme Structure
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-docs-theme-settings' %}">
+              <span>
+               Theme Settings
+              </span>
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- End mobile menu -->
+      </div>
+     </div>
+     <!-- End header row -->
+    </div>
+   </div>
+   <!-- End header -->
+   <div id="page">
+    <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+    <div class="tp-banner-container">
+     <div class="tp-banner pi-revolution-slider">
+      <ul class="">
+       <!-- SLIDE  -->
+       <li data-masterspeed="1000" data-slotamount="1" data-transition="fade">
+        <!-- MAIN IMAGE -->
+        <img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="{% static 'aura/img_external/revolution-slider/back-13.jpg' %}"/>
+        <!-- LAYERS -->
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption sfr fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="1200" data-x="620" data-y="0" style="z-index: 3">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/businessman-2.png' %}"/>
+        </div>
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption sft str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2400" data-x="45" data-y="157" style="z-index: 4; font-size: 34px; color: #21252b; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; line-height: 40px; background: rgba(255, 255, 255, 0.9); padding: 12px 16px; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15);">
+         Soluta Nobis Eligendi
+        </div>
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption sfl str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2600" data-x="45" data-y="236" style="z-index: 5; font-size: 20px; color: #fff; font-weight: 300; line-height: 28px; background: rgba(33, 37, 43, 0.8); padding: 12px 16px; border-radius: 3px;">
+         Nam libero Tempore Cum Soluta Nobis est
+        </div>
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption sfb str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2800" data-x="45" data-y="303" style="z-index: 6;">
+         <a class="btn pi-btn-base pi-btn-big" href="{% url 'aura-about-about-1' %}">
+          <i class="icon-users pi-icon-left">
+          </i>
+          About us
+         </a>
+        </div>
+       </li>
+       <!-- SLIDE  -->
+       <li data-masterspeed="1000" data-slotamount="1" data-transition="fade">
+        <!-- MAIN IMAGE -->
+        <img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="{% static 'aura/img_external/revolution-slider/back-9.jpg' %}"/>
+        <!-- LAYERS -->
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption sfb fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="1500" data-x="595" data-y="300" style="z-index: 3">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/stone-1.png' %}"/>
+        </div>
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption fade fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="400" data-start="2200" data-x="856" data-y="308" style="z-index: 4">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/shadow-1.png' %}"/>
+        </div>
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption sft fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="800" data-start="2500" data-x="690" data-y="70" style="z-index: 5">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/men-flag.png' %}"/>
+        </div>
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption sft str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2400" data-x="45" data-y="157" style="z-index: 6; font-size: 34px; color: #21252b; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; line-height: 40px; background: rgba(255, 255, 255, 0.9); padding: 12px 16px; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15);">
+         Modi Tempora Incidunt
+        </div>
+        <!-- LAYER NR. 5 -->
+        <div class="tp-caption sfl str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2600" data-x="45" data-y="236" style="z-index: 7; font-size: 20px; color: #fff; font-weight: 300; line-height: 28px; background: rgba(33, 37, 43, 0.8); padding: 12px 16px; border-radius: 3px;">
+         Dolore Magnam Aliquam Quaerat Voluptatem
+        </div>
+        <!-- LAYER NR. 6 -->
+        <div class="tp-caption sfb str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2800" data-x="45" data-y="303" style="z-index: 8;">
+         <a class="btn pi-btn-base pi-btn-big" href="{% url 'aura-services-services-1' %}">
+          <i class="icon-cog pi-icon-left">
+          </i>
+          Our services
+         </a>
+        </div>
+       </li>
+       <!-- SLIDE  -->
+       <li data-masterspeed="1000" data-slotamount="1" data-transition="fade">
+        <!-- MAIN IMAGE -->
+        <img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="{% static 'aura/img_external/revolution-slider/back-12.jpg' %}"/>
+        <!-- LAYERS -->
+        <!-- LAYER NR. 1 -->
+        <div class="tp-caption sft fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="1200" data-x="577" data-y="73" style="z-index: 3">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/labirint-1.png' %}"/>
+        </div>
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption sfb fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="1600" data-x="577" data-y="238" style="z-index: 4">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/labirint-2.png' %}"/>
+        </div>
+        <!-- LAYER NR. 3 -->
+        <div class="tp-caption lfl fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="2000" data-x="565" data-y="203" style="z-index: 5">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/arrow-1.png' %}"/>
+        </div>
+        <!-- LAYER NR. 4 -->
+        <div class="tp-caption sfr fadeout" data-captionhidden="on" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn" data-endspeed="300" data-speed="1100" data-start="2000" data-x="995" data-y="200" style="z-index: 6">
+         <img alt="" src="{% static 'aura/img_external/revolution-slider/businessman-1.png' %}"/>
+        </div>
+        <!-- LAYER NR. 5 -->
+        <div class="tp-caption sft str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2400" data-x="45" data-y="157" style="z-index: 7; font-size: 34px; color: #21252b; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; line-height: 40px; background: rgba(255, 255, 255, 0.9); padding: 12px 16px; border-radius: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15);">
+         Voluptas Assumenda Est
+        </div>
+        <!-- LAYER NR. 6 -->
+        <div class="tp-caption sfl str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2600" data-x="45" data-y="236" style="z-index: 8; font-size: 20px; color: #fff; font-weight: 300; line-height: 28px; background: rgba(33, 37, 43, 0.8); padding: 12px 16px; border-radius: 3px;">
+         Quod Maxime Placeat Facere Possimus
+        </div>
+        <!-- LAYER NR. 7 -->
+        <div class="tp-caption sfb str" data-easing="Back.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="500" data-start="2800" data-x="45" data-y="303" style="z-index: 9;">
+         <a class="btn pi-btn-base pi-btn-big" href="{% url 'aura-contact-contact-1-fancy-header' %}">
+          <i class="icon-mail pi-icon-left">
+          </i>
+          Get in touch
+         </a>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <span class="revolution-slider">
+    </span>
+    <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+    <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+    <div class="pi-section-w pi-shadow-inside pi-section-dark">
+     <div class="pi-texture" style="background: url(img/hexagon.png) repeat;">
+     </div>
+     <div class="pi-section pi-padding-top-50 pi-padding-bottom-30">
+      <!-- Row -->
+      <div class="pi-row">
+       <!-- Col 9 -->
+       <div class="pi-col-sm-9 pi-center-text-xs">
+        <h3 class="pi-weight-300">
+         Want to say Hey or find out more?
+        </h3>
+        <p class="lead-16">
+         Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+        </p>
+       </div>
+       <!-- End col 9 -->
+       <div class="pi-clearfix pi-visible-xs">
+       </div>
+       <!-- Col 3 -->
+       <div class="pi-col-sm-3 pi-text-right pi-center-text-xs">
+        <p class="pi-margin-top-5">
+         <a class="btn pi-btn-base pi-btn-big" href="#">
+          Get a Free Quote
+         </a>
+        </p>
+       </div>
+       <!-- End col 3 -->
+      </div>
+      <!-- End row -->
+     </div>
+    </div>
+    <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+    <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+    <div class="pi-section-w pi-section-white piTabs">
+     <div class="pi-section">
+      <!-- Row -->
+      <div class="pi-row pi-padding-bottom-30">
+       <!-- Col 3 -->
+       <div class="pi-col-md-3 pi-col-sm-4 pi-col-xs-6 pi-padding-bottom-20">
+        <!-- Box -->
+        <div class="pi-shadow-effect7">
+         <div class="pi-box pi-box-slave pi-border pi-round pi-icon-box-hover">
+          <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-big pi-icon-box-hover pi-text-center">
+           <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base">
+            <i class="icon-lamp">
+            </i>
+           </div>
+           <h4>
+            Strategy
+           </h4>
+           <p class="pi-margin-bottom-10">
+            Nemo enim ipsam voluptatem quia voluptas
+           </p>
+           <p>
+            <a href="#">
+             Learn more
+             <i class="icon-right-open-mini">
+             </i>
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- End box -->
+       </div>
+       <!-- End col 3 -->
+       <!-- Col 3 -->
+       <div class="pi-col-md-3 pi-col-sm-4 pi-col-xs-6 pi-padding-bottom-20">
+        <!-- Box -->
+        <div class="pi-shadow-effect7">
+         <div class="pi-box pi-box-slave pi-border pi-round pi-icon-box-hover">
+          <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-big pi-icon-box-hover pi-text-center">
+           <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base">
+            <i class="icon-mobile">
+            </i>
+           </div>
+           <h4>
+            Mobile Apps
+           </h4>
+           <p class="pi-margin-bottom-10">
+            Nemo enim ipsam voluptatem quia voluptas
+           </p>
+           <p>
+            <a href="#">
+             Learn more
+             <i class="icon-right-open-mini">
+             </i>
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- End box -->
+       </div>
+       <!-- End col 3 -->
+       <!-- Col 3 -->
+       <div class="pi-col-md-3 pi-col-sm-4 pi-col-xs-6 pi-padding-bottom-20">
+        <!-- Box -->
+        <div class="pi-shadow-effect7">
+         <div class="pi-box pi-box-slave pi-border pi-round pi-icon-box-hover">
+          <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-big pi-icon-box-hover pi-text-center">
+           <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base">
+            <i class="icon-rocket">
+            </i>
+           </div>
+           <h4>
+            Branding
+           </h4>
+           <p class="pi-margin-bottom-10">
+            Nemo enim ipsam voluptatem quia voluptas
+           </p>
+           <p>
+            <a href="#">
+             Learn more
+             <i class="icon-right-open-mini">
+             </i>
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- End box -->
+       </div>
+       <!-- End col 3 -->
+       <!-- Col 3 -->
+       <div class="pi-col-md-3 pi-col-sm-12 pi-col-xs-6 pi-padding-bottom-20">
+        <!-- Box -->
+        <div class="pi-shadow-effect7">
+         <div class="pi-box pi-box-slave pi-border pi-round pi-icon-box-hover">
+          <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-big pi-icon-box-hover pi-text-center">
+           <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base">
+            <i class="icon-cog">
+            </i>
+           </div>
+           <h4>
+            Development
+           </h4>
+           <p class="pi-margin-bottom-10">
+            Nemo enim ipsam voluptatem quia voluptas
+           </p>
+           <p>
+            <a href="#">
+             Learn more
+             <i class="icon-right-open-mini">
+             </i>
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- End box -->
+       </div>
+       <!-- End col 3 -->
+      </div>
+      <!-- End row -->
+      <h2 class="h4 pi-weight-700 pi-uppercase pi-letter-spacing pi-has-bg pi-margin-bottom-30">
+       Recent projects
+      </h2>
+      <!-- Portfolio gallery -->
+      <div class="pi-row pi-liquid-col-xs-2 pi-liquid-col-sm-4 pi-gallery pi-column-fix pi-padding-bottom-20">
+       <!-- Portfolio item -->
+       <div class="pi-gallery-item pi-padding-bottom-30">
+        <div class="pi-img-w pi-img-round-corners pi-img-shadow">
+         <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/sensuality-at-the-sea.jpg' %}">
+          <img alt="" src="{% static 'aura/img_external/gallery/sensuality-at-the-sea.jpg' %}"/>
+          <div class="pi-img-overlay pi-no-padding pi-img-overlay-darker">
+           <div class="pi-caption-centered">
+            <div>
+             <span class="pi-caption-icon pi-caption-scale icon-search">
+             </span>
+            </div>
+           </div>
+          </div>
+         </a>
+        </div>
+        <h6 class="pi-margin-bottom-5">
+         <a class="pi-link-dark" href="#">
+          Sensuality at the sea
+         </a>
+        </h6>
+        <ul class="pi-meta">
+         <li>
+          <i class="icon-tag">
+          </i>
+          <a href="#">
+           Beautiful
+          </a>
+          ,
+          <a href="#">
+           Morning
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- End portfolio item -->
+       <!-- Portfolio item -->
+       <div class="pi-gallery-item pi-padding-bottom-30">
+        <div class="pi-img-w pi-img-round-corners pi-img-shadow">
+         <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/selecting-pencil.jpg' %}">
+          <img alt="" src="{% static 'aura/img_external/gallery/selecting-pencil.jpg' %}"/>
+          <div class="pi-img-overlay pi-no-padding pi-img-overlay-darker">
+           <div class="pi-caption-centered">
+            <div>
+             <span class="pi-caption-icon pi-caption-scale icon-plus">
+             </span>
+            </div>
+           </div>
+          </div>
+         </a>
+        </div>
+        <h6 class="pi-margin-bottom-5">
+         <a class="pi-link-dark" href="#">
+          Selecting pencil
+         </a>
+        </h6>
+        <ul class="pi-meta">
+         <li>
+          <i class="icon-tag">
+          </i>
+          <a href="#">
+           Lifestyle
+          </a>
+          ,
+          <a href="#">
+           Creation
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- End portfolio item -->
+       <!-- Portfolio item -->
+       <div class="pi-gallery-item pi-padding-bottom-30">
+        <div class="pi-img-w pi-img-round-corners pi-img-shadow">
+         <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/mobile-business.jpg' %}">
+          <img alt="" src="{% static 'aura/img_external/gallery/mobile-business.jpg' %}"/>
+          <div class="pi-img-overlay pi-no-padding pi-img-overlay-darker">
+           <div class="pi-caption-centered">
+            <div>
+             <span class="pi-caption-icon pi-caption-scale icon-search">
+             </span>
+            </div>
+           </div>
+          </div>
+         </a>
+        </div>
+        <h6 class="pi-margin-bottom-5">
+         <a class="pi-link-dark" href="#">
+          Mobile business
+         </a>
+        </h6>
+        <ul class="pi-meta">
+         <li>
+          <i class="icon-tag">
+          </i>
+          <a href="#">
+           Technology
+          </a>
+          ,
+          <a href="#">
+           Business
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- End portfolio item -->
+       <!-- Portfolio item -->
+       <div class="pi-gallery-item pi-padding-bottom-30">
+        <div class="pi-img-w pi-img-round-corners pi-img-shadow">
+         <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/woman-at-the-wall.jpg' %}">
+          <img alt="" src="{% static 'aura/img_external/gallery/woman-at-the-wall.jpg' %}"/>
+          <div class="pi-img-overlay pi-no-padding pi-img-overlay-darker">
+           <div class="pi-caption-centered">
+            <div>
+             <span class="pi-caption-icon pi-caption-scale icon-plus">
+             </span>
+            </div>
+           </div>
+          </div>
+         </a>
+        </div>
+        <h6 class="pi-margin-bottom-5">
+         <a class="pi-link-dark" href="#">
+          Woman at the wall
+         </a>
+        </h6>
+        <ul class="pi-meta">
+         <li>
+          <i class="icon-tag">
+          </i>
+          <a href="#">
+           Beautiful
+          </a>
+          ,
+          <a href="#">
+           Travel
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- End portfolio item -->
+      </div>
+      <!-- End portfolio gallery -->
+      <!-- Row -->
+      <div class="pi-row pi-padding-bottom-20">
+       <!-- Col 6 -->
+       <div class="pi-col-sm-6 pi-padding-bottom-30">
+        <h2 class="h4 pi-weight-700 pi-uppercase pi-letter-spacing pi-has-bg pi-margin-bottom-30">
+         Why Choose Us
+        </h2>
+        <!-- Tabs -->
+        <ul class="pi-tabs-navigation pi-tabs-navigation-justified pi-tabs-navigation-transparent pi-responsive-sm" id="myTabs1">
+         <li class="pi-active">
+          <a href="#history">
+           <i class="icon-book-open">
+           </i>
+           History
+          </a>
+         </li>
+         <li>
+          <a href="#vision">
+           <i class="icon-eye">
+           </i>
+           Vision
+          </a>
+         </li>
+         <li>
+          <a href="#phylosophy">
+           <i class="icon-flash">
+           </i>
+           Phylosophy
+          </a>
+         </li>
+        </ul>
+        <!-- End tabs -->
+        <!-- Tabs content -->
+        <div class="pi-tabs-content pi-tabs-content-transparent">
+         <!-- Tab content item -->
+         <div class="pi-tab-pane pi-active" id="history">
+          <div class="pi-img-w pi-img-round-corners pi-shadow-effect4 pi-margin-top-5 pi-img-left" style="width: 120px;">
+           <img alt="" src="{% static 'aura/img_external/gallery/img-23-sq.jpg' %}"/>
+          </div>
+          <p>
+           Surpis venenatis at laoreet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut spernatur aut odit aut fugit ipsum quia dolor sit amet, consectetur, adipisci velit labore actetuer ac etiam amet bibendum lorem ipsum dolor amet cras posuere pede placerat, velit neque felisios magnam aliquam quaerat voluptatem ipsum quia dolor sit amet, consectetur, adipisci velit labore venenatis at laoreet consectetur.
+          </p>
+         </div>
+         <!-- End tab content item -->
+         <!-- Tab content item -->
+         <div class="pi-tab-pane" id="vision">
+          <p>
+           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+          </p>
+          <ul class="pi-bullets-circle pi-bullets-base pi-bullets">
+           <li>
+            <span class="pi-bullet-icon">
+             <i class="icon-check">
+             </i>
+            </span>
+            <strong>
+             Dolores eos qui ratione voluptatem sequi nesciunt
+            </strong>
+           </li>
+           <li>
+            <span class="pi-bullet-icon">
+             <i class="icon-check">
+             </i>
+            </span>
+            <strong>
+             Laboriosam, nisi ut aliquid ex ea commodi consequatur
+            </strong>
+           </li>
+           <li>
+            <span class="pi-bullet-icon">
+             <i class="icon-check">
+             </i>
+            </span>
+            <strong>
+             Vel illum qui dolorem eum fugiat quo voluptas nulla
+            </strong>
+           </li>
+           <li>
+            <span class="pi-bullet-icon">
+             <i class="icon-check">
+             </i>
+            </span>
+            <strong>
+             Consequuntur magni dolores eos qui ratione voluptatem
+            </strong>
+           </li>
+          </ul>
+         </div>
+         <!-- End tab content item -->
+         <!-- Tab content item -->
+         <div class="pi-tab-pane" id="phylosophy">
+          <p>
+           <span class="pi-dropcap">
+            T
+           </span>
+           empora incidunt ut labore et dolore magnam curpis venenatis at laoreet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut spernatur aut odit aut fugit ipsum quia dolor sit amet, consectetur, adipisci velit labore actetuer ac etiam amet bibendum lorem ipsum dolor amet cras posuere pede placerat, velit neque felisios magnam aliquam quaerat voluptatem.
+          </p>
+          <p>
+           <a class="btn pi-btn-base" href="#">
+            Read more
+           </a>
+          </p>
+         </div>
+         <!-- End tab content item -->
+        </div>
+        <!-- End tabs content -->
+       </div>
+       <!-- End col 6 -->
+       <!-- Col 6 -->
+       <div class="pi-col-sm-6 pi-padding-bottom-30">
+        <h2 class="h4 pi-weight-700 pi-uppercase pi-letter-spacing pi-has-bg pi-margin-bottom-30">
+         We Are Good At
+        </h2>
+        <!-- Progress bar -->
+        <div class="pi-counter pi-counter-round pi-counter-line" data-count-from="0" data-count-to="85" data-counter-type="line" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+         <p class="pi-counter-label">
+          System design 85%
+         </p>
+         <div class="pi-counter-count">
+          <div class="pi-counter-progress pi-bar-one">
+          </div>
+         </div>
+        </div>
+        <!-- End progress bar -->
+        <!-- Progress bar -->
+        <div class="pi-counter pi-counter-round pi-counter-line" data-count-from="0" data-count-to="95" data-counter-type="line" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+         <p class="pi-counter-label">
+          Data analysis 95%
+         </p>
+         <div class="pi-counter-count">
+          <div class="pi-counter-progress pi-bar-two">
+          </div>
+         </div>
+        </div>
+        <!-- End progress bar -->
+        <!-- Progress bar -->
+        <div class="pi-counter pi-counter-round pi-counter-line pi-slave" data-count-from="0" data-count-to="98" data-counter-type="line" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+         <p class="pi-counter-label">
+          Link-level analysis 98%
+         </p>
+         <div class="pi-counter-count">
+          <div class="pi-counter-progress pi-bar-three">
+          </div>
+         </div>
+        </div>
+        <!-- End progress bar -->
+        <!-- Progress bar -->
+        <div class="pi-counter pi-counter-round pi-counter-line pi-slave" data-count-from="0" data-count-to="85" data-counter-type="line" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+         <p class="pi-counter-label">
+          Coverage modelling 85%
+         </p>
+         <div class="pi-counter-count">
+          <div class="pi-counter-progress pi-bar-four">
+          </div>
+         </div>
+        </div>
+        <!-- End progress bar -->
+        <!-- Progress bar -->
+        <div class="pi-counter pi-counter-round pi-counter-line pi-slave-2" data-count-from="0" data-count-to="75" data-counter-type="line" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+         <p class="pi-counter-label">
+          System modelling 75%
+         </p>
+         <div class="pi-counter-count">
+          <div class="pi-counter-progress pi-bar-five">
+          </div>
+         </div>
+        </div>
+        <!-- End progress bar -->
+       </div>
+       <!-- End col 6 -->
+      </div>
+      <!-- End row -->
+      <h2 class="h4 pi-weight-700 pi-uppercase pi-letter-spacing pi-has-bg pi-margin-bottom-30">
+       Happy Clients
+      </h2>
+      <!-- Logos gallery -->
+      <div class="pi-row pi-liquid-col-sm-6 pi-liquid-col-xs-3 pi-gallery pi-gallery-small-margins pi-column-fix">
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/diesel-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/google-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/sony-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/virgin-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/instagram-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+       <!-- Logo -->
+       <div class="pi-gallery-item">
+        <div class="pi-img-w">
+         <span class="pi-img-opacity-30">
+          <img alt="" src="{% static 'aura/img_external/clients/yelp-2.png' %}"/>
+         </span>
+        </div>
+       </div>
+       <!-- End logo -->
+      </div>
+      <!-- End logos gallery -->
+     </div>
+    </div>
+    <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+    <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+    <div class="pi-section-w pi-shadow-inside-top pi-section-grey pi-slider-enabled">
+     <div class="pi-texture" style="background: url(img/hexagon.png) repeat;">
+     </div>
+     <div class="pi-section">
+      <!-- Slider -->
+      <div class="pi-slider-wrapper pi-slider-arrows-inside pi-slider-show-arrow-hover pi-text-center">
+       <div class="pi-slider pi-slider-animate-opacity">
+        <!-- Row -->
+        <div class="pi-row">
+         <!-- Col 8 -->
+         <div class="pi-col-sm-8 pi-col-sm-offset-2">
+          <!-- Slide -->
+          <div class="pi-slide">
+           <p class="lead-30 pi-margin-bottom-20 pi-text-dark">
+            "Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi."
+           </p>
+           <p class="pi-text-base">
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+           </p>
+           <p class="lead-14 pi-weight-700 pi-text-dark pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+            Mattias Nuffer
+           </p>
+           <p class="pi-italic">
+            Executive Director
+            <a href="#">
+             Company Inc.
+            </a>
+           </p>
+          </div>
+          <!-- End slide -->
+          <!-- Slide -->
+          <div class="pi-slide">
+           <p class="lead-30 pi-margin-bottom-20 pi-text-dark">
+            "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi at vero eos et accusamus et iusto odio dignis."
+           </p>
+           <p class="pi-text-base">
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+           </p>
+           <p class="lead-14 pi-weight-700 pi-text-dark pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+            Jim Terrell
+           </p>
+           <p class="pi-italic">
+            Project Director
+            <a href="#">
+             Company Inc.
+            </a>
+           </p>
+          </div>
+          <!-- End slide -->
+          <!-- Slide -->
+          <div class="pi-slide">
+           <p class="lead-30 pi-margin-bottom-20 pi-text-dark">
+            "Corrupti quos dolores et quas molestias excepturi praesentium voluptatum deleniti atque at vero eos et accusamus ducimus."
+           </p>
+           <p class="pi-text-base">
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+            <i class="icon-star">
+            </i>
+           </p>
+           <p class="lead-14 pi-weight-700 pi-text-dark pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+            Kindra Hall
+           </p>
+           <p class="pi-italic">
+            Associate Director
+            <a href="#">
+             Company Inc.
+            </a>
+           </p>
+          </div>
+          <!-- End slide -->
+         </div>
+         <!-- End col 8 -->
+        </div>
+        <!-- End row -->
+       </div>
+      </div>
+      <!-- End slider -->
+     </div>
+    </div>
+    <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   </div>
+   <!-- Footer -->
+   <!-- Widget area -->
+   <div class="pi-section-w pi-border-bottom pi-border-top-light pi-section-dark">
+    <div class="pi-section pi-padding-bottom-10">
+     <!-- Row -->
+     <div class="pi-row">
+      <!-- Col 4 -->
+      <div class="pi-col-md-4 pi-padding-bottom-30">
+       <h6 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing">
+        <a class="pi-link-no-style" href="#">
+         Latest Tweet
+        </a>
+       </h6>
+       <!-- Twitter -->
+       <div class="pi-footer-tweets">
+        <ul class="pi-bullets-circle pi-bullets-base pi-bullets pi-list-big-margins">
+         <li>
+          <span class="pi-bullet-icon">
+           <i class="icon-twitter">
+           </i>
+          </span>
+          <a href="http://twitter.com/PIthemess" target="_blank" title="PIthemess on Twitter">
+           @PIthemess
+          </a>
+          Meet Aura 1.6 version. A lot of new things are coming soon.
+          <br/>
+          <span class="pi-smaller-text pi-italic pi-text-opacity-50">
+           Jun. 29, 2014
+          </span>
+         </li>
+         <li>
+          <span class="pi-bullet-icon">
+           <i class="icon-twitter">
+           </i>
+          </span>
+          <a href="http://twitter.com/PIthemess" target="_blank" title="PIthemess on Twitter">
+           @PIthemess
+          </a>
+          Hey, this is PI Themes twitter account!
+          <br/>
+          <span class="pi-smaller-text pi-italic pi-text-opacity-50">
+           Jun. 29, 2014
+          </span>
+         </li>
+        </ul>
+       </div>
+       <!-- End twitter -->
+      </div>
+      <!-- End col 4 -->
+      <div class="pi-clearfix pi-hidden-lg-only pi-hidden-md-only">
+      </div>
+      <!-- Col 4 -->
+      <div class="pi-col-md-4 pi-col-sm-6 pi-padding-bottom-30" style="background-image: url('img/map-base.png'); background-position: 50% 55px; background-repeat: no-repeat;">
+       <h6 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing">
+        Contact Us
+       </h6>
+       <!-- Contact info -->
+       <ul class="pi-list-with-icons pi-list-big-margins">
+        <li>
+         <span class="pi-bullet-icon">
+          <i class="icon-location">
+          </i>
+         </span>
+         <strong>
+          Address:
+         </strong>
+         557 Cyan Avenue, Suite 65,
+         <br/>
+         New York, CA 9008
+        </li>
+        <li>
+         <span class="pi-bullet-icon">
+          <i class="icon-phone">
+          </i>
+         </span>
+         <strong>
+          Phone:
+         </strong>
+         (123) 456-7890
+        </li>
+        <li>
+         <span class="pi-bullet-icon">
+          <i class="icon-mail">
+          </i>
+         </span>
+         <strong>
+          Email:
+         </strong>
+         <a href="mailto:hello@pitheme.com">
+          hello@pitheme.com
+         </a>
+        </li>
+        <li>
+         <span class="pi-bullet-icon">
+          <i class="icon-clock">
+          </i>
+         </span>
+         Monday - Friday:
+         <strong>
+          9:00 am - 10:00 pm
+         </strong>
+         <br/>
+         Saturday - Sunday:
+         <strong>
+          Closed
+         </strong>
+        </li>
+       </ul>
+       <!-- End contact info -->
+      </div>
+      <!-- End col 4 -->
+      <!-- Col 4 -->
+      <div class="pi-col-md-4 pi-col-sm-6 pi-padding-bottom-30">
+       <h6 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing">
+        Say Hey
+       </h6>
+       <!-- Contact form -->
+       <form action="handlers/formContact.php" class="pi-contact-form" role="form">
+        <div class="pi-error-container">
+        </div>
+        <div class="pi-row pi-grid-small-margins">
+         <div class="pi-col-2xs-6">
+          <div class="form-group">
+           <div class="pi-input-with-icon">
+            <div class="pi-input-icon">
+             <i class="icon-user">
+             </i>
+            </div>
+            <input class="form-control form-control-name" id="exampleInputName" placeholder="Name"/>
+           </div>
+          </div>
+         </div>
+         <div class="pi-col-2xs-6">
+          <div class="form-group">
+           <div class="pi-input-with-icon">
+            <div class="pi-input-icon">
+             <i class="icon-mail">
+             </i>
+            </div>
+            <input class="form-control form-control-email" id="exampleInputEmail" placeholder="Email" type="email"/>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="form-group">
+         <div class="pi-input-with-icon">
+          <div class="pi-input-icon">
+           <i class="icon-pencil">
+           </i>
+          </div>
+          <textarea class="form-control form-control-comments" id="exampleInputMessage" placeholder="Message" rows="3">
+          </textarea>
+         </div>
+        </div>
+        <p>
+         <button class="btn pi-btn-base pi-btn-no-border" type="submit">
+          Send
+         </button>
+        </p>
+       </form>
+       <!-- End contact form -->
+      </div>
+      <!-- End col 4 -->
+     </div>
+     <!-- End row -->
+    </div>
+   </div>
+   <!-- End widget area -->
+   <!-- Copyright area -->
+   <div class="pi-section-w pi-section-dark pi-border-top-light pi-border-bottom-strong-base">
+    <div class="pi-section pi-row-lg pi-center-text-2xs pi-clearfix">
+     <!-- Social icons -->
+     <div class="pi-row-block pi-pull-right pi-hidden-2xs">
+      <ul class="pi-social-icons-simple pi-small clearFix">
+       <li>
+        <a class="pi-social-icon-facebook" href="#">
+         <i class="icon-facebook">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a class="pi-social-icon-twitter" href="#">
+         <i class="icon-twitter">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a class="pi-social-icon-dribbble" href="#">
+         <i class="icon-dribbble">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a class="pi-social-icon-tumblr" href="#">
+         <i class="icon-tumblr">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a class="pi-social-icon-vimeo" href="#">
+         <i class="icon-vimeo">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a class="pi-social-icon-rss" href="#">
+         <i class="icon-rss">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- End social icons -->
+     <!-- Footer logo -->
+     <div class="pi-row-block pi-row-block-logo pi-row-block-bordered">
+      <a href="#">
+       <img alt="" src="{% static 'aura/img/logo-opacity-dark.png' %}"/>
+      </a>
+     </div>
+     <!-- End footer logo -->
+     <!-- Text -->
+     <span class="pi-row-block pi-row-block-txt pi-hidden-xs">
+      © 2014. «
+      <a href="#">
+       Aura HTML Theme
+      </a>
+      ».
+			All right reserved.
+     </span>
+     <!-- End text -->
+    </div>
+   </div>
+   <!-- End copyright area -->
+   <!-- End footer -->
+  </div>
+  <div class="pi-scroll-top-arrow" data-scroll-to="0">
+  </div>
+  <script src="{% static 'aura/3dParty/jquery-1.11.0.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/bootstrap/js/bootstrap.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/gauge.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/inview.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.touchSwipe.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/rs-plugin/js/jquery.themepunch.tools.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/rs-plugin/js/jquery.themepunch.revolution.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/requestAnimationFramePolyfill.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.placeholder.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.scrollTo.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/colorbox/jquery.colorbox-min.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.revolutionSlider.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.global.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.tab.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.tab.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.easing.1.3.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.counter.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.counter.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.tooltip.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.tooltip.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.slider.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.slider.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.parallax.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.parallax.js' %}">
+  </script>
+ </body>
+</html>

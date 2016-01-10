@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <title>
+   CenterStack
+  </title>
+  <link href="{% static 'aura/favicon.ico' %}" rel="shortcut icon"/>
+  <link href="{% static 'aura/3dParty/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/global.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/3dParty/colorbox/colorbox.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/google-maps.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/typo.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/slider.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/tooltips.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/counters.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/portfolio.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/social.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'aura/css/page-nav.css' %}" rel="stylesheet" type="text/css"/>
+  <!--Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"/>
+  <!--Fonts with Icons-->
+  <link href="{% static 'aura/3dParty/fontello/css/fontello.css' %}" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="pi-all">
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-parallax pi-section-high piSectionHigh" id="anchor-home" style="background-image: url(img_external/gallery/laptop-table.jpg);">
+    <div class="pi-texture" style="background: rgba(24, 28, 32, 0.7);">
+    </div>
+    <div class="pi-section pi-text-center">
+     <h2 class="h1 pi-text-shadow pi-weight-700 pi-uppercase" style="font-size: 60px;">
+      We Are
+      <span class="pi-text-base">
+       Pi
+      </span>
+      Themes
+     </h2>
+     <p class="lead-20 pi-weight-300 pi-margin-bottom-30">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+      <br/>
+      aut odit aut fugit, sed quia consequuntur
+     </p>
+     <p>
+      <a class="btn pi-btn-contur-3 pi-btn-big" href="http://themeforest.net/item/aura-responsive-multipurpose-template/7786132">
+       Get in Touch
+      </a>
+      <span class="pi-clearfix pi-visible-sm">
+      </span>
+      <span class="pi-or">
+       or
+      </span>
+      <span class="pi-clearfix pi-visible-sm">
+      </span>
+      <a class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big" href="http://themeforest.net/item/aura-responsive-multipurpose-template/7786132">
+       Buy Aura for $17
+      </a>
+     </p>
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- Header -->
+   <div class="pi-header piScrollTo piFixedHeader">
+    <div class="pi-header-sticky">
+     <!-- Header row -->
+     <div class="pi-section-w pi-section-white pi-shadow-bottom pi-row-reducible">
+      <div class="pi-section pi-row-lg">
+       <!-- Logo -->
+       <div class="pi-row-block pi-row-block-logo">
+        <a href="{% url 'aura-index' %}">
+         <img alt="" src="{% static 'aura/img/logo-base.png' %}"/>
+        </a>
+       </div>
+       <!-- End logo -->
+       <!-- Text -->
+       <div class="pi-row-block pi-row-block-txt pi-hidden-2xs">
+        HTML5 template
+       </div>
+       <!-- End text -->
+       <!-- Menu -->
+       <div class="pi-row-block pi-pull-right" id="pi-header-menu">
+        <ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm nav navbar-nav">
+         <li class="pi-has-dropdown">
+          <a data-scroll-to="#anchor-home" href="#anchor-home">
+           <span>
+            Home
+           </span>
+          </a>
+          <ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+           <li>
+            <a href="{% url 'aura-home-onepage-1' %}">
+             One page 1
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-onepage-2' %}">
+             One page 2
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-onepage-3' %}">
+             One page 3
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-index' %}">
+             Home 1
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-2' %}">
+             Home 2
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-3' %}">
+             Home 3
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-4' %}">
+             Home 4
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-5' %}">
+             Home 5
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-6' %}">
+             Home 6
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-7' %}">
+             Home 7
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-8' %}">
+             Home 8
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-9' %}">
+             Home 9
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-10' %}">
+             Home 10
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-11' %}">
+             Home 11
+            </a>
+           </li>
+           <li>
+            <a href="{% url 'aura-home-home-12' %}">
+             Home 12
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-about" data-scroll-to-offset="-100" href="#anchor-about">
+           <span>
+            About
+           </span>
+          </a>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-services" data-scroll-to-offset="-70" href="#anchor-services">
+           <span>
+            Services
+           </span>
+          </a>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-team" data-scroll-to-offset="-70" href="#anchor-team">
+           <span>
+            Team
+           </span>
+          </a>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-testimonials" data-scroll-to-offset="-70" href="#anchor-testimonials">
+           <span>
+            Testimonials
+           </span>
+          </a>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-work" data-scroll-to-offset="-70" href="#anchor-work">
+           <span>
+            Work
+           </span>
+          </a>
+         </li>
+         <li>
+          <a data-scroll-to="#anchor-contact" data-scroll-to-offset="-70" href="#anchor-contact">
+           <span>
+            Contact
+           </span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- End menu -->
+       <!-- Mobile menu button -->
+       <div class="pi-row-block pi-pull-right pi-hidden-lg-only pi-hidden-md-only">
+        <button class="btn pi-btn pi-mobile-menu-toggler" data-target="#pi-main-mobile-menu">
+         <i class="icon-menu pi-text-center">
+         </i>
+        </button>
+       </div>
+       <!-- End mobile menu button -->
+       <!-- Mobile menu -->
+       <div class="pi-section-menu-mobile-w pi-section-dark" id="pi-main-mobile-menu">
+        <div class="pi-section-menu-mobile">
+         <!-- Search form -->
+         <form class="form-inline pi-search-form-wide" role="form">
+          <div class="pi-input-with-icon">
+           <div class="pi-input-icon">
+            <i class="icon-search-2">
+            </i>
+           </div>
+           <input class="form-control pi-input-wide" placeholder="Search.." type="text"/>
+          </div>
+         </form>
+         <!-- End search form -->
+         <ul class="pi-menu-mobile pi-items-have-borders pi-menu-mobile-dark" data-onepage-menu="yes">
+          <li class="active">
+           <a href="#home">
+            Home
+           </a>
+           <ul>
+            <li>
+             <a href="{% url 'aura-home-onepage-1' %}">
+              One page 1
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-onepage-2' %}">
+              One page 2
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-1' %}">
+              Home 1
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-2' %}">
+              Home 2
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-3' %}">
+              Home 3
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-4' %}">
+              Home 4
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-5' %}">
+              Home 5
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-6' %}">
+              Home 6
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-7' %}">
+              Home 7
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-8' %}">
+              Home 8
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-9' %}">
+              Home 9
+             </a>
+            </li>
+            <li>
+             <a href="{% url 'aura-home-home-10' %}">
+              Home 10
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-about" data-scroll-to-offset="-100" href="#anchor-about">
+            About
+           </a>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-services" data-scroll-to-offset="-70" href="#anchor-services">
+            Services
+           </a>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-team" data-scroll-to-offset="-70" href="#anchor-team">
+            Team
+           </a>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-testimonials" data-scroll-to-offset="-70" href="#anchor-testimonials">
+            Testimonials
+           </a>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-work" data-scroll-to-offset="-70" href="#anchor-work">
+            Work
+           </a>
+          </li>
+          <li>
+           <a data-scroll-to="#anchor-contact" data-scroll-to-offset="-70" href="#anchor-contact">
+            Contact
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- End mobile menu -->
+      </div>
+     </div>
+     <!-- End header row -->
+    </div>
+   </div>
+   <!-- End header -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white" id="anchor-about">
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-30">
+     <div class="pi-text-center pi-padding-bottom-40">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base pi-margin-bottom-15">
+       About
+      </h6>
+      <h2 class="h1 pi-weight-700 pi-uppercase pi-has-border pi-has-tall-border pi-has-short-border">
+       Who We Are
+      </h2>
+     </div>
+     <div class="pi-row">
+      <div class="pi-col-sm-6 pi-padding-bottom-50">
+       <!-- Slider -->
+       <div class="pi-slider-wrapper pi-slider-arrows-inside pi-slider-show-arrow-hover">
+        <div class="pi-slider pi-slider-animate-opacity">
+         <!-- Slide -->
+         <div class="pi-slide">
+          <div class="pi-img-w pi-img-round-corners pi-img-shadow pi-img-with-overlay">
+           <a href="#">
+            <img alt="" src="{% static 'aura/img_external/gallery/office-building.jpg' %}"/>
+           </a>
+          </div>
+         </div>
+         <!-- End slide -->
+         <!-- Slide -->
+         <div class="pi-slide">
+          <div class="pi-img-w pi-img-round-corners pi-img-shadow pi-img-with-overlay">
+           <a href="#">
+            <img alt="" src="{% static 'aura/img_external/gallery/team-photo.jpg' %}"/>
+           </a>
+          </div>
+         </div>
+         <!-- End slide -->
+        </div>
+       </div>
+       <!-- End slider -->
+      </div>
+      <div class="pi-col-sm-6 pi-padding-bottom-50">
+       <p class="lead-26 pi-weight-300 pi-text-base pi-margin-top-minus-10">
+        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.
+       </p>
+       <p class="pi-margin-bottom-30">
+        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+					eligendi optio cumque nihil impedit quo facilis est et expedita distinctio minus id quod maxime placeat facere possimus, omnis voluptas
+					assumenda est, omnis dolor repellendus. Facilis facere possimus, omnis voluptas rerum necessitatibus saepe eveniet.
+       </p>
+       <h5 class="pi-uppercase pi-weight-700">
+        Core Values:
+       </h5>
+       <div class="pi-row">
+        <div class="pi-col-sm-6">
+         <ul class="pi-list-with-icons pi-list-icons-ok">
+          <li>
+           Consectetur adipisicing
+          </li>
+          <li>
+           Eiusmod tempor incididunt
+          </li>
+          <li>
+           Labore et dolore
+          </li>
+          <li>
+           Nostrud exercitation
+          </li>
+         </ul>
+        </div>
+        <div class="pi-col-sm-6">
+         <ul class="pi-list-with-icons pi-list-icons-ok">
+          <li>
+           Consectetur adipisicing
+          </li>
+          <li>
+           Eiusmod tempor incididunt
+          </li>
+          <li>
+           Labore et dolore
+          </li>
+          <li>
+           Nostrud exercitation
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-parallax" style="background-image: url(img_external/gallery/modern-skyscraper.jpg);">
+    <div class="pi-texture pi-section-overlay-base">
+    </div>
+    <div class="pi-section pi-padding-top-50 pi-padding-bottom-20">
+     <div class="pi-text-center pi-padding-bottom-20">
+      <h6 class="pi-uppercase pi-letter-spacing-3">
+       Some Numbers
+      </h6>
+     </div>
+     <!-- Row -->
+     <div class="pi-row pi-grid-small-margins pi-text-center">
+      <!-- Col 3 -->
+      <div class="pi-col-sm-3 pi-col-2xs-6 pi-padding-bottom-20">
+       <div class="pi-counter pi-counter-simple" data-count-from="0" data-count-to="230" data-duration="1000" data-easing="easeInCirc" data-frames-per-second="0">
+        <div class="pi-counter-count pi-counter-count-big pi-text-white pi-weight-600 pi-text-shadow">
+         <p>
+          <i class="icon-thumbs-up">
+          </i>
+         </p>
+         <div class="pi-counter-number">
+          0
+         </div>
+        </div>
+        <p class="lead-18">
+         Magnam aliquam
+        </p>
+       </div>
+      </div>
+      <!-- End col 3 -->
+      <!-- Col 3 -->
+      <div class="pi-col-sm-3 pi-col-2xs-6 pi-padding-bottom-20">
+       <div class="pi-counter pi-counter-simple" data-count-from="0" data-count-to="26" data-duration="2000" data-easing="easeInCirc" data-frames-per-second="10">
+        <div class="pi-counter-count pi-counter-count-big pi-text-white pi-weight-600 pi-text-shadow">
+         <p>
+          <i class="icon-arrows-ccw">
+          </i>
+         </p>
+         $
+         <span class="pi-counter-number">
+          0
+         </span>
+        </div>
+        <p class="lead-18">
+         Deserunt mollitia animi
+        </p>
+       </div>
+      </div>
+      <!-- End col 3 -->
+      <!-- Col 3 -->
+      <div class="pi-col-sm-3 pi-col-2xs-6 pi-padding-bottom-20">
+       <div class="pi-counter pi-counter-simple" data-count-from="0" data-count-to="73" data-duration="3000" data-easing="easeInCirc" data-frames-per-second="10">
+        <div class="pi-counter-count pi-counter-count-big pi-text-white pi-weight-600 pi-text-shadow">
+         <p>
+          <i class="icon-compass">
+          </i>
+         </p>
+         <span class="pi-counter-number">
+          73
+         </span>
+         %
+        </div>
+        <p class="lead-18">
+         Temporibus autem
+        </p>
+       </div>
+      </div>
+      <!-- End col 3 -->
+      <!-- Col 3 -->
+      <div class="pi-col-sm-3 pi-col-2xs-6 pi-padding-bottom-20">
+       <div class="pi-counter pi-counter-simple" data-count-from="0" data-count-to="59" data-duration="4000" data-easing="easeInCirc" data-frames-per-second="10">
+        <div class="pi-counter-count pi-counter-count-big pi-text-white pi-weight-600 pi-text-shadow">
+         <p>
+          <i class="icon-paper-plane">
+          </i>
+         </p>
+         <span class="pi-counter-number">
+          59
+         </span>
+         k
+        </div>
+        <p class="lead-18">
+         Similique sunt in culpa
+        </p>
+       </div>
+      </div>
+      <!-- End col 3 -->
+     </div>
+     <!-- End row -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white" id="anchor-services">
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-60">
+     <div class="pi-text-center pi-padding-bottom-40">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base pi-margin-bottom-15">
+       Services
+      </h6>
+      <h2 class="h1 pi-weight-700 pi-uppercase pi-has-border pi-has-tall-border pi-has-short-border">
+       What We Offer
+      </h2>
+     </div>
+     <!-- Row -->
+     <div class="pi-row">
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-lamp">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           Strategy Solutions
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-monitor">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           Digital Design
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+      <div class="pi-clearfix pi-visible-xs">
+      </div>
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-brush">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           Illustration
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+      <div class="pi-clearfix pi-hidden-xs pi-visible-sm-only">
+      </div>
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-cog">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           Web Development
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+      <div class="pi-clearfix pi-visible-xs">
+      </div>
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-mobile">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           App Development
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+      <!-- Col 4 -->
+      <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-40">
+       <div class="pi-icon-box pi-icon-box-hover pi-icon-box-icon-big">
+        <div class="pi-icon-box-icon pi-icon-box-icon-circle">
+         <i class="icon-search">
+         </i>
+        </div>
+        <div class="pi-icon-box-content-2">
+         <h5 class="pi-uppercase pi-weight-700">
+          <a class="pi-link-dark" href="#">
+           S.E.O.
+          </a>
+         </h5>
+         <p class="pi-margin-bottom-10">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+         </p>
+        </div>
+       </div>
+      </div>
+      <!-- End col 4 -->
+     </div>
+     <!-- End row -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-parallax" style="background-image: url(img_external/gallery/laptop-table.jpg);">
+    <div class="pi-texture" style="background: rgba(24, 28, 32, 0.7);">
+    </div>
+    <div class="pi-section pi-padding-top-140 pi-padding-bottom-120">
+     <!-- Row -->
+     <div class="pi-row">
+      <!-- Col 8 -->
+      <div class="pi-col-md-8 pi-col-md-offset-2 pi-text-center">
+       <p class="lead-32 pi-text-shadow pi-text-white">
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+       </p>
+      </div>
+      <!-- End col 8 -->
+     </div>
+     <!-- End row -->
+    </div>
+   </div>
+   <!-- End promo -->
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white piSocials" id="anchor-team">
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-30">
+     <div class="pi-text-center pi-padding-bottom-20">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base pi-margin-bottom-15">
+       Team
+      </h6>
+      <h2 class="h1 pi-weight-700 pi-uppercase pi-has-border pi-has-tall-border pi-has-short-border">
+       Meet The Team
+      </h2>
+      <p class="lead-16">
+       Contrary to popular belief, Lorem Ipsum is not simply random text.
+       <br/>
+       It has roots in piece of classical.
+      </p>
+     </div>
+     <div class="pi-row">
+      <div class="pi-col-xs-6 pi-col-sm-3 pi-padding-bottom-40 pi-text-center">
+       <!-- Team member -->
+       <div class="pi-img-w pi-img-round pi-img-center" style="max-width: 220px;">
+        <a href="#">
+         <img alt="" src="{% static 'aura/img_external/team/leader-11.jpg' %}"/>
+         <span class="pi-img-overlay pi-img-round">
+          <span class="pi-caption-centered">
+           <span>
+            <span class="pi-caption-icon pi-caption-icon-light pi-caption-scale icon-plus">
+            </span>
+           </span>
+          </span>
+         </span>
+        </a>
+       </div>
+       <h5 class="pi-uppercase pi-weight-700 pi-margin-bottom-5 pi-letter-spacing">
+        Mike Ross
+       </h5>
+       <p class="pi-italic pi-text-base pi-margin-bottom-10">
+        Co-Founder, Art Director
+       </p>
+       <p class="pi-margin-bottom-10">
+        Leveraging our collective experience, we create extraordinary elegant solutions
+       </p>
+       <ul class="pi-social-icons pi-jump pi-small pi-round pi-colored-bg clearFix">
+        <li>
+         <a class="pi-social-icon-facebook" href="#">
+          <i class="icon-facebook">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-twitter" href="#">
+          <i class="icon-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-dribbble" href="#">
+          <i class="icon-dribbble">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <!-- End team member -->
+      </div>
+      <div class="pi-col-xs-6 pi-col-sm-3 pi-padding-bottom-40 pi-text-center">
+       <!-- Team member -->
+       <div class="pi-img-w pi-img-round pi-img-center" style="max-width: 220px;">
+        <a href="#">
+         <img alt="" src="{% static 'aura/img_external/team/leader-22.jpg' %}"/>
+         <span class="pi-img-overlay pi-img-round">
+          <span class="pi-caption-centered">
+           <span>
+            <span class="pi-caption-icon pi-caption-icon-light pi-caption-scale icon-plus">
+            </span>
+           </span>
+          </span>
+         </span>
+        </a>
+       </div>
+       <h5 class="pi-uppercase pi-weight-700 pi-margin-bottom-5 pi-letter-spacing">
+        Mattias Nuffer
+       </h5>
+       <p class="pi-italic pi-text-base pi-margin-bottom-10">
+        Co-Founder, Web Developer
+       </p>
+       <p class="pi-margin-bottom-10">
+        Leveraging our collective experience, we create extraordinary elegant solutions
+       </p>
+       <ul class="pi-social-icons pi-jump pi-small pi-round pi-colored-bg clearFix">
+        <li>
+         <a class="pi-social-icon-facebook" href="#">
+          <i class="icon-facebook">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-twitter" href="#">
+          <i class="icon-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-dribbble" href="#">
+          <i class="icon-dribbble">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <!-- End team member -->
+      </div>
+      <div class="pi-col-xs-6 pi-col-sm-3 pi-padding-bottom-40 pi-text-center">
+       <!-- Team member -->
+       <div class="pi-img-w pi-img-round pi-img-center" style="max-width: 220px;">
+        <a href="#">
+         <img alt="" src="{% static 'aura/img_external/team/leader-33.jpg' %}"/>
+         <span class="pi-img-overlay pi-img-round">
+          <span class="pi-caption-centered">
+           <span>
+            <span class="pi-caption-icon pi-caption-icon-light pi-caption-scale icon-plus">
+            </span>
+           </span>
+          </span>
+         </span>
+        </a>
+       </div>
+       <h5 class="pi-uppercase pi-weight-700 pi-margin-bottom-5 pi-letter-spacing">
+        Kindra Hall
+       </h5>
+       <p class="pi-italic pi-text-base pi-margin-bottom-10">
+        Web &amp; Graphic Designer
+       </p>
+       <p class="pi-margin-bottom-10">
+        Leveraging our collective experience, we create extraordinary elegant solutions
+       </p>
+       <ul class="pi-social-icons pi-jump pi-small pi-round pi-colored-bg clearFix">
+        <li>
+         <a class="pi-social-icon-twitter" href="#">
+          <i class="icon-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-dribbble" href="#">
+          <i class="icon-dribbble">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-vimeo" href="#">
+          <i class="icon-vimeo">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <!-- End team member -->
+      </div>
+      <div class="pi-col-xs-6 pi-col-sm-3 pi-padding-bottom-40 pi-text-center">
+       <!-- Team member -->
+       <div class="pi-img-w pi-img-round pi-img-center" style="max-width: 220px;">
+        <a href="#">
+         <img alt="" src="{% static 'aura/img_external/team/leader-44.jpg' %}"/>
+         <span class="pi-img-overlay pi-img-round">
+          <span class="pi-caption-centered">
+           <span>
+            <span class="pi-caption-icon pi-caption-icon-light pi-caption-scale icon-plus">
+            </span>
+           </span>
+          </span>
+         </span>
+        </a>
+       </div>
+       <h5 class="pi-uppercase pi-weight-700 pi-margin-bottom-5 pi-letter-spacing">
+        Nora Anderson
+       </h5>
+       <p class="pi-italic pi-text-base pi-margin-bottom-10">
+        Project Manager
+       </p>
+       <p class="pi-margin-bottom-10">
+        Leveraging our collective experience, we create extraordinary elegant solutions
+       </p>
+       <ul class="pi-social-icons pi-jump pi-small pi-round pi-colored-bg clearFix">
+        <li>
+         <a class="pi-social-icon-instagram" href="#">
+          <i class="icon-instagram">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a class="pi-social-icon-dribbble" href="#">
+          <i class="icon-dribbble">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <!-- End team member -->
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-parallax pi-slider-enabled" id="anchor-testimonials" style="background-image: url(img_external/gallery/consulting.jpg);">
+    <div class="pi-texture" style="background: rgba(30, 35, 41, 0.8);">
+    </div>
+    <div class="pi-section pi-padding-top-70 pi-padding-bottom-70">
+     <div class="pi-text-center pi-padding-bottom-20">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-margin-bottom-15">
+       Testimonials
+      </h6>
+     </div>
+     <!-- Slider -->
+     <div class="pi-slider-wrapper pi-slider-arrows-inside pi-slider-show-arrow-hover pi-text-center">
+      <div class="pi-slider pi-slider-animate-opacity">
+       <!-- Row -->
+       <div class="pi-row">
+        <!-- Col 8 -->
+        <div class="pi-col-sm-10 pi-col-sm-offset-1">
+         <!-- Slide -->
+         <div class="pi-slide">
+          <div class="pi-img-w pi-img-round">
+           <img src="{% static 'aura/img_external/testimonials/client-photo-2.jpg' %}" style="width: 80px;"/>
+          </div>
+          <p class="lead-32 pi-text-white pi-text-shadow pi-italic">
+           <i class="icon-quote pi-text-base pi-icon-left">
+           </i>
+           Corrupti quos dolores et quas molestias excepturi at vero eos et accusamus et iusto odio dignis.
+           <i class="icon-quote pi-text-base pi-icon-right">
+           </i>
+          </p>
+          <p class="pi-text-base">
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+          </p>
+          <p class="lead-16 pi-weight-700 pi-text-white pi-text-shadow pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+           Jim Terrell
+          </p>
+          <p class="pi-italic">
+           Project Director. Company Inc.
+          </p>
+         </div>
+         <!-- End slide -->
+         <!-- Slide -->
+         <div class="pi-slide">
+          <div class="pi-img-w pi-img-round">
+           <img src="{% static 'aura/img_external/testimonials/client-photo-3.jpg' %}" style="width: 80px;"/>
+          </div>
+          <p class="lead-32 pi-text-white pi-text-shadow pi-italic">
+           <i class="icon-quote pi-text-base pi-icon-left">
+           </i>
+           Quas molestias excepturi praesentium voluptatum deleniti atque at vero eos et accusamus ducimus.
+           <i class="icon-quote pi-text-base pi-icon-right">
+           </i>
+          </p>
+          <p class="pi-text-base">
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+          </p>
+          <p class="lead-16 pi-weight-700 pi-text-white pi-text-shadow pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+           Kindra Hall
+          </p>
+          <p class="pi-italic">
+           Associate Director. Company Inc.
+          </p>
+         </div>
+         <!-- End slide -->
+         <!-- Slide -->
+         <div class="pi-slide">
+          <div class="pi-img-w pi-img-round">
+           <img src="{% static 'aura/img_external/testimonials/client-photo-1.jpg' %}" style="width: 80px;"/>
+          </div>
+          <p class="lead-32 pi-text-white pi-text-shadow pi-italic">
+           <i class="icon-quote pi-text-base pi-icon-left">
+           </i>
+           Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.
+           <i class="icon-quote pi-text-base pi-icon-right">
+           </i>
+          </p>
+          <p class="pi-text-base">
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+           <i class="icon-star">
+           </i>
+          </p>
+          <p class="lead-16 pi-weight-700 pi-text-white pi-text-shadow pi-uppercase pi-letter-spacing pi-margin-bottom-5">
+           Mattias Nuffer
+          </p>
+          <p class="pi-italic">
+           Executive Director. Company Inc.
+          </p>
+         </div>
+         <!-- End slide -->
+        </div>
+        <!-- End col 8 -->
+       </div>
+       <!-- End row -->
+      </div>
+     </div>
+     <!-- End slider -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-shadow-inside-top pi-section-dark piTooltips">
+    <div class="pi-texture" style="background: url(img/hexagon.png) repeat;">
+    </div>
+    <div class="pi-section pi-padding-top-50 pi-padding-bottom-10">
+     <div class="pi-text-center">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base">
+       Clients
+      </h6>
+     </div>
+     <!-- Logos gallery -->
+     <div class="pi-row pi-liquid-col-lg-6 pi-liquid-col-sm-4 pi-liquid-col-xs-3 pi-liquid-col-2xs-2 pi-gallery pi-gallery-small-margins">
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="Italian clothing company" data-placement="top" title="">
+        <a class="pi-img-opacity-30" href="#">
+         <img alt="" src="{% static 'aura/img_external/clients/diesel-4.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <!-- End logo -->
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="American multinational corporation" data-placement="top" title="">
+        <a class="pi-img-opacity-30" href="#">
+         <img alt="" src="{% static 'aura/img_external/clients/google-4.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <!-- End logo -->
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="Japanese multinational conglomerate corporation" data-placement="top" title="">
+        <a class="pi-img-opacity-30" href="#">
+         <img alt="" src="{% static 'aura/img_external/clients/sony-4.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <!-- End logo -->
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="British multinational branded venture capital conglomerate" data-placement="top" title="">
+        <a class="pi-img-opacity-30" href="#">
+         <img alt="" src="{% static 'aura/img_external/clients/virgin-4.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <!-- End logo -->
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="Online mobile photo-sharing, video-sharing and social networking service" data-placement="top" title="">
+        <a class="pi-img-opacity-30" href="#">
+         <img alt="" src="{% static 'aura/img_external/clients/instagram-4.png' %}"/>
+        </a>
+       </div>
+      </div>
+      <!-- End logo -->
+      <!-- Logo -->
+      <div class="pi-gallery-item">
+       <div class="pi-img-w">
+        <div class="pi-img-w pi-tooltip pi-tooltip-base" data-original-title="American multinational Internet corporation" data-placement="top" title="">
+         <a class="pi-img-opacity-30" href="#">
+          <img alt="" src="{% static 'aura/img_external/clients/yahoo-4.png' %}"/>
+         </a>
+        </div>
+       </div>
+      </div>
+      <!-- End logo -->
+     </div>
+     <!-- End logos gallery -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white" id="anchor-work">
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-70">
+     <div class="pi-text-center pi-padding-bottom-10">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base pi-margin-bottom-15">
+       Work
+      </h6>
+      <h2 class="h1 pi-weight-700 pi-uppercase pi-has-border pi-has-tall-border pi-has-short-border">
+       Case Studies
+      </h2>
+      <p class="lead-16">
+       Contrary to popular belief, Lorem Ipsum is not simply random text.
+       <br/>
+       It has roots in piece of classical.
+      </p>
+     </div>
+     <!-- Filter -->
+     <div class="pi-pagenav pi-big pi-text-center" data-isotope-nav="isotope">
+      <ul>
+       <li>
+        <a class="pi-active" data-filter="*" href="#">
+         All
+        </a>
+       </li>
+       <li>
+        <a data-filter=".Beautiful" href="#">
+         Beautiful
+        </a>
+       </li>
+       <li>
+        <a data-filter=".Lifestyle" href="#">
+         Lifestyle
+        </a>
+       </li>
+       <li>
+        <a data-filter=".Creation" href="#">
+         Creation
+        </a>
+       </li>
+       <li>
+        <a data-filter=".Travel" href="#">
+         Travel
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- End filter -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white">
+    <!-- Portfolio gallery -->
+    <div class="pi-row pi-liquid-col-xs-2 pi-liquid-col-lg-3 pi-gallery pi-stacked pi-no-margin-bottom isotope pi-column-fix" id="isotope">
+     <!-- Portfolio item -->
+     <div class="Beautiful Travel pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/woman-at-the-wall.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/woman-at-the-wall.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-plus">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Woman at the wall
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Beautiful
+            </a>
+            ,
+            <a href="#">
+             Travel
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+     <!-- Portfolio item -->
+     <div class="Beautiful Food pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/healthy-food.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/healthy-food.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-search-1">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Healthy food
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Beautiful
+            </a>
+            ,
+            <a href="#">
+             Food
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+     <!-- Portfolio item -->
+     <div class="Sport Lifestyle pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/golf-ball.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/golf-ball.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-plus">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Golf ball
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Sport
+            </a>
+            ,
+            <a href="#">
+             Lifestyle
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+     <!-- Portfolio item -->
+     <div class="Travel Lifestyle pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/sailing.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/sailing.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-plus">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Sailing
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Travel
+            </a>
+            ,
+            <a href="#">
+             Lifestyle
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+     <!-- Portfolio item -->
+     <div class="Сreation pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/digital-photo-camera.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/digital-photo-camera.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-plus">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Digital Photo Camera
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Сreation
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+     <!-- Portfolio item -->
+     <div class="Creation Lifestyle pi-gallery-item isotope-item">
+      <div class="pi-img-w pi-img-hover-zoom">
+       <img alt="" src="{% static 'aura/img_external/gallery/microphone-on-concert.jpg' %}"/>
+       <div class="pi-img-overlay pi-img-overlay-darker">
+        <div class="pi-caption-centered">
+         <div>
+          <a class="pi-colorbox" href="{% static 'aura/img_external/gallery/microphone-on-concert.jpg' %}">
+           <span class="pi-caption-icon pi-caption-scale icon-plus">
+           </span>
+          </a>
+          <h4 class="pi-uppercase">
+           <a class="pi-link-white" href="#">
+            Microphone on concert
+           </a>
+          </h4>
+          <ul class="pi-caption-links">
+           <li>
+            <i class="icon-tag">
+            </i>
+            <a href="#">
+             Creation
+            </a>
+            ,
+            <a href="#">
+             Lifestyle
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- End portfolio item -->
+    </div>
+    <!-- End portfolio gallery -->
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-shadow-inside-top pi-section-dark">
+    <div class="pi-texture" style="background: url(img/hexagon.png) repeat;">
+    </div>
+    <div class="pi-section pi-padding-top-70 pi-padding-bottom-50 pi-text-center">
+     <p class="lead-30 pi-text-white">
+      We Interested You?
+      <a class="btn pi-btn-base pi-btn-no-border pi-btn-big pi-shadow pi-weight-400" href="http://themeforest.net/item/aura-responsive-multipurpose-template/7786132" style="margin-left: 25px;">
+       Buy Aura for $17
+      </a>
+     </p>
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white" id="anchor-contact">
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-80">
+     <div class="pi-text-center pi-padding-bottom-20">
+      <h6 class="pi-uppercase pi-letter-spacing-3 pi-text-base pi-margin-bottom-15">
+       Contact
+      </h6>
+      <h2 class="h1 pi-weight-700 pi-uppercase pi-has-border pi-has-tall-border pi-has-short-border">
+       Get In Touch
+      </h2>
+      <p class="lead-16">
+       Contrary to popular belief, Lorem Ipsum is not simply random text.
+       <br/>
+       It has roots in piece of classical.
+      </p>
+     </div>
+     <!-- Row -->
+     <div class="pi-row">
+      <!-- Col 8 -->
+      <div class="pi-col-md-8 pi-col-md-offset-2">
+       <!-- Forms -->
+       <form action="handlers/formContact.php" class="pi-contact-form" role="form">
+        <div class="pi-error-container">
+        </div>
+        <!-- Row -->
+        <div class="pi-row pi-grid-small-margins">
+         <!-- Col 6 -->
+         <div class="pi-col-xs-6">
+          <!-- Name form -->
+          <div class="form-group">
+           <div class="pi-input-with-icon pi-input-with-icon-lg">
+            <div class="pi-input-icon">
+             <i class="icon-user">
+             </i>
+            </div>
+            <input class="form-control input-lg form-control-name" id="exampleInputName" placeholder="Your Name" type="text"/>
+           </div>
+          </div>
+          <!-- End name form -->
+          <!-- Email form -->
+          <div class="form-group">
+           <div class="pi-input-with-icon pi-input-with-icon-lg">
+            <div class="pi-input-icon">
+             <i class="icon-mail">
+             </i>
+            </div>
+            <input class="form-control input-lg form-control-email" id="exampleInputEmail" placeholder="Email address" type="email"/>
+           </div>
+          </div>
+          <!-- End email form -->
+          <!-- Name form -->
+          <div class="form-group">
+           <div class="pi-input-with-icon pi-input-with-icon-lg">
+            <div class="pi-input-icon">
+             <i class="icon-briefcase">
+             </i>
+            </div>
+            <input class="form-control input-lg form-control-company-name" id="exampleInputCompany" placeholder="e.g. PI Studio" type="text"/>
+           </div>
+          </div>
+          <!-- End name form -->
+         </div>
+         <!-- End col 6 -->
+         <!-- Col 6 -->
+         <div class="pi-col-xs-6">
+          <!-- Message -->
+          <div class="form-group">
+           <div class="pi-input-with-icon pi-input-with-icon-lg">
+            <div class="pi-input-icon">
+             <i class="icon-pencil">
+             </i>
+            </div>
+            <textarea class="form-control input-lg form-control-comments" id="exampleInputMessage" placeholder="How can we help?" rows="7" style="height: 178px;">
+            </textarea>
+           </div>
+          </div>
+          <!-- End message form -->
+         </div>
+         <!-- End col 6 -->
+        </div>
+        <!-- End row -->
+        <p class="pi-text-center">
+         <button class="btn pi-btn-big pi-btn-base pi-btn-wide" type="submit">
+          Send Message
+          <i class="icon-paper-plane pi-icon-right">
+          </i>
+         </button>
+        </p>
+       </form>
+       <!-- End forms -->
+      </div>
+      <!-- End col 8 -->
+     </div>
+     <!-- End row -->
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-parallax" style="background-image: url(img_external/gallery/architecture.jpg);">
+    <div class="pi-texture" style="background: rgba(24, 28, 32, 0.8);">
+    </div>
+    <div class="pi-section pi-padding-top-90 pi-padding-bottom-80">
+     <div class="pi-icon-box-vertical pi-text-center">
+      <div class="pi-icon-box-icon pi-icon-box-icon-big pi-icon-box-icon-base">
+       <i class="icon-phone">
+       </i>
+      </div>
+      <h2 class="h1 pi-has-border pi-has-tall-border pi-has-short-border pi-text-shadow">
+       1 (212)
+       <span class="pi-weight-700">
+        557-3559
+       </span>
+      </h2>
+      <p class="lead-18 pi-text-shadow pi-uppercase pi-weight-700 pi-text-white pi-margin-bottom-5">
+       Aura, Street Name 6209, New York
+      </p>
+      <p class="lead-18 pi-text-shadow pi-uppercase pi-weight-700 pi-margin-bottom-30">
+       <a class="mail-text uppercase oswald" href="mailto:support@goldeyestheme.com">
+        mail@example.com
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- - - - - - - - - - SECTION - - - - - - - - - -->
+   <div class="pi-section-w pi-section-white">
+    <div class="pi-google-map pi-google-map-wide googleMap" data-map-address="110 Wall Street NY 100050" data-map-marker="img/marker-base.png" data-map-marker-anchor="30,81" data-map-marker-size="67,81" data-map-style="base" data-map-type="roadmap" data-map-zoom="14" style="height: 440px;">
+    </div>
+   </div>
+   <!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+   <!-- Footer -->
+   <!-- Copyright area -->
+   <div class="pi-section-w pi-border-bottom pi-border-top-light pi-section-dark">
+    <div class="pi-texture" style="background: url(img/hexagon.png) repeat;">
+    </div>
+    <div class="pi-section pi-text-center pi-padding-top-60 pi-padding-bottom-40">
+     <div class="pi-img-w pi-margin-bottom-30">
+      <img alt="" class="pi-img-center" src="{% static 'aura/img_external/gallery/logo-big-white.png' %}" style="width: 120px;"/>
+     </div>
+     <ul class="pi-social-icons pi-jump pi-round pi-colored-bg pi-margin-bottom-20 pi-clearfix">
+      <li>
+       <a class="pi-social-icon-rss pi-shadow" href="#">
+        <i class="icon-rss">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a class="pi-social-icon-facebook pi-shadow" href="#">
+        <i class="icon-facebook">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a class="pi-social-icon-twitter pi-shadow" href="#">
+        <i class="icon-twitter">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a class="pi-social-icon-dribbble pi-shadow" href="#">
+        <i class="icon-dribbble">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a class="pi-social-icon-linkedin pi-shadow" href="#">
+        <i class="icon-linkedin">
+        </i>
+       </a>
+      </li>
+     </ul>
+     <p>
+      © 2014. «
+      <a href="#">
+       Aura HTML Theme
+      </a>
+      ». All right reserved.
+     </p>
+    </div>
+   </div>
+   <!-- End copyright area -->
+   <!-- End footer -->
+  </div>
+  <div class="pi-scroll-top-arrow" data-scroll-to="0">
+  </div>
+  <script src="{% static 'aura/3dParty/jquery-1.11.0.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/bootstrap/js/bootstrap.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.touchSwipe.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/gauge.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/inview.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/isotope/isotope.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.googleMapStyles.js' %}">
+  </script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.gmap.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/requestAnimationFramePolyfill.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.placeholder.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.scrollTo.min.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/colorbox/jquery.colorbox-min.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.scrollSpy.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.global.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.slider.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.slider.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.tooltip.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.tooltip.js' %}">
+  </script>
+  <script src="{% static 'aura/3dParty/jquery.easing.1.3.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.counter.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.counter.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.parallax.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.parallax.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.isotope.js' %}">
+  </script>
+  <script src="{% static 'aura/scripts/pi.init.map.js' %}">
+  </script>
+ </body>
+</html>
